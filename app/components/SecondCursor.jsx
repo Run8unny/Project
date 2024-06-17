@@ -2,9 +2,11 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
-export default function Cursor({ isHovered }) {
-	const size = isHovered ? 200 : 50;
-	const circle = useRef();
+const colors = ['#c32d27', '#EE82EE', '#d35f0d', '#356fdb'];
+
+export default function SecondCursor() {
+	const size = 240;
+	const circles = useRef([]);
 	const mouse = useRef({
 		x: 0,
 		y: 0,
@@ -26,7 +28,9 @@ export default function Cursor({ isHovered }) {
 	const lerp = (x, y, a) => x * (1 - a) + y * a;
 
 	function moveCircle(x, y) {
-		gsap.set(circle.current, { x, y, xPercent: -50, yPercent: -50 });
+		circles.current.forEach((circle, i) => {
+			gsap.set(circle, { x, y, xPercent: -50, yPercent: -50 });
+		});
 	}
 
 	function animate() {
@@ -48,10 +52,25 @@ export default function Cursor({ isHovered }) {
 	}, []);
 
 	return (
-		<div
-			ref={circle}
-			className='fixed top-0 left-0 bg-[#ffff] rounded-full mix-blend-difference pointer-events-none'
-			style={{ width: size, height: size }}
-		></div>
+		<>
+			{colors.map((color, i) => {
+				return (
+					<div
+						key={color}
+						ref={(ref) => (circles.current[i] = ref)}
+						className='fixed top-0 left-0 rounded-full mix-blend-difference pointer-events-none'
+						style={{
+							width: size,
+							height: size,
+							backgroundColor: color,
+							filter: `blur(20px)`,
+							transition: `height 0.3s ease-out, width 0.3s ease-out, filter 0.3s ease-out, transform ${
+								0.03 * i
+							}s ease-out`,
+						}}
+					></div>
+				);
+			})}
+		</>
 	);
 }
