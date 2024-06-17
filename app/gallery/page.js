@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NewScene from '../components/NewScene';
+import Cursor from '../components/Cursor';
 export default function Page() {
 	return (
 		<div>
@@ -11,6 +12,7 @@ export default function Page() {
 				<NewScene />
 			</main>
 			<Link href='/'>Home</Link>
+			<Cursor />
 		</div>
 	);
 }
