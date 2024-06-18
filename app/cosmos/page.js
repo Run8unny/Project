@@ -10,7 +10,7 @@ export default async function Page() {
 	console.log(data);
 
 	return (
-		<div>
+		<div className='h-dvh'>
 			<h1>This is Cosomos</h1>
 			<img src={data.url} alt='' />
 			<Link href='/'>Home</Link>

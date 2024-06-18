@@ -1,19 +1,12 @@
-'use client';
 import * as THREE from 'three';
-import {
-	Stats,
-	OrbitControls,
-	Environment,
-	ContactShadows,
-} from '@react-three/drei';
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
+import { useFrame, useLoader, useThree } from '@react-three/fiber';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
 import { Vector3 } from 'three';
 
-function Model() {
-	const { scene } = useLoader(GLTFLoader, '/untitled.glb');
+export default function Icosahedron() {
+	const { scene } = useLoader(GLTFLoader, '/source/untitled.glb');
 	const { camera, mouse } = useThree();
-	const texture = useLoader(THREE.TextureLoader, '/IMG_7833.jpg');
+	const texture = useLoader(THREE.TextureLoader, '/images/IMG_7833.jpg');
 	const vector = new Vector3();
 
 	useFrame(() => {
@@ -35,25 +28,5 @@ function Model() {
 			children-0-material-thickness={1}
 			children-0-material-map={texture}
 		/>
-	);
-}
-
-export default function NewScene() {
-	return (
-		<Canvas camera={{ position: [-2, 10, 3] }} shadows>
-			<Model />
-			<Environment
-				files='/kloofendal_48d_partly_cloudy_puresky_4k.hdr'
-				background
-				blur={0}
-			/>
-			<ContactShadows
-				scale={150}
-				position={[0.33, -0.33, 0.33]}
-				opacity={1.5}
-			/>
-			<OrbitControls target={[0, 1, 0]} autoRotate autoRotateSpeed={0.4} />
-			<Stats />
-		</Canvas>
 	);
 }
