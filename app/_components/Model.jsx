@@ -18,12 +18,13 @@ function Model(props) {
 
 	return (
 		<>
-			<group ref={group} scale={viewport.width / 5} {...props}>
+			<group ref={group} scale={viewport.width / 2} {...props}>
 				<Shape />
 			</group>
 			<group
 				ref={one}
-				scale={viewport.width / 2}
+				scale={viewport.width}
+				position={(10, -30, -10)}
 				onPointerDown={() => setRotate(!rotate)}
 			>
 				<Shape />

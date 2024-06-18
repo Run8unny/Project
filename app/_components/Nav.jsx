@@ -3,14 +3,14 @@ import Logo from './Logo';
 
 import NavMenu from './NavMenu';
 
-export default function Nav({ onIsHoverd }) {
+export default function Nav({ onIsHoverd, arrayFont }) {
 	return (
 		<div
 			onMouseEnter={() => onIsHoverd(true)}
 			onMouseLeave={() => onIsHoverd(false)}
-			className='flex justify-between gap-40 mr-20 ml-20 my-10 border-b border-neutral-400 p-2 pr-80'
+			className='flex justify-between gap-40 px-6 my-2  p-2'
 		>
-			<Logo />
+			<Logo arrayFont={arrayFont} />
 			<NavMenu />
 		</div>
 	);

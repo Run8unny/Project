@@ -21,7 +21,7 @@ export default function Scene() {
 			<OrbitControls />
 			<directionalLight intensity={4} position={[3.3, 1.0, 4.4]} />
 			<Environment preset='dawn' />
-			<Model position={[22, -5, 8]} />
+			<Model position={[20, -10, 10]} />
 		</Canvas>
 	);
 }

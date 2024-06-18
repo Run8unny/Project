@@ -1687,6 +1687,6 @@ export function Shape(props) {
 	);
 }
 
-useGLTF.preload('/mastershape.glb');
+useGLTF.preload('/sourcemastershape.glb');
 
 export default Shape;
