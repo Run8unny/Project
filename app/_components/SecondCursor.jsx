@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
-const colors = ['#c32d27', '#EE82EE', '#d35f0d', '#356fdb'];
+const colors = ['#c32d27', '#fff', '#EE82EE', '#fff'];
 
 export default function SecondCursor() {
 	const size = 240;
@@ -63,7 +63,7 @@ export default function SecondCursor() {
 							width: size,
 							height: size,
 							backgroundColor: color,
-							filter: `blur(20px)`,
+							filter: 'blur(15px)',
 							transition: `height 0.3s ease-out, width 0.3s ease-out, filter 0.3s ease-out, transform ${
 								0.03 * i
 							}s ease-out`,

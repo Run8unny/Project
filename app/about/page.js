@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Cursor from '../components/Cursor';
+import Cursor from '../_components/Cursor';
 export default function Page() {
 	return (
-		<div>
+		<div className='h-dvh'>
 			<h1>Hello From About</h1>
 			<Link href='/'>Home</Link>
 			<Cursor />

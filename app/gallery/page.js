@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import NewScene from '../components/NewScene';
-import Cursor from '../components/Cursor';
+import NewScene from '../_components/NewScene';
+import Cursor from '../_components/Cursor';
 export default function Page() {
 	return (
-		<div>
+		<div className='h-dvh'>
 			<h1>Hello From Gallery</h1>
 			<div>
 				<Link href='/gallery/items'>Item</Link>

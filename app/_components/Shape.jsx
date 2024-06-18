@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 export function Shape(props) {
 	const group = useRef();
-	const { nodes, materials, animations } = useGLTF('/mastershape.glb');
+	const { nodes, materials, animations } = useGLTF('/source/mastershape.glb');
 	const { actions } = useAnimations(animations, group);
 	return (
 		<group ref={group} {...props} dispose={null}>

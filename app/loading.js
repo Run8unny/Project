@@ -1,3 +1,3 @@
 export default function Loading() {
-	return <p>Loading...</p>;
+	return <div className='h-screen w-auto animate-pulse'>Loading</div>;
 }
