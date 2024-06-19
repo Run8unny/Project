@@ -32,23 +32,3 @@
 		transform: rotate(360deg);
 	}
 }
-
-/* .container {
-	background: linear-gradient(-45deg, #fff, #e5e5e5, #111, #111);
-	background-size: 400% 400%;
-	animation: gradient 60s ease infinite;
-	animation-delay: 3s;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */

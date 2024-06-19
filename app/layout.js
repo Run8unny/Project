@@ -13,7 +13,7 @@ const vietnam = localFont({
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className='container'>
+			<body>
 				<main className={vietnam.className}>{children}</main>
 			</body>
 		</html>
