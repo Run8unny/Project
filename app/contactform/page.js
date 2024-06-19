@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import Cursor from '../_components/Cursor';
+import SecondCursor from '../_components/SecondCursor';
+import MissionBox from '../_components/MissionBox';
 
 export default function Page() {
 	return (
-		<div className='h-dvh'>
-			<h1>Hello Contact</h1>
-			<Cursor />
+		<div className='h-dvh w-screen cursor-none flex items-center p-20 m-20'>
+			<MissionBox text="Let's get in touch" />
+			<SecondCursor />
 			<Link href='/'>Home</Link>
 		</div>
 	);

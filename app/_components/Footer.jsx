@@ -25,6 +25,7 @@ export default function Footer({ onIsHoverd, arrayFont }) {
 					<Link href=''>[Facebook]</Link>
 				</li>
 				<li>
+					{/* <FontAwesomeIcon icon={faCircle} className='px-2 text-sm' /> */}
 					<Link href='zaneta.wardaszka@gmail.com'>[Mail]</Link>
 				</li>
 			</ul>

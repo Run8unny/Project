@@ -7,13 +7,13 @@ export const metadata = {
 };
 
 const vietnam = localFont({
-	src: '../public/fonts/BeVietnamPro-Thin.woff2',
+	src: '../public/fonts/BeVietnamPro-Regular.woff2',
 });
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body>
+			<body className='container'>
 				<main className={vietnam.className}>{children}</main>
 			</body>
 		</html>

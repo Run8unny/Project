@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-export default function ImageLogo() {
+export default function ImageLogo({ width, height, color }) {
 	return (
 		<Image
-			className='bg-white rounded-full m-1 p-0'
-			width={30}
-			height={30}
+			className={`${color} rounded-full m-4 p-0`}
+			width={width}
+			height={height}
 			src='/icons/Icosahedron.png'
 			alt='logo icon'
 		></Image>

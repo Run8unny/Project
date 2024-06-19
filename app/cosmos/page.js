@@ -12,8 +12,14 @@ export default async function Page() {
 	return (
 		<div className='h-dvh'>
 			<h1>This is Cosomos</h1>
-			<img src={data.url} alt='' />
 			<Link href='/'>Home</Link>
+			<div className='h-dvh w-auto'>
+				<img
+					src={data.url}
+					alt='cosmos image from NASA'
+					className='h-4/5 w-auto'
+				/>
+			</div>
 		</div>
 	);
 }
