@@ -9,7 +9,7 @@ import { Environment, OrbitControls } from '@react-three/drei';
 export default function Scene() {
 	const cameraRef = useRef();
 	return (
-		<div className='h-screen'>
+		<div className='h-dvh w-4/5  p-4'>
 			<Canvas camera={{ position: [30, -100, 10] }} ref={cameraRef} shadows>
 				<OrbitControls />
 				<directionalLight intensity={4} position={[0.75, -0.75, 0]} />

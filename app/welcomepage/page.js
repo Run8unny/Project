@@ -3,22 +3,24 @@ import SecondCursor from '../_components/SecondCursor';
 import MissionBox from '../_components/MissionBox';
 import Main from '../_components/Main';
 import localFont from 'next/font/local';
+import '../_styles/style.css';
+import Button from '../_components/Button';
 
-const vietnamBold = localFont({
-	src: '../../public/fonts/BeVietnamPro-Bold.woff2',
+const poppinsBold = localFont({
+	src: '../../public/fonts/Poppins-Semibold.woff2',
 });
 
 export default function Page() {
 	return (
-		<div className='p-20 z-20 h-dvh w-screen cursor-none flex items-center'>
+		<div className='p-60 z-20 h-dvh w-screen cursor-none flex items-center'>
 			<h1
-				className={`${vietnamBold.className} text-[7.5vw] max-w-[90vw] text-green-600 text-center`}
+				className={`${poppinsBold.className} text-[8.5vw] max-w-[90vw] text-green-600 text-center`}
 			>
-				Welcome to Solo Creative Coding Studio{' '}
-				<span className='text-lg'>by zan</span>
+				Creative Front End Developer
 			</h1>
-
-			<Link href='/'>Home</Link>
+			<Button color={'green-600'}>
+				<Link href='/'>Enter</Link>
+			</Button>
 			<SecondCursor />
 		</div>
 	);

@@ -6,15 +6,15 @@ export const metadata = {
 	description: 'Portfolio',
 };
 
-const vietnam = localFont({
-	src: '../public/fonts/BeVietnamPro-Regular.woff2',
+const poppins = localFont({
+	src: '../public/fonts/Poppins-Regular.woff2',
 });
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body>
-				<main className={vietnam.className}>{children}</main>
+			<body className='grain'>
+				<main className={`${poppins.className} overlay`}>{children}</main>
 			</body>
 		</html>
 	);

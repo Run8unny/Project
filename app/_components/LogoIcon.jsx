@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function ImageLogo({ width, height, color }) {
+export default function LogoIcon({ width, height, color, src, alt }) {
 	return (
 		<Image
 			className={`${color} rounded-full m-4 p-0`}

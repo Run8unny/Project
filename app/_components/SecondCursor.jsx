@@ -5,7 +5,7 @@ import gsap from 'gsap';
 const colors = ['#c32d27', '#fff', '#EE82EE', '#fff'];
 
 export default function SecondCursor() {
-	const size = 240;
+	const size = 270;
 	const circles = useRef([]);
 	const mouse = useRef({
 		x: 0,

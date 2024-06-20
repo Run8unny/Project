@@ -1,15 +1,9 @@
-import ImageLogo from './ImageLogo';
+import LogoIcon from './LogoIcon';
 
-export default function MissionBox({ text }) {
+export default function MissionBox({ text, color = 'text-green-600' }) {
 	return (
-		<div className='flex items-center h-1/2 p-20 m-20'>
-			<p className='text-green-600 text-9xl text-center'>{text}</p>
-			<ImageLogo
-				width={80}
-				height={80}
-				color='bg-green-600'
-				className='m-20 p-20'
-			/>
+		<div className='flex items-center h-1/2 p-40 m-20'>
+			<p className={`${color} text-9xl text-center`}>{text}</p>
 		</div>
 	);
 }

@@ -15,7 +15,7 @@ export default function NavMenu() {
 			</li>
 			<li>
 				<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-				<Link href='/contactform'>Contact</Link>
+				<Link href='/contact'>Contact</Link>
 			</li>
 			<li className='hover:text-pink-400'>
 				<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
