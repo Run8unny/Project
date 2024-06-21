@@ -10,20 +10,31 @@ export default function Footer({ arrayFont }) {
 				className={`${arrayFont.className} flex justify-evenly gap-40 text-4xl py-4`}
 			>
 				<li>
-					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-					<Link href='https://github.com/Run8unny'>Github</Link>
+					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm ' />
+					<Link className='hover:text-white' href='https://github.com/Run8unny'>
+						Github
+					</Link>
 				</li>
 				<li>
 					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-					<Link href=''>LinkedIn</Link>
+					<Link className='hover:text-white' href=''>
+						LinkedIn
+					</Link>
 				</li>
 				<li>
 					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-					<Link href='https://pl.pinterest.com/zanwardaszka/'>Pinterest</Link>
+					<Link
+						className='hover:text-white'
+						href='https://pl.pinterest.com/zanwardaszka/'
+					>
+						Pinterest
+					</Link>
 				</li>
 				<li>
 					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-					<Link href=''>Facebook</Link>
+					<Link className='hover:text-white' href=''>
+						Facebook
+					</Link>
 				</li>
 			</ul>
 		</div>
