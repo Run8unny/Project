@@ -6,9 +6,9 @@ import dynamic from 'next/dynamic';
 import Footer from './_components/Footer';
 import Cursor from './_components/Cursor';
 import { useState } from 'react';
-import MissionBoox from './_components/MissionBox';
-import HomeNav from './_components/HomeNav';
 import localFont from 'next/font/local';
+import NavMenu from './_components/NavMenu';
+import CTA from './_components/CTA';
 
 const arrayFont = localFont({
 	src: '../public/fonts/Array-Regular.woff2',
@@ -25,13 +25,13 @@ export default function Home() {
 		>
 			<header className='h-20'>
 				<Nav onIsHoverd={setIsHoverd} arrayFont={arrayFont}>
-					<HomeNav />
+					<NavMenu />
 				</Nav>
 			</header>
-			<main className='h-full w-screen border-neutral-400 flex flex-col justify-center items-center'>
+			<div className='w-full relative h-[37.625rem]'>
 				<Scene />
-				<MissionBoox text='I create viusal experience through web design.' />
-			</main>
+			</div>
+			<CTA />
 			<Footer arrayFont={arrayFont} />
 			<Cursor isHovered={isHovered} />
 		</div>

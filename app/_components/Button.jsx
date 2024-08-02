@@ -1,8 +1,6 @@
-export default function Button({ children, color }) {
+export default function Button({ children }) {
 	return (
-		<button
-			className={`border-2 text-slate-50 border-${color} m-2 p-4 rounded-full`}
-		>
+		<button className='className="w-full relative rounded-[25px] bg-gray border-black border-[2px] border-solid box-border h-[3.125rem]'>
 			{children}
 		</button>
 	);

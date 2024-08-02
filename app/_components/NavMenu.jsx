@@ -1,25 +1,26 @@
 import Link from 'next/link';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Button from './Button';
 
 export default function NavMenu() {
 	return (
 		<ul className='flex gap-4 items-center text-lg'>
 			<li className='hover:text-pink-400'>
-				<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-				<Link href='/about'>About</Link>
+				<Button>
+					<Link href='/about'>about</Link>
+				</Button>
 			</li>
 			<li>
-				<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-				<Link href='/gallery'>Gallery</Link>
+				<Button>
+					<Link href='/playground'>playground</Link>
+				</Button>
 			</li>
 			<li>
-				<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-				<Link href='/contact'>Contact</Link>
+				<Button>
+					<Link href='/contact'>contact</Link>
+				</Button>
 			</li>
 			<li className='hover:text-pink-400'>
-				<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
-				<Link href='/cosmos'>Cosmos</Link>
+				<Link href='/work'>work</Link>
 			</li>
 		</ul>
 	);

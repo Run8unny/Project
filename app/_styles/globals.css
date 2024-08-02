@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Array:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@font-face {
+	font-family: 'Array';
+	src: url('/Array-Regular.otf');
+	font-weight: 400;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+	@apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+	border-width: 0;
+}
 
 :root {
 	--foreground-rgb: 0, 0, 0;
