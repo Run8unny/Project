@@ -1,27 +1,73 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Model from './Model';
 import { Environment, OrbitControls } from '@react-three/drei';
 // import { Stats } from '@react-three/drei';
+import * as THREE from 'three';
+import { useControls } from 'leva';
 
-// const matirialProps = useControls({
-// 	thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-// 	roughness: { value: 0, min: 0, max: 1, step: 0.1 },
-// 	transmission: { value: 1, min: 0, max: 1, step: 0.1 },
-// 	ior: { value: 1.2, min: 0, max: 3, step: 0.1 },
-// 	chromaticAberration: { value: 0.02, min: 0, max: 1 },
-// 	backSide: { value: true },
-// });
+function Lights() {
+	const ambientRef = useRef();
+	const directionalRef = useRef();
+
+	useControls('Ambient Light', {
+		visible: {
+			value: false,
+			onChange: (v) => {
+				ambientRef.current.visible = v;
+			},
+		},
+		color: {
+			value: 'white',
+			onChange: (v) => {
+				ambientRef.current.color = new THREE.Color(v);
+			},
+		},
+	});
+
+	useControls('Directional Light', {
+		visible: {
+			value: true,
+			onChange: (v) => {
+				directionalRef.current.visible = v;
+			},
+		},
+		position: {
+			x: 1,
+			y: 1,
+			z: 1,
+			onChange: (v) => {
+				directionalRef.current.position.copy(v);
+			},
+		},
+		color: {
+			value: 'white',
+			onChange: (v) => {
+				directionalRef.current.color = new THREE.Color(v);
+			},
+		},
+	});
+
+	return (
+		<>
+			<ambientLight ref={ambientRef} />
+			<directionalLight ref={directionalRef} />
+		</>
+	);
+}
 
 export default function Scene() {
+	const cameraRef = useRef();
 	return (
-		<Canvas shadows>
-			<OrbitControls />
-			<directionalLight intensity={4} position={[3.3, 1.0, 4.4]} />
-			<Environment preset='dawn' />
-			<Model position={[22, -5, 8]} />
-		</Canvas>
+		<div className='h-lvh w-4/5 p-30 m-10'>
+			<Canvas>
+				<Lights />
+				<OrbitControls />
+				<Environment preset='forest' />
+				<Model />
+			</Canvas>
+		</div>
 	);
 }

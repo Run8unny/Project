@@ -1,5 +1,4 @@
 import '@/app/_styles/globals.css';
-import Footer from './_components/Footer';
 import localFont from 'next/font/local';
 
 export const metadata = {
@@ -8,14 +7,14 @@ export const metadata = {
 };
 
 const vietnam = localFont({
-	src: '../public/fonts/BeVietnamPro-Thin.woff2',
+	src: '../public/fonts/BeVietnamPro-Regular.ttf',
 });
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body>
-				<main className={vietnam.className}>{children}</main>
+			<body className='grain'>
+				<main className={`${vietnam.className} overlay`}>{children}</main>
 			</body>
 		</html>
 	);

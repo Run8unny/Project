@@ -1,18 +1,40 @@
-'use client';
-import Cursor from './Cursor';
 import Logo from './Logo';
-import { useState } from 'react';
 import Link from 'next/link';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Footer({ onIsHoverd }) {
+export default function Footer({ arrayFont }) {
 	return (
-		<div className='flex justify-between gap-40 mr-20 ml-20 my-20 border-t border-neutral-400 p-2 pr-80'>
+		<div>
 			<ul
-				onMouseEnter={() => onIsHoverd(true)}
-				onMouseLeave={() => onIsHoverd(false)}
+				className={`${arrayFont.className} flex justify-evenly gap-40 text-4xl py-4`}
 			>
 				<li>
-					<Link href='https://github.com/Run8unny'>[Github]</Link>
+					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm ' />
+					<Link className='hover:text-white' href='https://github.com/Run8unny'>
+						Github
+					</Link>
+				</li>
+				<li>
+					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
+					<Link className='hover:text-white' href=''>
+						LinkedIn
+					</Link>
+				</li>
+				<li>
+					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
+					<Link
+						className='hover:text-white'
+						href='https://pl.pinterest.com/zanwardaszka/'
+					>
+						Pinterest
+					</Link>
+				</li>
+				<li>
+					<FontAwesomeIcon icon={faCircle} className='px-2 text-sm' />
+					<Link className='hover:text-white' href=''>
+						Facebook
+					</Link>
 				</li>
 			</ul>
 		</div>
