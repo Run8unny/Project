@@ -32,7 +32,7 @@ export default function Cursor({ isHovered }) {
 	return (
 		<div
 			ref={circle}
-			className='fixed top-0 left-0 bg-[#ffff] rounded-full mix-blend-difference pointer-events-none'
+			className='fixed z-30 top-0 left-0 bg-[#ffff] rounded-full mix-blend-difference pointer-events-none'
 			style={{ width: size, height: size }}
 		></div>
 	);

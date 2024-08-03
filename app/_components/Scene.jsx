@@ -1,73 +1,65 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import Model from './Model';
 import { Environment, OrbitControls } from '@react-three/drei';
-// import { Stats } from '@react-three/drei';
-import * as THREE from 'three';
-import { useControls } from 'leva';
+import { useRef } from 'react';
 
 function Lights() {
 	const ambientRef = useRef();
 	const directionalRef = useRef();
-
-	useControls('Ambient Light', {
-		visible: {
-			value: false,
-			onChange: (v) => {
-				ambientRef.current.visible = v;
-			},
-		},
-		color: {
-			value: 'white',
-			onChange: (v) => {
-				ambientRef.current.color = new THREE.Color(v);
-			},
-		},
-	});
-
-	useControls('Directional Light', {
-		visible: {
-			value: true,
-			onChange: (v) => {
-				directionalRef.current.visible = v;
-			},
-		},
-		position: {
-			x: 1,
-			y: 1,
-			z: 1,
-			onChange: (v) => {
-				directionalRef.current.position.copy(v);
-			},
-		},
-		color: {
-			value: 'white',
-			onChange: (v) => {
-				directionalRef.current.color = new THREE.Color(v);
-			},
-		},
-	});
+	const pointLightRef1 = useRef();
+	const pointLightRef2 = useRef();
+	const spotLightRef = useRef();
 
 	return (
 		<>
-			<ambientLight ref={ambientRef} />
-			<directionalLight ref={directionalRef} />
+			<ambientLight ref={ambientRef} intensity={1} />
+			<directionalLight
+				ref={directionalRef}
+				position={[5, 5, 5]}
+				intensity={1.5}
+				castShadow
+			/>
+			<pointLight
+				ref={pointLightRef1}
+				position={[-5, 5, 5]}
+				intensity={1.5}
+				castShadow
+			/>
+			<pointLight
+				ref={pointLightRef2}
+				position={[5, -5, -5]}
+				intensity={1.5}
+				castShadow
+			/>
+			<spotLight
+				ref={spotLightRef}
+				position={[0, 10, 0]}
+				angle={0.3}
+				penumbra={1}
+				intensity={2}
+				castShadow
+			/>
 		</>
 	);
 }
 
 export default function Scene() {
-	const cameraRef = useRef();
 	return (
-		<div className='h-lvh w-4/5 p-30 m-10'>
-			<Canvas>
-				<Lights />
-				<OrbitControls />
-				<Environment preset='forest' />
-				<Model />
-			</Canvas>
+		<div className='flex items-center justify-center h-screen w-screen'>
+			<div className='relative w-full h-full md:w-2/3 md:h-2/3 mt-10'>
+				<Canvas
+					camera={{ position: [0, 0, 10], fov: 50 }}
+					className='absolute inset-0 z-30'
+				>
+					<Lights />
+					<OrbitControls minDistance={5} maxDistance={20} />
+					<Environment preset='forest' />
+					<Model />
+				</Canvas>
+			</div>
 		</div>
 	);
 }
