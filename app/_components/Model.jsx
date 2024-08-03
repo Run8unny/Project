@@ -9,19 +9,16 @@ function Model(props) {
 	useFrame((_, delta) => {
 <<<<<<< Updated upstream
 		rotate
-			? (group.current.rotation.x += 0.3 * delta)
-			: (one.current.rotation.y -= 0.7 * delta);
+			? (group.current.rotation.y += 0.1 * delta)
+			: (group.current.rotation.y -= 0.1 * delta);
 	});
 
 	return (
 		<>
-			<group ref={group} scale={viewport.width / 2} {...props}>
-				<Shape />
-			</group>
 			<group
-				ref={one}
-				scale={viewport.width}
-				position={(10, -30, -10)}
+				ref={group}
+				scale={viewport.height / 6}
+				{...props}
 				onPointerDown={() => setRotate(!rotate)}
 			>
 				<Shape />

@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Array:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@font-face {
+	font-family: 'Array';
+	src: url('/Array-Regular.otf');
+	font-weight: 400;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+	@apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+	border-width: 0;
+}
 
 :root {
 	--foreground-rgb: 0, 0, 0;
@@ -38,5 +55,71 @@ body {
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
+	}
+}
+
+.overlay {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	/* background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); */
+	z-index: 100;
+}
+.grain {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url('https://i.picsum.photos/id/100/2500/1656.jpg?hmac=gWyN-7ZB32rkAjMhKXQgdHOIBRHyTSgzuOK6U0vXb1w');
+	background-position: center;
+}
+
+.grain:after {
+	content: '';
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png');
+	height: 300%;
+	width: 300%;
+	position: fixed;
+	opacity: 0.1;
+	animation: animateGrain 17s steps(10) infinite;
+}
+
+@keyframes animateGrain {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -10%);
+	}
+	20% {
+		transform: translate(-15%, -20%);
+	}
+	30% {
+		transform: translate(-5%, -10%);
+	}
+	40% {
+		transform: translate(-15%, -20%);
+	}
+
+	50% {
+		transform: translate(-5%, -10%);
+	}
+	60% {
+		transform: translate(-15%, -20%);
+	}
+	70% {
+		transform: translate(-5%, -10%);
+	}
+	80% {
+		transform: translate(-15%, -20%);
+	}
+	90% {
+		transform: translate(-5%, -10%);
+	}
+	100% {
+		transform: translate(-15%, -20%);
 	}
 }

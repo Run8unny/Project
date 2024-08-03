@@ -7,6 +7,7 @@ import {
 } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import Icosahedron from './Icosahedron';
+import FloatingText from './FloatingText';
 
 export default function NewScene() {
 	return (
@@ -19,7 +20,7 @@ export default function NewScene() {
 				opacity={1.5}
 			/>
 			<OrbitControls target={[0, 1, 0]} autoRotate autoRotateSpeed={0.4} />
-			<Stats />
+			{/* <Stats /> */}
 		</Canvas>
 	);
 }

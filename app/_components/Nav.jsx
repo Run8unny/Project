@@ -1,19 +1,3 @@
-<<<<<<< Updated upstream
-import Cursor from './Cursor';
-import Logo from './Logo';
-
-import NavMenu from './NavMenu';
-
-export default function Nav({ onIsHoverd, arrayFont }) {
-	return (
-		<div
-			onMouseEnter={() => onIsHoverd(true)}
-			onMouseLeave={() => onIsHoverd(false)}
-			className='flex justify-between gap-40 px-6 my-2  p-2'
-		>
-			<Logo arrayFont={arrayFont} />
-			<NavMenu />
-=======
 import Link from 'next/link';
 import Logo from './Logo'; // Assuming Logo is imported from a file
 
@@ -27,7 +11,6 @@ export default function Nav({ children }) {
 			<span className='text-[40px] font-array pr-4 hover:text-white'>
 				<Link href='/contact'>{`let's talk`}</Link>
 			</span>
->>>>>>> Stashed changes
 		</div>
 	);
 }
