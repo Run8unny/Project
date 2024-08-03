@@ -9,31 +9,32 @@ import { useState } from 'react';
 import localFont from 'next/font/local';
 import NavMenu from './_components/NavMenu';
 import CTA from './_components/CTA';
+import Homefooter from './_components/Homefooter';
 
-const arrayFont = localFont({
-	src: '../public/fonts/Array-Regular.woff2',
-});
 
 const Scene = dynamic(() => import('./_components/Scene'), { ssr: false });
 
 export default function Home() {
 	const [isHovered, setIsHoverd] = useState(false);
 	return (
+		<div className='h-screen border border-neutral-400 m-5'>
+		
 		<div
 			onMouseEnter={() => setIsHoverd(true)}
 			onMouseLeave={() => setIsHoverd(false)}
 		>
 			<header className='h-20'>
-				<Nav onIsHoverd={setIsHoverd} arrayFont={arrayFont}>
+				<Nav onIsHoverd={setIsHoverd}>
 					<NavMenu />
 				</Nav>
 			</header>
-			<div className='w-full relative h-[37.625rem]'>
+			<main className='h-4/5 w-auto'>
 				<Scene />
+			</main>
 			</div>
 			<CTA />
-			<Footer arrayFont={arrayFont} />
 			<Cursor isHovered={isHovered} />
 		</div>
 	);
 }
+

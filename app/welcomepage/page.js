@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import SecondCursor from '../_components/SecondCursor';
-import '../_styles/style.css';
-import GreenCircle from '../_components/GreenCircle';
 
 export default function Page() {
 	return (
@@ -15,7 +13,9 @@ export default function Page() {
 						<p>[ ŻANETA]</p>
 					</div>
 					<div className='h-[31.25rem] w-[31.25rem] text-[1.25rem] flex justify-center items-center'>
-						<GreenCircle>HOLD TO ENTER</GreenCircle>
+						<GreenCircle>
+							<Link href='/'>{`HOLD TO ENTER`}</Link>
+						</GreenCircle>
 					</div>
 					<div className='pt-[15rem] px-[0rem] md:block'>
 						<p>[ WARDASZKA ]</p>
@@ -32,6 +32,8 @@ export default function Page() {
 					</div>
 				</div>
 			</div>
+			<SecondCursor />
 		</div>
 	);
 }
+

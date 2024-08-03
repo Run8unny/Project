@@ -5,7 +5,7 @@ export function Shape(props) {
 	const { nodes, materials } = useGLTF('/source/variation.glb');
 	return (
 		<group {...props} dispose={null}>
-			<group position={[-0.117, 1.867, 0.028]}>
+			<group position={[0, 0.5, 0]}>
 				<mesh
 					castShadow
 					receiveShadow
