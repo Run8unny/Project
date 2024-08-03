@@ -6,6 +6,7 @@ export function Shape(props) {
 	const { nodes, materials, animations } = useGLTF('/source/mastershape.glb');
 	const { actions } = useAnimations(animations, group);
 	return (
+<<<<<<< Updated upstream
 		<group ref={group} {...props} dispose={null}>
 			<group name='Sketchfab_Scene'>
 				<group
@@ -1682,6 +1683,22 @@ export function Shape(props) {
 						</group>
 					</group>
 				</group>
+=======
+		<group {...props} dispose={null}>
+			<group position={[0, 0.5, 0]}>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Object_4.geometry}
+					material={materials['Material.001']}
+				/>
+				<mesh
+					castShadow
+					receiveShadow
+					geometry={nodes.Object_5.geometry}
+					material={materials.Material}
+				/>
+>>>>>>> Stashed changes
 			</group>
 		</group>
 	);
