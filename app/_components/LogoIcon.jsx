@@ -5,6 +5,8 @@ export default function LogoIcon({ width, height, color, src, alt }) {
 		<div className='w-full relative h-[5.625rem] overflow-hidden text-left text-[3rem] text-black font-array'>
 			<Image
 				className='absolute top-[0rem] right-[0.031rem] w-[2.094rem] h-[1.188rem]'
+				width={30}
+				height={40}
 				alt=''
 				src='Polygon 2.svg'
 			/>
