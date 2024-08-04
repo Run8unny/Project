@@ -1,20 +1,15 @@
 import '@/app/_styles/globals.css';
-import localFont from 'next/font/local';
 
 export const metadata = {
 	title: 'ZanWardaszka',
 	description: 'Portfolio',
 };
 
-const vietnam = localFont({
-	src: '../public/fonts/BeVietnamPro-Thin.woff2',
-});
-
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body
-				className='grain absolute inset-0 w-full h-full'
+				className='grain absolute inset-0 w-full h-full font-be-vietnam-pro'
 				style={{
 					backgroundImage: 'url(/assets/home/Rectangle5.png)',
 					backgroundSize: 'cover',
@@ -26,9 +21,8 @@ export default function RootLayout({ children }) {
 					zIndex: 1,
 				}}
 			>
-				<main className={`${vietnam.className} overlay`}>{children}</main>
+				<main className='overlay'>{children}</main>
 			</body>
 		</html>
 	);
 }
-
