@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-const GreenCircle = ({ className = '', children }) => {
+const Circle = ({ className = '', children }) => {
 	return (
 		<div
-			className={`rounded-full [background:radial-gradient(50%_50%_at_50%_50%,_rgba(217,_218,_217,_0)_36%,_#12bd42_96.5%)] border-darkgray border-[2px] border-solid box-border max-w-full max-h-full overflow-hidden leading-[normal] tracking-[normal] relative ${className}`}
+			className={`rounded-full [background:radial-gradient(50%_50%_at_50%_50%,_rgba(217,_218,_217,_0)_36%,_#f5f6f5_96.5%)] border-darkgray border-[2px] border-solid box-border max-w-full max-h-full overflow-hidden leading-[normal] tracking-[normal] relative ${className}`}
 			style={{
 				width: '60vw',
 				height: '60vw',
@@ -20,9 +20,9 @@ const GreenCircle = ({ className = '', children }) => {
 	);
 };
 
-GreenCircle.propTypes = {
+Circle.propTypes = {
 	className: PropTypes.string,
 	children: PropTypes.node,
 };
 
-export default GreenCircle;
+export default Circle;

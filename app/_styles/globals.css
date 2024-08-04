@@ -121,3 +121,17 @@ body {
 		transform: translate(-15%, -20%);
 	}
 }
+
+.aspect-square {
+	position: relative;
+	width: 100%;
+	padding-top: 100%;
+}
+
+.aspect-square > * {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
