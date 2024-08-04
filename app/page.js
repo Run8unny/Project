@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic';
 import Footer from './_components/Footer';
 import Cursor from './_components/Cursor';
 import { useState } from 'react';
-import localFont from 'next/font/local';
 import NavMenu from './_components/NavMenu';
 import CTA from './_components/CTA';
 

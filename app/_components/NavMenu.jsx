@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import Button from './Button';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function NavMenu() {
 	return (
@@ -27,3 +28,4 @@ export default function NavMenu() {
 		</ul>
 	);
 }
+

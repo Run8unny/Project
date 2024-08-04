@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const vietnam = localFont({
-	src: '../public/fonts/BeVietnamPro-Regular.ttf',
+	src: '../public/fonts/BeVietnamPro-Thin.woff2',
 });
 
 export default function RootLayout({ children }) {
@@ -31,3 +31,4 @@ export default function RootLayout({ children }) {
 		</html>
 	);
 }
+
