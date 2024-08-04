@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 export default function Cursor({ isHovered }) {
-	const size = isHovered ? 100 : 70;
+	const size = isHovered ? 50 : 0;
 	const circle = useRef();
 	const mouse = useRef({
 		x: 0,
@@ -32,8 +32,8 @@ export default function Cursor({ isHovered }) {
 	return (
 		<div
 			ref={circle}
-			className='fixed z-50 top-0 left-0 bg-[#ffff] rounded-full mix-blend-difference pointer-events-none'
-			style={{ width: size, height: size }}
+			className='fixed z-50 top-0 left-0 rounded-full mix-blend-difference pointer-events-none'
+			style={{ width: size, height: size, backgroundColor: 'white' }}
 		></div>
 	);
 }
