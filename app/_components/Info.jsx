@@ -1,6 +1,6 @@
 const Info = () => {
 	return (
-		<div className='w-full relative h-[47.313rem] overflow-hidden text-left text-[1.563rem] text-black font-inter'>
+		<div className='w-full relative h-[47.313rem] overflow-hidden text-left text-[1.563rem] font-inter'>
 			<div className='absolute top-[10.375rem] left-[0.688rem] w-[37.938rem] h-[36.75rem] overflow-hidden'>
 				<div className='absolute top-[6rem] left-[16.813rem] inline-block w-[21.125rem] h-[30.75rem]'>
 					<span>{`With passion for problems solving and development, I create visual stories through authentic design. I always care for lasting positive impact on the digital `}</span>

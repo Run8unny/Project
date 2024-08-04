@@ -26,7 +26,7 @@ export default function Footer() {
 				<li>
 					<FooterDiv>
 						<SpanTextSmall>[ Location ]</SpanTextSmall>
-						<SpanTextBig>warsaw 13:45</SpanTextBig>
+						<SpanTextBig>warsaw PL</SpanTextBig>
 					</FooterDiv>
 				</li>
 				<li className='hover:bg-white hover:text-black rounded-full'>
