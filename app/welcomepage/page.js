@@ -17,7 +17,7 @@ export default function Page() {
 					<Link
 						href='/'
 						className='flex justify-center items-center'
-					>{`HOLD TO ENTER`}</Link>
+					>{`ENTER`}</Link>
 				</Circle>
 			</div>
 

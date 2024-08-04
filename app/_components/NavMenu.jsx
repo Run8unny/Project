@@ -25,9 +25,6 @@ export default function NavMenu() {
 					<Link href='/work'>work</Link>
 				</Button>
 			</li>
-			<li className='hover:bg-white  hover:text-black rounded-full'>
-				<ToggleThemeButton />
-			</li>
 		</ul>
 	);
 }

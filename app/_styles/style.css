@@ -17,3 +17,42 @@
 		background-position: 0% 50%;
 	}
 }
+
+@keyframes border-animate {
+	0% {
+		border-color: transparent;
+		border-width: 3px;
+	}
+	100% {
+		border-color: rgb(41, 222, 41);
+		border-width: 8px;
+	}
+}
+
+.animate-border::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 8px solid transparent;
+	border-radius: 50%;
+	box-sizing: border-box;
+	animation: border-animate 2s linear;
+}
+
+/* .pink-dot {
+	width: 60px;
+	height: 60px;
+	transform: rotate(88.416deg);
+	fill: linear-gradient(90deg, #f791ed -1.36%, #91558b 98.64%);
+}
+
+.green-dot {
+	width: 45px;
+	height: 45px;
+	transform: rotate(90.139deg);
+	flex-shrink: 0;
+	fill: linear-gradient(180deg, #1a652f 0%, #34cb5e 100%);
+} */

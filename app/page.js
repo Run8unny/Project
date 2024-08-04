@@ -8,6 +8,8 @@ import Cursor from './_components/Cursor';
 import { useState } from 'react';
 import NavMenu from './_components/NavMenu';
 import CTA from './_components/CTA';
+import Homefooter from './_components/Homefooter';
+import ToggleThemeButton from './_components/ToggleThemeButton';
 
 const Scene = dynamic(() => import('./_components/Scene'), { ssr: false });
 
@@ -27,6 +29,9 @@ export default function Home() {
 				<main className='h-4/5 w-auto'>
 					<Scene />
 				</main>
+				<Homefooter>
+					<ToggleThemeButton />
+				</Homefooter>
 			</div>
 			<CTA />
 			<Cursor isHovered={isHovered} />
