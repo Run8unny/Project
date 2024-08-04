@@ -26,7 +26,7 @@ const Circle = ({ className = '', children }) => {
 			}}
 		>
 			<div
-				className={`absolute inset-0 flex items-center justify-center z-[1] font-be-vietnam-pro ${
+				className={`absolute inset-0 flex items-center justify-center z-30 font-be-vietnam-pro ${
 					isAnimating ? 'animate-border' : ''
 				}`}
 				onMouseEnter={handleAnimation}
