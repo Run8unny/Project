@@ -4,7 +4,7 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import Model from './Model';
 import { Environment, OrbitControls } from '@react-three/drei';
-// import { Stats } from '@react-three/drei';
+import { useRef } from 'react';
 
 function Lights() {
 	const ambientRef = useRef();
@@ -49,7 +49,7 @@ function Lights() {
 export default function Scene() {
 	return (
 		<div className='flex items-center justify-center h-screen w-screen'>
-			<div className='relative w-full h-full md:w-2/3 md:h-2/3'>
+			<div className='relative w-full h-full md:w-2/3 md:h-2/3 mt-10'>
 				<Canvas
 					camera={{ position: [0, 0, 10], fov: 50 }}
 					className='absolute inset-0 z-30'
@@ -63,4 +63,3 @@ export default function Scene() {
 		</div>
 	);
 }
-

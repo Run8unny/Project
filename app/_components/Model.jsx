@@ -7,24 +7,6 @@ function Model(props) {
 	const [rotate, setRotate] = useState(false);
 
 	useFrame((_, delta) => {
-<<<<<<< Updated upstream
-		rotate
-			? (group.current.rotation.y += 0.1 * delta)
-			: (group.current.rotation.y -= 0.1 * delta);
-	});
-
-	return (
-		<>
-			<group
-				ref={group}
-				scale={viewport.height / 6}
-				{...props}
-				onPointerDown={() => setRotate(!rotate)}
-			>
-				<Shape />
-			</group>
-		</>
-=======
 		if (group.current) {
 			group.current.rotation.y += rotate ? 0.09 * delta : -0.09 * delta;
 		}
@@ -40,7 +22,6 @@ function Model(props) {
 		>
 			<Shape />
 		</group>
->>>>>>> Stashed changes
 	);
 }
 

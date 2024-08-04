@@ -7,12 +7,8 @@ export default function Logo() {
 			<Link href='/' className='flex flex-row'>
 				<span className='text-[40px] hover:text-pink-400 self-center'>zan</span>
 				<div>
-					<LogoIcon width={27} height={30} />
+					<LogoIcon />
 				</div>
-		<div className={`${arrayFont.className} hover:scale-125 pl-4`}>
-			<Link href='/' className='flex items-center'>
-				<span className='text-6xl hover:text-pink-400'>zan</span>
-				<LogoIcon width={30} height={30} color='bg-white' />
 			</Link>
 		</div>
 	);

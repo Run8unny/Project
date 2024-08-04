@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import SecondCursor from '../_components/SecondCursor';
+import GreenCircle from '../_components/GreenCircle';
 
 export default function Page() {
 	return (
-		<div className='w-full relative overflow-hidden flex flex-col items-start justify-start pt-[1.25rem] px-[0rem] pb-[0rem] box-border leading-[normal] tracking-[normal] text-left text-[1rem] text-black font-be-vietnam-pro gap-[3.938rem]'>
+		<div className='w-full relative overflow-hidden flex flex-col items-start justify-start pt-[1.25rem] px-[0rem] pb-[0rem] box-border leading-[normal] tracking-[normal] text-left text-[1rem] font-be-vietnam-pro gap-[3.938rem]'>
 			<div className='self-stretch flex flex-row items-center justify-center py-[1rem] pl-[1.25rem] pr-[1.375rem]'>
 				<p>[ WELCOME ]</p>
 			</div>
-			<main className='w-[100%] flex flex-col items-center justify-between py-[0rem] pl-[2.2rem] pr-[2.2rem] box-border max-w-full gap-[1.25rem] text-left text-[1rem] text-black font-be-vietnam-pro'>
-				<section className='flex flex-row items-start justify-evenly max-w-full text-[1rem] text-black font-be-vietnam-pro w-full'>
+			<main className='w-[100%] flex flex-col items-center justify-between py-[0rem] pl-[2.2rem] pr-[2.2rem] box-border max-w-full gap-[1.25rem] text-left text-[1rem] font-be-vietnam-pro'>
+				<section className='flex flex-row items-start justify-evenly max-w-full text-[1rem] font-be-vietnam-pro w-full'>
 					<div className='pt-[15rem] px-[0rem] md:block'>
 						<p>[ ŻANETA]</p>
 					</div>
@@ -36,4 +37,3 @@ export default function Page() {
 		</div>
 	);
 }
-
