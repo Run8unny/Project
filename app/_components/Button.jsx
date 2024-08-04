@@ -1,7 +1,26 @@
-export default function Button({ children }) {
+'use client';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useTheme } from './ThemeProvider';
+
+const Button = ({ onClick, children }) => {
+	const { theme } = useTheme();
+
+	const buttonClass = theme === 'light' ? 'border-black' : 'border-white';
+
 	return (
-		<button className='className="w-full px-3 rounded-[25px] bg-gray border-white border-[2px] border-solid box-border h-[2.5rem]'>
+		<button
+			onClick={onClick}
+			className={`w-full px-3 rounded-[25px] bg-gray border ${buttonClass} border-[2px] border-solid box-border h-[2.5rem]`}
+		>
 			{children}
 		</button>
 	);
-}
+};
+
+Button.propTypes = {
+	onClick: PropTypes.func,
+	children: PropTypes.node.isRequired,
+};
+
+export default Button;

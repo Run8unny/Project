@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Button from './Button';
+import ToggleThemeButton from './ToggleThemeButton';
 
 export default function NavMenu() {
 	return (
@@ -23,6 +24,9 @@ export default function NavMenu() {
 				<Button>
 					<Link href='/work'>work</Link>
 				</Button>
+			</li>
+			<li className='hover:bg-white  hover:text-black rounded-full'>
+				<ToggleThemeButton />
 			</li>
 		</ul>
 	);
