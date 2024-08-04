@@ -15,10 +15,10 @@ export default function Footer() {
 						<SpanTextBig>©folio 2024</SpanTextBig>
 					</FooterDiv>
 				</li>
-				<li className='hover:bg-white hover:text-black rounded-full'>
+				<li>
 					<Button>↖︎top</Button>
 				</li>
-				<li className='hover:bg-white hover:text-black rounded-full'>
+				<li>
 					<Link href='https://github.com/Run8unny'>
 						<Button>github</Button>
 					</Link>
@@ -34,7 +34,7 @@ export default function Footer() {
 						<Button>linkedIn</Button>
 					</Link>
 				</li>
-				<li className='hover:bg-white hover:text-black rounded-full'>
+				<li>
 					<Link href='https://pl.pinterest.com/zanwardaszka/'>
 						<Button>pinterest</Button>
 					</Link>
