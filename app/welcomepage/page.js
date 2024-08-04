@@ -8,7 +8,7 @@ export default function Page() {
 			<div className='row-start-1 row-end-2 col-start-2 col-end-5 flex items-start justify-center'>
 				<span>[ WELCOME ]</span>
 			</div>
-			<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex justify-start items-center w-[100px]'>
+			<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex flex-initial justify-start items-center w-[100px]'>
 				<span>[ ŻANETA]</span>
 			</div>
 
