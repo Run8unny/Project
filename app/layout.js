@@ -1,4 +1,5 @@
 import '@/app/_styles/globals.css';
+import { ThemeProvider } from './_components/ThemeProvider';
 
 export const metadata = {
 	title: 'ZanWardaszka',
@@ -8,21 +9,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body
-				className='grain absolute inset-0 w-full h-full font-be-vietnam-pro'
-				style={{
-					backgroundImage: 'url(/assets/home/Rectangle5.png)',
-					backgroundSize: 'cover',
-					backgroundPosition: 'center',
-					backgroundRepeat: 'no-repeat',
-					backgroundAttachment: 'fixed',
-					marginTop: 0,
-					paddingTop: 0,
-					zIndex: 1,
-				}}
-			>
-				<main className='overlay'>{children}</main>
-			</body>
+			<ThemeProvider>
+				<body
+					className='grain relative inset-0 w-full h-full font-be-vietnam-pro'
+					style={{
+						backgroundImage: 'url(/assets/home/Rectangle5.png)',
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+						backgroundRepeat: 'no-repeat',
+						backgroundAttachment: 'fixed',
+						marginTop: 0,
+						paddingTop: 0,
+					}}
+				>
+					<main className='overlay relative z-10'>{children}</main>
+				</body>
+			</ThemeProvider>
 		</html>
 	);
 }
