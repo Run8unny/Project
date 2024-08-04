@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Cursor from '../_components/Cursor';
 import Button from '../_components/Button';
+import Loader from '../_components/Loader';
 export default function Page() {
 	return (
 		<div className='h-dvh w-auto felx justify-center items-center'>

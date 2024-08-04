@@ -1,6 +1,5 @@
 'use client';
-import Image from 'next/image';
-import Link from 'next/link';
+
 import Nav from './_components/Nav';
 import dynamic from 'next/dynamic';
 import Footer from './_components/Footer';
@@ -8,6 +7,9 @@ import Cursor from './_components/Cursor';
 import { useState } from 'react';
 import NavMenu from './_components/NavMenu';
 import CTA from './_components/CTA';
+import Homefooter from './_components/Homefooter';
+import ToggleThemeButton from './_components/ToggleThemeButton';
+import HomeContact from './_components/HomeContact';
 
 const Scene = dynamic(() => import('./_components/Scene'), { ssr: false });
 
@@ -27,8 +29,13 @@ export default function Home() {
 				<main className='h-4/5 w-auto'>
 					<Scene />
 				</main>
+				<Homefooter>
+					<ToggleThemeButton />
+				</Homefooter>
 			</div>
 			<CTA />
+			<HomeContact />
+			<Footer />
 			<Cursor isHovered={isHovered} />
 		</div>
 	);
