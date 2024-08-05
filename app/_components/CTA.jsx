@@ -1,6 +1,6 @@
 const CTA = () => {
 	return (
-		<div className='w-full h-[64rem] flex flex-col justify-center items-center text-center text-[4.75rem] font-be-vietnam-pro mt-[20px] relative z-20'>
+		<div className='w-full h-[58rem] flex flex-col justify-center items-center text-center text-[4.75rem] font-be-vietnam-pro mt-[20px] relative z-20'>
 			<div className='relative w-4/5'>
 				<h1 className='font-bold mt-3'>
 					LET’S WORK TOGETHER. I’M NOT JUST AN EMPLOYEE. I TRULY AM IN YOUR

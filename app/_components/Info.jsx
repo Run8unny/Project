@@ -1,27 +1,28 @@
 const Info = () => {
 	return (
-		<div className='w-full relative h-[47.313rem] overflow-hidden text-left text-[1.563rem] font-inter'>
-			<div className='absolute top-[10.375rem] left-[0.688rem] w-[37.938rem] h-[36.75rem] overflow-hidden'>
-				<div className='absolute top-[6rem] left-[16.813rem] inline-block w-[21.125rem] h-[30.75rem]'>
-					<span>{`With passion for problems solving and development, I create visual stories through authentic design. I always care for lasting positive impact on the digital `}</span>
-					<span className='font-be-vietnam-pro'>landscape</span>
-					<span>
-						{' '}
-						and business. I happy to make custom-code websites that are tailored
-						to your brand. I also focus on accessibility, performance, and
-						scalability. When I don’t work, I like climbing, knitting, andtaking
-						walks with my dog, Lola.
-					</span>
-				</div>
-				<div className='absolute top-[0rem] left-[0rem] inline-block w-[17.375rem] h-[7.5rem] font-be-vietnam-pro'>
-					<span className='whitespace-pre-wrap'>
-						front-end developer, passionate about design, creative programming
-						and 3D.
-					</span>
-					<span className='font-inter'>{` `}</span>
-				</div>
+		<div className='w-full relative mt-20'>
+			<div className='w-full relative overflow-hidden flex flex-col items-start justify-start py-[0.875rem] px-[0.562rem] box-border gap-[0.187rem] leading-[normal] tracking-[normal] text-left text-[4.563rem] font-array'>
+				<span className='[text-decoration:none] relative text-[inherit]'>{`I’m Zan, `}</span>
+				<section className='w-[28.563rem] flex flex-row items-start justify-start py-[0rem] px-[0.125rem] box-border max-w-full text-justify text-[1rem] font-be-vietnam-pro'>
+					<div className='flex-1 flex flex-row flex-wrap items-start justify-start gap-[0.687rem] max-w-full'>
+						<div className='flex-1 relative inline-block min-w-[9rem]'>
+							front-end developer who loves design, creative programming, and 3D
+							art. With a passion for problem-solving and development, I create
+							visual stories through authentic design. I always strive to make a
+							lasting positive impact on the digital landscape and business.
+						</div>
+						<div className='flex-1 flex flex-col items-start justify-start pt-[6rem] px-[0rem] pb-[0rem] box-border min-w-[9rem]'>
+							<div className='self-stretch relative'>
+								I am happy to create custom-coded websites that are tailored to
+								your brand. I also focus on accessibility, performance, and
+								scalability. When I’m not working, I enjoy climbing, knitting,
+								and taking walks with my dog, Lola. I’m on my way to travel
+								around the world!
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
-			<div className='absolute top-[2.688rem] left-[calc(50%_-_301.5px)] text-[4.75rem] font-array inline-block w-[36.813rem] h-[5.938rem]'>{`[ I’m Zan ], `}</div>
 		</div>
 	);
 };

@@ -14,7 +14,7 @@ export default function HomeContact() {
 				<Button>call me</Button>
 			</div>
 
-			<div className='text-[1.25rem] mt-52 mb-20 row-start-2 row-end-3 col-start-2 col-end-7 flex flex-initial justify-center items-center'>
+			<div className='text-[1.25rem] mt-52 mb-8 row-start-2 row-end-3 col-start-2 col-end-7 flex flex-initial justify-center items-center'>
 				<Circle>
 					<Link
 						href='/contact'
