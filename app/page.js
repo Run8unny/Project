@@ -14,15 +14,16 @@ import HomeContact from './_components/HomeContact';
 const Scene = dynamic(() => import('./_components/Scene'), { ssr: false });
 
 export default function Home() {
-	const [isHovered, setIsHoverd] = useState(false);
+	const [isHovered, setIsHovered] = useState(false);
 	return (
 		<div>
+			<Cursor isHovered={isHovered} />
 			<div
-				onMouseEnter={() => setIsHoverd(true)}
-				onMouseLeave={() => setIsHoverd(false)}
+				onMouseEnter={() => setIsHovered(true)}
+				onMouseLeave={() => setIsHovered(false)}
 			>
 				<header className='h-20'>
-					<Nav onIsHoverd={setIsHoverd}>
+					<Nav>
 						<NavMenu />
 					</Nav>
 				</header>
@@ -33,10 +34,9 @@ export default function Home() {
 					<ToggleThemeButton />
 				</Homefooter>
 			</div>
-			<CTA />
+			<CTA onIsHoverd={setIsHovered} />
 			<HomeContact />
 			<Footer />
-			<Cursor isHovered={isHovered} />
 		</div>
 	);
 }
