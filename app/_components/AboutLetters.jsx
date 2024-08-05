@@ -1,7 +1,7 @@
 const AboutLetters = () => {
 	return (
 		<div className='w-full relative bg-silver flex flex-col h-[22rem] overflow-hidden text-left text-[4.75rem] text-black font-be-vietnam-pro my-10'>
-			<div className='bg-white w-[90rem] h-[5.5rem] overflow-hidden px-5'>
+			<div className='bg-white w-[80rem] h-[5.5rem] overflow-hidden px-5'>
 				<p className='font-extrabold inline-block maxw-[16.125rem]'>I WORK</p>
 			</div>
 			<div className='bg-silver h-[5.5rem] overflow-hidden flex flex-row justify-between px-5'>
