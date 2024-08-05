@@ -1,17 +1,28 @@
 import Link from 'next/link';
 import NewScene from '../_components/NewScene';
 import Cursor from '../_components/Cursor';
+import Picture from '../_components/Picture';
+import Button from '../_components/Button';
 export default function Page() {
 	return (
 		<div className='h-dvh'>
-			<h1>Hello From Gallery</h1>
-			<div>
-				<Link href='/gallery/items'>Item</Link>
+			<div className='h-auto flex justify-center items-center mt-20'>
+				<Picture
+					width={2000}
+					height={200}
+					src='/images/Untitled.png'
+					alt='title'
+				/>
 			</div>
 			<main className='h-screen'>
 				<NewScene />
 			</main>
-			<Link href='/'>Home</Link>
+			<div className='h-60 flex justify-center items-center mt-20'>
+				<Button color={'white'}>
+					<Link href='/'>Home</Link>
+				</Button>
+			</div>
+
 			<Cursor />
 		</div>
 	);

@@ -1,35 +1,27 @@
-import { useGLTF, useAnimations, Text } from '@react-three/drei';
-import { useFrame, useThree } from '@react-three/fiber';
-import React, { useState } from 'react';
-import { useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
+import React, { useState, useRef } from 'react';
 import Shape from './Shape';
 
 function Model(props) {
 	const group = useRef();
-	const one = useRef();
-	const { viewport } = useThree();
 	const [rotate, setRotate] = useState(false);
 
 	useFrame((_, delta) => {
-		rotate
-			? (group.current.rotation.x += 0.3 * delta)
-			: (one.current.rotation.y -= 0.7 * delta);
+		if (group.current) {
+			group.current.rotation.y += rotate ? 0.09 * delta : -0.09 * delta;
+		}
 	});
 
 	return (
-		<>
-			<group ref={group} scale={viewport.width / 2} {...props}>
-				<Shape />
-			</group>
-			<group
-				ref={one}
-				scale={viewport.width}
-				position={(10, -30, -10)}
-				onPointerDown={() => setRotate(!rotate)}
-			>
-				<Shape />
-			</group>
-		</>
+		<group
+			ref={group}
+			scale={[2, 2, 2]}
+			{...props}
+			onPointerDown={() => setRotate(!rotate)}
+			position={[0, 0, 0]}
+		>
+			<Shape />
+		</group>
 	);
 }
 
