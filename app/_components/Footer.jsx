@@ -7,7 +7,7 @@ import SpanTextSmall from './SpanTextSmall';
 
 export default function Footer() {
 	return (
-		<div className='px-1 py-3 mb-3 bg-transparent'>
+		<div className='px-1 py-4 m-3 bg-transparent'>
 			<ul className='flex flex-row justify-evenly items-center gap-1'>
 				<li>
 					<FooterDiv>
