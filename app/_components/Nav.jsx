@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 export default function Nav({ children }) {
 	return (
-		<div className='flex flex-row justify-between items-center gap-4 md:gap-10 px-4 py-3 mb-5 bg-transparent'>
+		<div className='flex flex-row justify-between items-center gap-4 md:gap-10 px-4 py-3 mb-10 bg-transparent'>
 			<div className='mb-2 md:mb-0'>
 				<Logo />
 			</div>
