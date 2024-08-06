@@ -27,7 +27,7 @@ export default function Home() {
 						<NavMenu />
 					</Nav>
 				</header>
-				<main className='h-4/5 w-auto'>
+				<main className='w-auto'>
 					<Scene />
 				</main>
 				<Homefooter>
