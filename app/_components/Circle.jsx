@@ -17,7 +17,7 @@ const Circle = ({ className = '', children }) => {
 
 	const backgroundColor =
 		theme === 'light'
-			? 'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #1134bd 86.5%)'
+			? 'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #2E2FC8 86.5%)'
 			: 'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #eded47 86.5%)';
 
 	return (
