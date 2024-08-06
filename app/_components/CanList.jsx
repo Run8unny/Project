@@ -17,11 +17,11 @@ export default function CanList() {
 	];
 
 	return (
-		<div className='px-20 py-5'>
-			<div className='flex items-start justify-start text-[8rem]'>
-				<h1 className='font-bold'>I CAN</h1>
+		<div>
+			<div className='flex items-start justify-start text-[4.75rem] bg-white h-[5.5rem] overflow-hidden text-black text-center px-5'>
+				<h1 className='font-extrabold'>CAN ↘︎</h1>
 			</div>
-			<ul className='flex flex-wrap gap-0 justify-end items-center text-lg pb-10'>
+			<ul className='flex flex-wrap gap-0 justify-end items-center text-lg  h-[7rem] bg-silver overflow-hidden text-center px-5'>
 				{canList.map((can, i) => (
 					<li key={i} className='m-2'>
 						<Button>{can}</Button>

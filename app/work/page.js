@@ -12,13 +12,6 @@ export default function Page() {
 					src='/ellipsegreen.svg'
 				/>
 			</div>
-			<TextF
-			<img
-				className='w-[65.625rem] relative max-h-full overflow-hidden max-w-full z-[2]'
-				loading='lazy'
-				alt=''
-				src='public/assets/footer/Frame 38.png'
-			/>
 
 			<Button>
 				<Link href='/'>back</Link>

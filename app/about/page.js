@@ -1,4 +1,4 @@
-import SecondCursor from '../_components/SecondCursor';
+import Cursor from '../_components/Cursor';
 import Footer from '../_components/Footer';
 import AboutMe from '../_components/AboutMe';
 import CanList from '../_components/CanList';
@@ -13,7 +13,7 @@ export default function Page() {
 			<LearnList />
 			<AboutLetters />
 			<Footer />
-			<SecondCursor />
+			<Cursor />
 		</div>
 	);
 }

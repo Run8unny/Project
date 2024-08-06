@@ -2,7 +2,7 @@ const Info = () => {
 	return (
 		<div className='w-full relative mt-2 px-5'>
 			<div className='w-full relative overflow-hidden flex flex-col items-start justify-start py-[0.875rem] px-[0.562rem] box-border gap-[0.187rem] leading-[normal] tracking-[normal] text-left text-[4.563rem] font-array'>
-				<span className='[text-decoration:none] relative text-[inherit] mb-5'>{`I’m Zan, `}</span>
+				<span className='[text-decoration:none] relative text-[4.7rem] mb-5'>{`I’m Zan, `}</span>
 				<section className='w-[28.563rem] flex flex-row items-start justify-start py-[0rem] px-[0.125rem] box-border max-w-full text-justify text-[1rem] font-be-vietnam-pro'>
 					<div className='flex-1 flex flex-row flex-wrap items-center justify-start gap-[1rem] max-w-full'>
 						<div className='flex-1 relative inline-block min-w-[11rem]'>

@@ -36,14 +36,14 @@ export default function AboutMe() {
 					<Info />
 				</div>
 			</div>
-			<div className='flex justify-center items-center pt-0 pb-10 px-6'>
+			{/* <div className='flex justify-center items-center pt-0 pb-10 px-6'>
 				<Image
 					src={'/assets/about/Frame 38.png'}
 					alt={'decoration'}
 					width={800}
 					height={40}
 				/>
-			</div>
+			</div> */}
 		</>
 	);
 }
