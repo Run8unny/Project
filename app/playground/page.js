@@ -2,10 +2,11 @@ import SmallNav from '../_components/SmallNav';
 import Button from '../_components/Button';
 import Link from 'next/link';
 import ContactButton from '../_components/ContactButton';
+import SecondCursor from '../_components/SecondCursor';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center font-be-vietnam-pro'>
+		<div className='w-full h-full text-center font-be-vietnam-pro p-10'>
 			<SmallNav>
 				<div className='flex-shrink-0'>
 					<Button>
@@ -23,9 +24,10 @@ export default function Page() {
 					<h1 className='font-extrabold'>PLAYGROUND</h1>
 				</div>
 			</div>
-
-			<div className='w-full flex flex-row justify-between items-center p-5'>
-				<div className='flex justify-center items-center gap-7'>
+			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-20 relative overflow-hidden box-border leading-normal tracking-normal font-be-vietnam-pro'></div>
+			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-20 relative overflow-hidden box-border leading-normal tracking-normal font-be-vietnam-pro'></div>
+			<div className='w-full flex flex-row justify-between items-center mt-10'>
+				<div className='flex justify-center items-start gap-7'>
 					<div className='flex-shrink-0'>
 						<Button>↖︎top</Button>
 					</div>
@@ -40,8 +42,11 @@ export default function Page() {
 						</Button>
 					</div>
 				</div>
-				<ContactButton />
+				<div className='flex-shrink-0'>
+					<ContactButton />
+				</div>
 			</div>
+			<SecondCursor />
 		</div>
 	);
 }

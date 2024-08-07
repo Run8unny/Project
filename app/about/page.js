@@ -7,7 +7,7 @@ import AboutLetters from '../_components/AboutLetters';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center font-be-vietnam-pro'>
+		<div className='w-full text-center font-be-vietnam-pro bg-gradient-to-r from-silver to-natural-400'>
 			<AboutMe />
 			<CanList />
 			<LearnList />
