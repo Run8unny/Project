@@ -129,9 +129,7 @@ const Homefooter = ({ className = '', children }) => {
 					</svg>
 				</div>
 			</li>
-			<li className='hover:bg-white  hover:text-black rounded-full'>
-				{children}
-			</li>
+			<li>{children}</li>
 
 			<li>
 				<svg

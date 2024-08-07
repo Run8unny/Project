@@ -1,4 +1,4 @@
-import SecondCursor from '../_components/SecondCursor';
+import Cursor from '../_components/Cursor';
 import Footer from '../_components/Footer';
 import AboutMe from '../_components/AboutMe';
 import CanList from '../_components/CanList';
@@ -7,13 +7,13 @@ import AboutLetters from '../_components/AboutLetters';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center font-be-vietnam-pro'>
+		<div className='w-full text-center font-be-vietnam-pro bg-gradient-to-r from-silver to-natural-400'>
 			<AboutMe />
 			<CanList />
 			<LearnList />
 			<AboutLetters />
 			<Footer />
-			<SecondCursor />
+			<Cursor />
 		</div>
 	);
 }

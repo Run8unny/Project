@@ -16,7 +16,7 @@ export default function Page() {
 				</div>
 				<div className='flex-shrink-0'>
 					<Button>
-						<Link href='/contact'>playground</Link>
+						<Link href='/playground'>playground</Link>
 					</Button>
 				</div>
 			</SmallNav>

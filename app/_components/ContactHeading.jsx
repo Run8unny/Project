@@ -12,7 +12,7 @@ const ContactHeading = () => {
 				</span>
 			</h1>
 			<div className='w-1/2 flex flex-col items-center justify-center px-6 pt-[8rem] pb-0 box-border min-w-[275px] text-justify text-[24px] mq450:pt-[155px] mq450:box-border mq900:flex-1'>
-				<div className=' w-[275px] self-stretch relative mq450:text-[19px]'>
+				<div className=' w-[275px] self-stretch font-extralight relative mq450:text-[19px]'>
 					I’m always excited to discuss new project and opportunities. Feel free
 					to reach out and let’s have a nice chat!
 				</div>

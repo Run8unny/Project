@@ -20,15 +20,15 @@ body {
 }
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-}
-
-[data-theme='dark'] {
 	--foreground-rgb: 255, 255, 255;
 	--background-start-rgb: 0, 0, 0;
 	--background-end-rgb: 0, 0, 0;
+}
+
+[data-theme='light'] {
+	--foreground-rgb: 53, 12, 53;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 body {
@@ -133,4 +133,21 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+::placeholder {
+	color: #333;
+	opacity: 1;
+}
+
+textarea::placeholder {
+	color: #333;
+	opacity: 1;
+}
+
+textarea.text-center::placeholder {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	height: 100%;
 }

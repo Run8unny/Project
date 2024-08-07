@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-const colors = ['#d40909', '#10e457', '#c3e334', '#e832ae', '#fff'];
+const colors = ['#d40909', '#8cf6a1', '#eded47', '#e832ae', '#ffffff'];
 
 export default function SecondCursor() {
 	const size = 270;

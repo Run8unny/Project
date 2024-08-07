@@ -30,7 +30,7 @@ export default function Footer() {
 					</FooterDiv>
 				</li>
 				<li className='hover:bg-white hover:text-black rounded-full'>
-					<Link href=''>
+					<Link href='https://www.linkedin.com/'>
 						<Button>linkedIn</Button>
 					</Link>
 				</li>
