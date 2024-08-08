@@ -17,12 +17,6 @@ export default function Page() {
 			<main className='h-screen'>
 				<NewScene />
 			</main>
-			<div className='h-60 flex justify-center items-center mt-20'>
-				<Button color={'white'}>
-					<Link href='/'>Home</Link>
-				</Button>
-			</div>
-
 			<Cursor />
 		</div>
 	);
