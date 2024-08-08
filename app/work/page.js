@@ -41,7 +41,7 @@ export default function Page() {
 					))}
 				</div>
 			</div>
-			<div className='fixed bottom-5 right-5 text-[#eded47]'>
+			<div className='fixed bottom-5 right-5 text-green-500'>
 				<ContactButton />
 			</div>
 			<Cursor />
