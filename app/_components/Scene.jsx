@@ -49,7 +49,7 @@ function Lights() {
 export default function Scene() {
 	return (
 		<div className='flex items-center justify-center h-full w-screen'>
-			<div className='relative w-[80vw] h-[80vh] md:w-2/3 md:h-2/3'>
+			<div className='p-10 mb-5 relative w-[80vw] h-[80vh] md:w-2/3 md:h-2/3'>
 				<Canvas
 					camera={{ position: [0, 0, 10], fov: 50 }}
 					className='absolute inset-0 z-30'
