@@ -9,7 +9,7 @@ export default function Nav({ children }) {
 			</div>
 			<div className='flex-grow'>{children}</div>
 			<span className='text-[40px] font-array pr-4 hover:text-white'>
-				<Link href='/contact'>{`let's talk`}</Link>
+				<Link href='/contact'>let's talk</Link>
 			</span>
 		</div>
 	);
