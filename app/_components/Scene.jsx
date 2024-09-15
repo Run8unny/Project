@@ -19,7 +19,7 @@ function Lights() {
 			<directionalLight
 				ref={directionalRef}
 				position={[5, 5, 5]}
-				intensity={1.5}
+				intensity={1.6}
 				castShadow
 			/>
 			<pointLight
