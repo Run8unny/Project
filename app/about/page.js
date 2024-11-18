@@ -12,8 +12,8 @@ export default function Page() {
 			<CanList />
 			<LearnList />
 			<AboutLetters />
-			<Footer />
-			<Cursor />
+			{/* <Footer />
+			<Cursor /> */}
 		</div>
 	);
 }

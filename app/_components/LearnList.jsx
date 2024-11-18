@@ -3,13 +3,12 @@ import Button from './Button';
 export default function LearnList() {
 	const learnList = [
 		'blener',
-		'three.js',
-		'react three fiber',
 		'react native',
 		'docker',
-		'cyber security',
 		'node.js',
 		'typescript',
+		'C++',
+		'unreal engine',
 	];
 
 	return (

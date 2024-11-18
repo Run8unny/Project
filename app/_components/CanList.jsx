@@ -5,15 +5,16 @@ export default function CanList() {
 		'react',
 		'next.js',
 		'mobile first',
-		'sass',
-		'babel',
-		'css',
+		'css/tailwind/bootstrap',
 		'html',
 		'figma',
 		'webpack&parcel&vite',
+		'babel',
 		'js',
-		'animation&3D',
+		'animation',
 		'git&github',
+		'three.js',
+		'react three fiber',
 	];
 
 	return (

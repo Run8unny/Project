@@ -22,7 +22,7 @@ export default function AboutMe() {
 				<div className='w-1/2 md:w-1/2 h-auto flex justify-end md:justify-end mb-10 md:mb-0'>
 					<div
 						className='relative w-full'
-						style={{ maxWidth: '550px', aspectRatio: '550 / 671' }}
+						style={{ maxWidth: '400px', aspectRatio: '550 / 671' }}
 					>
 						<Image
 							src={'/assets/about/gifme.gif'}
