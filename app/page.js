@@ -22,7 +22,7 @@ export default function Home() {
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => setIsHovered(false)}
 			>
-				<header className='h-20'>
+				<header className='h-18'>
 					<Nav>
 						<NavMenu />
 					</Nav>
