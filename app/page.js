@@ -10,6 +10,7 @@ import CTA from './_components/CTA';
 import Homefooter from './_components/Homefooter';
 import ToggleThemeButton from './_components/ToggleThemeButton';
 import HomeContact from './_components/HomeContact';
+import Model from './_components/Model';
 
 const Scene = dynamic(() => import('./_components/Scene'), { ssr: false });
 
@@ -28,7 +29,9 @@ export default function Home() {
 					</Nav>
 				</header>
 				<main className='w-auto'>
-					<Scene />
+					<Scene>
+						<Model />
+					</Scene>
 				</main>
 				<Homefooter>
 					<ToggleThemeButton />
