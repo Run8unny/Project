@@ -46,18 +46,22 @@ function Lights() {
 	);
 }
 
-export default function Scene() {
+export default function Scene({ children }) {
 	return (
 		<div className='flex items-center justify-center h-full w-screen'>
-			<div className='p-9 mb-5 relative w-[80vw] h-[80vh] md:w-2/3 md:h-2/3'>
+			<div className='mt-20 p-9 mb-5 relative w-[80vw] h-[80vh] md:w-2/3 md:h-2/3'>
 				<Canvas
-					camera={{ position: [0, 0, 10], fov: 50 }}
-					className='absolute inset-0 z-30'
+					camera={{
+						fov: 8,
+						near: 0.1,
+						far: 100,
+						position: [1, 3, 4],
+					}}
 				>
 					<Lights />
 					<OrbitControls minDistance={5} maxDistance={20} />
 					<Environment preset='forest' />
-					<Model />
+					{children}
 				</Canvas>
 			</div>
 		</div>

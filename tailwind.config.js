@@ -1,40 +1,38 @@
 /** @type {import('tailwindcss').Config} */
-import { nextui } from '@nextui-org/react';
 
 module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
-		'./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
 		extend: {
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-			},
+			// backgroundImage: {
+			// 	'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			// 	'gradient-conic':
+			// 		'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+			// },
 			colors: {
-				white: '#fff',
-				black: '#000',
-				darkgray: {
-					100: '#b9b3b3',
-					200: 'rgba(152, 148, 148, 0)',
-					300: 'rgba(152, 148, 148, 0.27)',
-				},
-				gray: {
-					100: '#080808',
-					200: 'rgba(255, 255, 255, 0)',
-					300: 'rgba(0, 0, 0, 0)',
-				},
-				silver: '#c5bfbf',
-				limegreen: '#34cb5e',
-				plum: '#270d27',
-				darkslategray: {
-					100: '#333',
-					200: 'rgba(51, 51, 51, 0)',
-				},
+				// white: '#fff',
+				// black: '#000',
+				// darkgray: {
+				// 	100: '#b9b3b3',
+				// 	200: 'rgba(152, 148, 148, 0)',
+				// 	300: 'rgba(152, 148, 148, 0.27)',
+				// },
+				// gray: {
+				// 	100: '#080808',
+				// 	200: 'rgba(255, 255, 255, 0)',
+				// 	300: 'rgba(0, 0, 0, 0)',
+				// },
+				// silver: '#c5bfbf',
+				// limegreen: '#34cb5e',
+				// plum: '#270d27',
+				// darkslategray: {
+				// 	100: '#333',
+				// 	200: 'rgba(51, 51, 51, 0)',
+				// },
 			},
 			spacing: {},
 			fontFamily: {
@@ -89,5 +87,5 @@ module.exports = {
 		},
 	},
 	darkMode: 'class',
-	plugins: [nextui()],
+	plugins: [],
 };
