@@ -1,12 +1,10 @@
 'use client';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { useTheme } from './ThemeProvider'; // Make sure the import path is correct
 import '@/app/_styles/style.css';
 
 const Circle = ({ className = '', children }) => {
 	const [isAnimating, setIsAnimating] = useState(false);
-	const { theme } = useTheme();
 
 	const handleAnimation = () => {
 		setIsAnimating(true);
@@ -14,11 +12,6 @@ const Circle = ({ className = '', children }) => {
 			setIsAnimating(false);
 		}, 3000);
 	};
-
-	const backgroundColor =
-		theme === 'light'
-			? 'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #0028CC 86.5%)'
-			: 'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #eded47 86.5%)';
 
 	return (
 		<div
@@ -30,7 +23,8 @@ const Circle = ({ className = '', children }) => {
 				minHeight: '300px',
 				maxWidth: '500px',
 				maxHeight: '500px',
-				background: backgroundColor,
+				background:
+					'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #0028CC 86.5%)',
 			}}
 		>
 			<div

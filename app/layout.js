@@ -1,5 +1,6 @@
 import '@/app/_styles/globals.css';
 import { ThemeProvider } from './_components/ThemeProvider';
+import { Providers } from './Providers';
 
 export const metadata = {
 	title: 'ZanWardaszka',
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
 						paddingTop: 0,
 					}}
 				>
-					<main className='overlay relative z-10'>{children}</main>
+					<Providers>
+						<main className='overlay relative z-10'>{children}</main>
+						{children}
+					</Providers>
 				</body>
 			</ThemeProvider>
 		</html>
