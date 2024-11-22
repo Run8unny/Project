@@ -7,7 +7,7 @@ import SecondCursor from '../components/SecondCursor';
 
 export default function Page() {
 	return (
-		<div className='w-full h-full text-center font-be-vietnam-pro'>
+		<div className='w-full h-full text-center'>
 			<SmallNav>
 				<div className='flex-shrink-0'>
 					<Button>
@@ -22,10 +22,10 @@ export default function Page() {
 			</SmallNav>
 			<div>
 				<div className='flex items-start justify-center text-[12rem] px-10'>
-					<h1 className='font-extrabold'>PLAYGROUND</h1>
+					<h1 className='custom-font'>PLAYGROUND</h1>
 				</div>
 			</div>
-			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-16 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal font-be-vietnam-pro'>
+			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-16 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal'>
 				<div className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-start justify-start p-6'>
 					<p>[ 3D HEAVEN MODEL]</p>
 					<Link href='/gallery'>
@@ -96,7 +96,7 @@ export default function Page() {
 					</Link>
 				</div>
 			</div>
-			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-20 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal font-be-vietnam-pro'>
+			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-20 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal'>
 				<div className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-start justify-start p-6'>
 					<p>[ CODE VARIATION ]</p>
 					<Image

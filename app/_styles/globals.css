@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Array:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+/* @font-face {
+	font-family: 'Pilsen Plakat';
+	src: url('./fonts/PilsenPlakat.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} */
 
 @tailwind base;
 @tailwind components;
@@ -71,4 +76,8 @@ textarea.text-center::placeholder {
 	vertical-align: middle;
 	display: table-cell;
 	height: 100%;
+}
+
+.custom-font {
+	font-family: 'Pilsen Plakat';
 }

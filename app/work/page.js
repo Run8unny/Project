@@ -6,7 +6,7 @@ import ContactButton from '../components/ContactButton';
 
 export default function Page() {
 	return (
-		<div className='h-full w-full overflow-hidden flex flex-col justify-between leading-[normal] tracking-[normal] font-be-vietnam-pro'>
+		<div className='h-full w-full overflow-hidden flex flex-col justify-between leading-[normal] tracking-[normal]'>
 			<SmallNav>
 				<div className='flex-shrink-0 z-10'>
 					<Button>
@@ -26,7 +26,7 @@ export default function Page() {
 					{[...Array(3)].map((_, index) => (
 						<div
 							key={index}
-							className={`text-[13rem] uppercase font-extrabold font-be-vietnam-pro text-[transparent] [-webkit-text-stroke:1px_#fff] ${
+							className={`text-[13rem] uppercase text-[transparent] [-webkit-text-stroke:1px_#fff] ${
 								index === 1
 									? '[text-shadow:2px_0_0_#fff,_0_2px_0_#fff,_-2px_0_0_#fff,_0_-2px_0_#fff]'
 									: ''

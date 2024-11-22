@@ -4,7 +4,7 @@ import Circle from '../../components/Circle';
 
 export default function Page() {
 	return (
-		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-[1rem] font-be-vietnam-pro p-[30px]'>
+		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-[1rem] p-[30px]'>
 			<div className='row-start-1 row-end-2 col-start-2 col-end-7 flex items-start justify-center'>
 				<span>[ WELCOME ]</span>
 			</div>

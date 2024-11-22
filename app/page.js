@@ -11,6 +11,7 @@ import Homefooter from './components/Homefooter';
 import ToggleThemeButton from './components/ToggleThemeButton';
 import HomeContact from './components/HomeContact';
 import Water from './components/Water';
+import Heading from './components/Heading';
 
 const Scene = dynamic(() => import('./components/Scene'), { ssr: false });
 
@@ -27,15 +28,16 @@ export default function Home() {
 					<Nav>
 						<NavMenu />
 					</Nav>
+					<Heading>CREATIVE DEVELOPER</Heading>
 				</header>
 				<main className='w-auto'>
 					<Scene>
 						<Water />
 					</Scene>
+					<Homefooter>
+						<ToggleThemeButton />
+					</Homefooter>
 				</main>
-				<Homefooter>
-					<ToggleThemeButton />
-				</Homefooter>
 			</div>
 			<CTA onIsHoverd={setIsHovered} />
 			<HomeContact />
