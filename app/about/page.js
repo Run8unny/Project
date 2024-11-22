@@ -1,18 +1,29 @@
-import Cursor from '../_components/Cursor';
-import Footer from '../_components/Footer';
-import AboutMe from '../_components/AboutMe';
-import CanList from '../_components/CanList';
-import LearnList from '../_components/LearnList';
-import AboutLetters from '../_components/AboutLetters';
-import Scene from '../_components/Scene';
-import FadingImages from '../_components/FadeImages';
+import Cursor from '../components/Cursor';
+import Footer from '../components/Footer';
+import Scene from '../components/Scene';
+import FadingImages from '../components/FadeImages';
+import MenuItem from '../components/MenuItem';
+import SmallNav from '../components/SmallNav';
+import SmallFooter from '../components/SmallFooter';
+import FooterItem from '../components/FooterItem';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center font-be-vietnam-pro bg-gradient-to-r from-silver to-natural-400'>
+		<div className='w-full text-center font-be-vietnam-pro '>
+			<SmallNav>
+				<MenuItem href='/'>back</MenuItem>
+				<MenuItem href='./playground'>playground</MenuItem>
+			</SmallNav>
 			<Scene>
 				<FadingImages />
 			</Scene>
+			<SmallFooter>
+				<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
+				<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
+				<FooterItem href='https://pl.pinterest.com/zanwardaszka/'>
+					pinterest
+				</FooterItem>
+			</SmallFooter>
 		</div>
 	);
 }

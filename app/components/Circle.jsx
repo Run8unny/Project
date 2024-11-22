@@ -17,12 +17,12 @@ const Circle = ({ className = '', children }) => {
 		<div
 			className={`rounded-full aspect-square box-border max-w-full max-h-full overflow-hidden leading-[normal] tracking-[normal] relative ${className}`}
 			style={{
-				width: '60vw',
-				height: '60vw',
-				minWidth: '300px',
-				minHeight: '300px',
-				maxWidth: '500px',
-				maxHeight: '500px',
+				width: '40vw',
+				height: '40vw',
+				minWidth: '200px',
+				minHeight: '200px',
+				maxWidth: '300px',
+				maxHeight: '300px',
 				background:
 					'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #0028CC 86.5%)',
 			}}

@@ -1,5 +1,5 @@
 import '@/app/_styles/globals.css';
-import { ThemeProvider } from './_components/ThemeProvider';
+import { ThemeProvider } from './components/ThemeProvider';
 
 export const metadata = {
 	title: 'ZanWardaszka',

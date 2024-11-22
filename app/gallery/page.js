@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import NewScene from '../_components/NewScene';
-import Cursor from '../_components/Cursor';
-import Picture from '../_components/Picture';
-import Button from '../_components/Button';
+import NewScene from '../components/NewScene';
+import Cursor from '../components/Cursor';
+import Picture from '../components/Picture';
+import Button from '../components/Button';
 export default function Page() {
 	return (
 		<div className='h-dvh'>

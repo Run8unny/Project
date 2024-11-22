@@ -2,7 +2,7 @@
 import * as THREE from 'three';
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { useTexture } from '@react-three/drei';
+import { useTexture, PresentationControls, Center } from '@react-three/drei';
 import { FadeImagesMaterial } from './FadeImagesMaterial';
 
 export default function FadingImages() {
@@ -21,19 +21,21 @@ export default function FadingImages() {
 		);
 	});
 	return (
-		<mesh
-			onPointerOver={(e) => setHover(true)}
-			onPointerOut={(e) => setHover(false)}
-		>
-			<planeGeometry />
-			<fadeImagesMaterial
-				ref={ref}
-				texture1={texture1}
-				texture2={texture2}
-				disp={dispTexture}
-				toneMapped={false}
-				side={THREE.DoubleSide}
-			/>
-		</mesh>
+		<Center>
+			<mesh
+				onPointerOver={(e) => setHover(true)}
+				onPointerOut={(e) => setHover(false)}
+			>
+				<planeGeometry />
+				<fadeImagesMaterial
+					ref={ref}
+					texture1={texture1}
+					texture2={texture2}
+					disp={dispTexture}
+					toneMapped={false}
+					side={THREE.DoubleSide}
+				/>
+			</mesh>
+		</Center>
 	);
 }

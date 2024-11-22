@@ -1,8 +1,8 @@
-import Cursor from '../_components/Cursor';
-import Button from '../_components/Button';
+import Cursor from '../components/Cursor';
+import Button from '../components/Button';
 import Link from 'next/link';
-import SmallNav from '../_components/SmallNav';
-import ContactButton from '../_components/ContactButton';
+import SmallNav from '../components/SmallNav';
+import ContactButton from '../components/ContactButton';
 
 export default function Page() {
 	return (

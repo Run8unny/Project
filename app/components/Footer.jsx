@@ -1,9 +1,9 @@
-import Logo from './Logo';
 import Link from 'next/link';
 import Button from './Button';
 import FooterDiv from './FooterDiv';
 import SpanTextBig from './SpanTextBig';
 import SpanTextSmall from './SpanTextSmall';
+import FooterItem from './FooterItem';
 
 export default function Footer() {
 	return (
@@ -19,9 +19,7 @@ export default function Footer() {
 					<Button>↖︎top</Button>
 				</li>
 				<li>
-					<Link href='https://github.com/Run8unny'>
-						<Button>github</Button>
-					</Link>
+					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
 				</li>
 				<li>
 					<FooterDiv>
@@ -29,15 +27,13 @@ export default function Footer() {
 						<SpanTextBig>warsaw PL</SpanTextBig>
 					</FooterDiv>
 				</li>
-				<li className='hover:bg-white hover:text-black rounded-full'>
-					<Link href='https://www.linkedin.com/'>
-						<Button>linkedIn</Button>
-					</Link>
+				<li>
+					<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
 				</li>
 				<li>
-					<Link href='https://pl.pinterest.com/zanwardaszka/'>
-						<Button>pinterest</Button>
-					</Link>
+					<FooterItem href='https://pl.pinterest.com/zanwardaszka/'>
+						pinterest
+					</FooterItem>
 				</li>
 				<li>
 					<FooterDiv>

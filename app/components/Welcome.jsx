@@ -1,4 +1,4 @@
-import GreenCircle from '../components/green-circle';
+import GreenCircle from './green-circle';
 
 const Welcome = () => {
 	return (

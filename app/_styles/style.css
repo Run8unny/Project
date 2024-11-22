@@ -1,8 +1,8 @@
 .container {
-	background: linear-gradient(-45deg, #fff, #e5e5e5, #111, #111);
+	background: linear-gradient(-45deg, #fff, #e5e5e5, #aeaeae);
 	background-size: 400% 400%;
-	animation: gradient 60s ease infinite;
-	animation-delay: 3s;
+	animation: gradient 30s ease infinite;
+	animation-delay: 1s;
 	height: 100vh;
 }
 
@@ -21,10 +21,10 @@
 @keyframes border-animate {
 	0% {
 		border-color: transparent;
-		border-width: 3px;
+		border-width: 2px;
 	}
 	100% {
-		border-color: rgb(41, 222, 41);
+		border-color: rgb(255, 255, 255);
 		border-width: 8px;
 	}
 }
@@ -36,23 +36,8 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border: 8px solid transparent;
+	border: 3px solid transparent;
 	border-radius: 50%;
 	box-sizing: border-box;
 	animation: border-animate 2s linear;
 }
-
-/* .pink-dot {
-	width: 60px;
-	height: 60px;
-	transform: rotate(88.416deg);
-	fill: linear-gradient(90deg, #f791ed -1.36%, #91558b 98.64%);
-}
-
-.green-dot {
-	width: 45px;
-	height: 45px;
-	transform: rotate(90.139deg);
-	flex-shrink: 0;
-	fill: linear-gradient(180deg, #1a652f 0%, #34cb5e 100%);
-} */
