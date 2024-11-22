@@ -49,7 +49,7 @@ function Lights() {
 export default function Scene({ children }) {
 	return (
 		<div className='flex items-center justify-center h-full w-screen'>
-			<div className='mt-20 p-9 mb-5 relative w-[80vw] h-[80vh] md:w-2/3 md:h-2/3'>
+			<div className='mt-20 p-9 mb-5 relative w-[90vw] h-[90vh] md:w-2/3 md:h-2/3'>
 				<Canvas
 					camera={{
 						fov: 8,

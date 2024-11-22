@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Button from '../_components/Button';
-import Info from '../_components/Info';
+import Button from './Button';
+import Info from './Info';
 import Image from 'next/image';
 import SmallNav from './SmallNav';
 export default function AboutMe() {

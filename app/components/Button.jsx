@@ -16,7 +16,7 @@ const Button = ({ onClick, children }) => {
 		<button
 			onClick={onClick}
 			className={classNames(
-				'w-full px-3 rounded-[25px] bg-gray border-[1px] border-solid box-border h-[2.5rem]',
+				'w-full px-5 rounded-[25px] bg-gray border-[1px] border-solid box-border h-[2.6rem]',
 				buttonClass,
 				buttonHover,
 				buttonHoverText

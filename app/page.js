@@ -1,18 +1,18 @@
 'use client';
 
-import Nav from './_components/Nav';
+import Nav from './components/Nav';
 import dynamic from 'next/dynamic';
-import Footer from './_components/Footer';
-import Cursor from './_components/Cursor';
+import Footer from './components/Footer';
+import Cursor from './components/Cursor';
 import { useState } from 'react';
-import NavMenu from './_components/NavMenu';
-import CTA from './_components/CTA';
-import Homefooter from './_components/Homefooter';
-import ToggleThemeButton from './_components/ToggleThemeButton';
-import HomeContact from './_components/HomeContact';
-import Model from './_components/Model';
+import NavMenu from './components/NavMenu';
+import CTA from './components/CTA';
+import Homefooter from './components/Homefooter';
+import ToggleThemeButton from './components/ToggleThemeButton';
+import HomeContact from './components/HomeContact';
+import Model from './components/Model';
 
-const Scene = dynamic(() => import('./_components/Scene'), { ssr: false });
+const Scene = dynamic(() => import('./components/Scene'), { ssr: false });
 
 export default function Home() {
 	const [isHovered, setIsHovered] = useState(false);

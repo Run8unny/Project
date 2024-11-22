@@ -8,31 +8,26 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			// backgroundImage: {
-			// 	'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-			// 	'gradient-conic':
-			// 		'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-			// },
 			colors: {
-				// white: '#fff',
-				// black: '#000',
-				// darkgray: {
-				// 	100: '#b9b3b3',
-				// 	200: 'rgba(152, 148, 148, 0)',
-				// 	300: 'rgba(152, 148, 148, 0.27)',
-				// },
-				// gray: {
-				// 	100: '#080808',
-				// 	200: 'rgba(255, 255, 255, 0)',
-				// 	300: 'rgba(0, 0, 0, 0)',
-				// },
-				// silver: '#c5bfbf',
-				// limegreen: '#34cb5e',
-				// plum: '#270d27',
-				// darkslategray: {
-				// 	100: '#333',
-				// 	200: 'rgba(51, 51, 51, 0)',
-				// },
+				white: '#fff',
+				black: '#000',
+				darkgray: {
+					100: '#b9b3b3',
+					200: 'rgba(152, 148, 148, 0)',
+					300: 'rgba(152, 148, 148, 0.27)',
+				},
+				gray: {
+					100: '#080808',
+					200: 'rgba(255, 255, 255, 0)',
+					300: 'rgba(0, 0, 0, 0)',
+				},
+				silver: '#c5bfbf',
+				limegreen: '#34cb5e',
+				plum: '#270d27',
+				darkslategray: {
+					100: '#333',
+					200: 'rgba(51, 51, 51, 0)',
+				},
 			},
 			spacing: {},
 			fontFamily: {
@@ -44,6 +39,49 @@ module.exports = {
 			borderRadius: {
 				'481xl': '500px',
 				'6xl': '25px',
+			},
+
+			animation: {
+				first: 'moveVertical 30s ease infinite',
+				second: 'moveInCircle 20s reverse infinite',
+				third: 'moveInCircle 40s linear infinite',
+				fourth: 'moveHorizontal 40s ease infinite',
+				fifth: 'moveInCircle 20s ease infinite',
+			},
+			keyframes: {
+				moveHorizontal: {
+					'0%': {
+						transform: 'translateX(-50%) translateY(-10%)',
+					},
+					'50%': {
+						transform: 'translateX(50%) translateY(10%)',
+					},
+					'100%': {
+						transform: 'translateX(-50%) translateY(-10%)',
+					},
+				},
+				moveInCircle: {
+					'0%': {
+						transform: 'rotate(0deg)',
+					},
+					'50%': {
+						transform: 'rotate(180deg)',
+					},
+					'100%': {
+						transform: 'rotate(360deg)',
+					},
+				},
+				moveVertical: {
+					'0%': {
+						transform: 'translateY(-50%)',
+					},
+					'50%': {
+						transform: 'translateY(50%)',
+					},
+					'100%': {
+						transform: 'translateY(-50%)',
+					},
+				},
 			},
 		},
 		fontSize: {

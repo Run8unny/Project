@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import SecondCursor from '../_components/SecondCursor';
-import Circle from '../_components/Circle';
+import SecondCursor from '../../components/SecondCursor';
+import Circle from '../../components/Circle';
 
 export default function Page() {
 	return (

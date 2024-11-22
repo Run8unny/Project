@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import SmallNav from '../_components/SmallNav';
-import Button from '../_components/Button';
+import SmallNav from '../components/SmallNav';
+import Button from '../components/Button';
 import Link from 'next/link';
-import ContactButton from '../_components/ContactButton';
-import SecondCursor from '../_components/SecondCursor';
+import ContactButton from '../components/ContactButton';
+import SecondCursor from '../components/SecondCursor';
 
 export default function Page() {
 	return (
