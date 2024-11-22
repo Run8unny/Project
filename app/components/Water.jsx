@@ -6,6 +6,7 @@ import {
 import { useFrame, extend } from '@react-three/fiber';
 import { useRef } from 'react';
 import * as THREE from 'three';
+import { OrbitControls } from '@react-three/drei';
 
 const WaterShaderMaterial = shaderMaterial(
 	{
@@ -167,15 +168,15 @@ export default function Water() {
 
 	useFrame((state, delta) => {
 		waterShaderMaterial.current.uTime += delta;
-		// waterGeometry.rotateX += delta;
 	});
 
 	return (
 		<>
 			{/* <Perf position='top-left' /> */}
 			<Center>
-				<PresentationControls rotation={[0, 1.5, -0.3]}>
-					<mesh geometry={waterGeometry} rotation-x={-Math.PI * 0.5}>
+				<OrbitControls minDistance={3} maxDistance={16} />
+				<PresentationControls rotation={[0, 1.5, -0.08]}>
+					<mesh geometry={waterGeometry} rotation-x={Math.PI * 0.41}>
 						<waterShaderMaterial
 							ref={waterShaderMaterial}
 							toneMapped={false}
