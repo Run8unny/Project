@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Button from './Button';
 import FooterDiv from './FooterDiv';
 import SpanTextBig from './SpanTextBig';

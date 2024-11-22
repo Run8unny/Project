@@ -5,7 +5,9 @@ export default function Logo() {
 	return (
 		<div className={`font-array pl-4`}>
 			<Link href='/' className='flex flex-row'>
-				<span className='text-[40px] hover:text-pink-400 self-center'>zan</span>
+				<span className='text-[40px] hover:text-orange-500 self-center'>
+					zan
+				</span>
 				<div>
 					<LogoIcon />
 				</div>

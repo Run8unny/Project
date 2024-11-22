@@ -1,18 +1,8 @@
 'use client';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import '@/app/_styles/style.css';
 
 const Circle = ({ className = '', children }) => {
-	const [isAnimating, setIsAnimating] = useState(false);
-
-	const handleAnimation = () => {
-		setIsAnimating(true);
-		setTimeout(() => {
-			setIsAnimating(false);
-		}, 3000);
-	};
-
 	return (
 		<div
 			className={`rounded-full aspect-square box-border max-w-full max-h-full overflow-hidden leading-[normal] tracking-[normal] relative ${className}`}
@@ -28,10 +18,7 @@ const Circle = ({ className = '', children }) => {
 			}}
 		>
 			<div
-				className={`absolute inset-0 flex items-center justify-center z-30 font-be-vietnam-pro ${
-					isAnimating ? 'animate-border' : ''
-				}`}
-				onMouseEnter={handleAnimation}
+				className={`absolute inset-0 flex items-center justify-center z-30 font-be-vietnam-pro `}
 			>
 				{children}
 			</div>
