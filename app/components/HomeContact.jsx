@@ -6,7 +6,7 @@ import Homefooter from './Homefooter';
 
 export default function HomeContact() {
 	return (
-		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-[1rem] font-be-vietnam-pro p-[30px]'>
+		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-[1rem] font-be-vietnam-pro p-[70px]'>
 			<div className='row-start-1 row-end-2 col-start-1 col-end-8 flex items-start justify-center text-[8rem]'>
 				<h1 className='font-extrabold'>GET IN TOUCH</h1>
 			</div>

@@ -26,7 +26,7 @@ body {
 }
 
 [data-theme='light'] {
-	--foreground-rgb: 53, 12, 53;
+	--foreground-rgb: 255, 255, 255;
 	--background-start-rgb: 237, 237, 237;
 	--background-end-rgb: 189, 189, 189;
 }

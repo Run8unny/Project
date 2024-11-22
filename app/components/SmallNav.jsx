@@ -1,7 +1,7 @@
 export default function SmallNav({ children }) {
 	return (
-		<div className='flex justify-between items-center w-full h-[100px] px-6 py-6 mb-1 bg-transparent'>
+		<ul className='flex gap-2 justify-between items-center text-lg px-10 mx-auto mt-5'>
 			{children}
-		</div>
+		</ul>
 	);
 }

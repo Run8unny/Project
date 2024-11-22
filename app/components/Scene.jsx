@@ -2,65 +2,21 @@
 
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
-import Model from './Model';
-import { Environment, OrbitControls } from '@react-three/drei';
-import { useRef } from 'react';
-
-function Lights() {
-	const ambientRef = useRef();
-	const directionalRef = useRef();
-	const pointLightRef1 = useRef();
-	const pointLightRef2 = useRef();
-	const spotLightRef = useRef();
-
-	return (
-		<>
-			<ambientLight ref={ambientRef} intensity={1} />
-			<directionalLight
-				ref={directionalRef}
-				position={[5, 5, 5]}
-				intensity={1.6}
-				castShadow
-			/>
-			<pointLight
-				ref={pointLightRef1}
-				position={[-5, 5, 5]}
-				intensity={1.5}
-				castShadow
-			/>
-			<pointLight
-				ref={pointLightRef2}
-				position={[5, -5, -5]}
-				intensity={1.5}
-				castShadow
-			/>
-			<spotLight
-				ref={spotLightRef}
-				position={[0, 10, 0]}
-				angle={0.3}
-				penumbra={1}
-				intensity={2}
-				castShadow
-			/>
-		</>
-	);
-}
+import { OrbitControls } from '@react-three/drei';
 
 export default function Scene({ children }) {
 	return (
 		<div className='flex items-center justify-center h-full w-screen'>
-			<div className='mt-20 p-9 mb-5 relative w-[90vw] h-[90vh] md:w-2/3 md:h-2/3'>
+			<div className='p-3 mb-5 relative w-[95vw] h-[95vh] md:w-2/3 md:h-2/3'>
 				<Canvas
 					camera={{
 						fov: 8,
-						near: 0.1,
-						far: 100,
-						position: [1, 3, 4],
+						near: 0.3,
+						far: 50,
+						position: [1, 3, 5],
 					}}
 				>
-					<Lights />
-					<OrbitControls minDistance={5} maxDistance={20} />
-					<Environment preset='forest' />
+					<OrbitControls minDistance={3} maxDistance={12} />
 					{children}
 				</Canvas>
 			</div>
