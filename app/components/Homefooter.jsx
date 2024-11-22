@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Homefooter = ({ className = '', children }) => {
 	return (
-		<ul className='flex gap-7 justify-center items-center text-lg'>
+		<ul className='flex gap-7 justify-center items-center text-lg mb-20'>
 			<li>{children}</li>
 		</ul>
 	);

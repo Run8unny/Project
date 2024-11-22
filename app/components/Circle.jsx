@@ -14,11 +14,11 @@ const Circle = ({ className = '', children }) => {
 				maxWidth: '270px',
 				maxHeight: '270px',
 				background:
-					'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #0028CC 86.5%)',
+					'radial-gradient(50% 50% at 50% 50%, rgba(217, 218, 217, 0) 38%, #1333b3 86.5%)',
 			}}
 		>
 			<div
-				className={`absolute inset-0 flex items-center justify-center z-30 font-be-vietnam-pro `}
+				className={`absolute inset-0 flex items-center justify-center z-30 `}
 			>
 				{children}
 			</div>

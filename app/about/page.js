@@ -8,7 +8,7 @@ import Cursor from '../components/Cursor';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center font-be-vietnam-pro '>
+		<div className='w-full text-center'>
 			<Cursor />
 			<SmallNav>
 				<MenuItem href='/'>back</MenuItem>

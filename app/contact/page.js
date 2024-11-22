@@ -7,7 +7,7 @@ import SmallNav from '../components/SmallNav';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center font-be-vietnam-pro'>
+		<div className='w-full text-center'>
 			<SmallNav>
 				<div className='flex-shrink-0'>
 					<Button>

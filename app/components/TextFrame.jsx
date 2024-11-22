@@ -1,6 +1,6 @@
 const TextFrame = () => {
 	return (
-		<div className='w-full relative h-[37.5rem] overflow-hidden text-left text-[8.625rem] text-[transparent] font-be-vietnam-pro'>
+		<div className='w-full relative h-[37.5rem] overflow-hidden text-left text-[8.625rem] text-[transparent]'>
 			<div className='absolute top-[0.688rem] left-[-0.25rem] w-[90.25rem] h-[10.938rem] flex flex-col items-center justify-start'>
 				<b className='#000'>WORK IN PROGRESS</b>
 				<div className='w-[90.25rem] relative h-[10.938rem] mt-[-6.5rem] text-black'>

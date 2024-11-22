@@ -40,8 +40,6 @@ module.exports = {
 			},
 			spacing: {},
 			fontFamily: {
-				'be-vietnam-pro': "'Be Vietnam Pro'",
-				'be-vietnam': "'Be Vietnam'",
 				array: 'Array',
 				inter: 'Inter',
 			},
