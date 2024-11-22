@@ -1,15 +1,15 @@
-import Cursor from '../components/Cursor';
-import Footer from '../components/Footer';
 import Scene from '../components/Scene';
 import FadingImages from '../components/FadeImages';
 import MenuItem from '../components/MenuItem';
 import SmallNav from '../components/SmallNav';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
+import Cursor from '../components/Cursor';
 
 export default function Page() {
 	return (
 		<div className='w-full text-center font-be-vietnam-pro '>
+			<Cursor />
 			<SmallNav>
 				<MenuItem href='/'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>

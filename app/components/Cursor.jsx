@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 export default function Cursor({ isHovered }) {
-	const size = isHovered ? 50 : 100;
+	const size = isHovered ? 70 : 140;
 	const circle = useRef();
 	const mouse = useRef({
 		x: 0,

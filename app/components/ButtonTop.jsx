@@ -1,5 +1,3 @@
-// components/ScrollButton.js
-
 import { useCallback } from 'react';
 
 const ButtonTop = ({ targetId, children }) => {

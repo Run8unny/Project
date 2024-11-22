@@ -1,8 +1,6 @@
 import Button from './Button';
 import Circle from './Circle';
-import Footer from './Footer';
 import Link from 'next/link';
-import Homefooter from './Homefooter';
 
 export default function HomeContact() {
 	return (
