@@ -9,9 +9,9 @@ import { OrbitControls } from '@react-three/drei';
 export default function FadingImages() {
 	const ref = useRef();
 	const [texture1, texture2, dispTexture] = useTexture([
-		'./assets/about/me4.png',
-		'./assets/about/about4.png',
-		'./assets/about/displacement.jpg',
+		'./assets/about_page/me4.png',
+		'./assets/about_page/about4.png',
+		'./assets/about_page/displacement.jpg',
 	]);
 	const [hovered, setHover] = useState(false);
 	useFrame(() => {
