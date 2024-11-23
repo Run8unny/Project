@@ -7,13 +7,13 @@ export default function HomeMenu() {
 				<Link href='/about'>[ About ]</Link>
 			</li>
 			<li className='hover:text-pink-400'>
-				<Link href='/gallery'>[ Gallery ]</Link>
+				<Link href='/playground'>[ Playground ]</Link>
 			</li>
 			<li className='hover:text-pink-400'>
 				<Link href='/contact'>[ Contact ]</Link>
 			</li>
 			<li className='hover:text-pink-400'>
-				<Link href='/cosmos'>[ Cosmos ]</Link>
+				<Link href='/work'>[ Work ]</Link>
 			</li>
 		</ul>
 	);
