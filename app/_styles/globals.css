@@ -3,7 +3,9 @@
 
 /* @font-face {
 	font-family: 'Pilsen Plakat';
-	src: url('./fonts/PilsenPlakat.ttf') format('truetype');
+	src: url('fonts/PilsenPlakat.woff') format('woff'),
+		url('fonts/PilsenPlakat.ttf') format('truetype'),
+		url('fonts/PilsenPlakat.svg#PilsenPlakat') format('svg');
 	font-weight: normal;
 	font-style: normal;
 } */
