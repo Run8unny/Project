@@ -9,8 +9,8 @@ import { OrbitControls } from '@react-three/drei';
 export default function FadingImages() {
 	const ref = useRef();
 	const [texture1, texture2, dispTexture] = useTexture([
-		'./assets/about/about-min.jpg',
-		'./assets/about/about2-min.jpg',
+		'./assets/about/me4.png',
+		'./assets/about/about4.png',
 		'./assets/about/displacement.jpg',
 	]);
 	const [hovered, setHover] = useState(false);
@@ -26,7 +26,6 @@ export default function FadingImages() {
 			<OrbitControls minDistance={3} maxDistance={7} />
 			<Center>
 				<mesh
-					position={[0, 0, 10]}
 					onPointerOver={(e) => setHover(true)}
 					onPointerOut={(e) => setHover(false)}
 				>
