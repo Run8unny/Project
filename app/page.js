@@ -12,6 +12,7 @@ import ToggleThemeButton from './components/ToggleThemeButton';
 import HomeContact from './components/HomeContact';
 import Water from './components/Water';
 import Heading from './components/Heading';
+import EvervaultCardContainer from './components/ui/EvervaultCard';
 
 const Scene = dynamic(() => import('./components/Scene'), { ssr: false });
 
@@ -38,8 +39,8 @@ export default function Home() {
 						<ToggleThemeButton />
 					</Homefooter>
 				</main>
+				<EvervaultCardContainer />
 			</div>
-			<CTA onIsHoverd={setIsHovered} />
 			<HomeContact />
 			<Footer />
 		</div>
