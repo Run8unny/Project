@@ -29,7 +29,7 @@ export default function Home() {
 					<Nav>
 						<NavMenu />
 					</Nav>
-					<Heading>CREATIVE DEVELOPER</Heading>
+					<Heading>{`<CREATIVE DEVELOPER>`}</Heading>
 				</header>
 				<main className='w-auto outline'>
 					<Scene>
