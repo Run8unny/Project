@@ -21,7 +21,7 @@ const Welcome = () => {
 						</div>
 					</div>
 					<div className='w-[49.563rem] flex flex-row items-start justify-between max-w-full gap-[1.25rem] text-right text-[11.563rem] text-[transparent] mq1050:flex-wrap'>
-						<div className='w-[31.688rem] relative font-extrabold inline-block [-webkit-text-stroke:4px_#000] opacity-[0.85] min-w-[31.688rem] max-w-full mq750:text-[4.625rem] mq750:min-w-full mq450:text-[2.875rem] mq1050:flex-1'>
+						<div className='w-[31.688rem] relative font-extrabold inline-block [-webkit-text-stroke:4px_#000] opacity-[0.85] min-w-[31.688rem] max-w-full mq850:text-[4.625rem] mq850:min-w-full mq450:text-[2.875rem] mq1050:flex-1'>
 							100%
 						</div>
 						<div className='flex flex-col items-start justify-start pt-[9.937rem] px-[0rem] pb-[0rem] box-border min-w-[12.625rem] text-left text-[1.563rem] text-black mq1050:flex-1'>

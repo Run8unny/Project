@@ -11,7 +11,8 @@ export default function Page() {
 				<MenuItem href='/'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
-			<div className='h-full w-full cursor-none flex flex-col justify-center items-center mt-20 outline'>
+			<ContactHeading />
+			<div className='h-full w-full cursor-none flex flex-col justify-center items-center mt-8 outline'>
 				<ContactForm />
 			</div>
 			<SecondCursor />
