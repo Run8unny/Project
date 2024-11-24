@@ -1,6 +1,6 @@
 export default function ContactForm() {
 	return (
-		<form className='h-full w-full flex flex-wrap justify-center items-center m-4 text-black'>
+		<form className='h-full w-full flex flex-wrap justify-center items-center m-4 text-black outline'>
 			<input
 				className='border-2 rounded-full h-80 w-80 m-4 text-center p-10  placeholder-gray-800'
 				type='text'

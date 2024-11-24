@@ -7,7 +7,7 @@ import CTA from '../CTA';
 
 export default function EvervaultCardContainer() {
 	return (
-		<div className='h-[42rem] w-full flex justify-center items-center text-center text-[4.75rem] relative z-20 p-5'>
+		<div className='h-[38rem] w-full flex justify-center items-center text-center text-[4.75rem] relative z-20'>
 			<EvervaultCard text={<CTA />} />
 		</div>
 	);
@@ -26,7 +26,7 @@ export const EvervaultCard = ({ text, className }) => {
 	return (
 		<div
 			className={cn(
-				'bg-transparent aspect-square flex items-center justify-center w-full h-full relative isolate p-30',
+				'bg-transparent aspect-square flex items-center justify-center w-full h-full relative isolate p-28',
 				className
 			)}
 		>
@@ -42,7 +42,7 @@ export const EvervaultCard = ({ text, className }) => {
 };
 
 export function CardPattern({ mouseX, mouseY }) {
-	let maskImage = useMotionTemplate`radial-gradient(350px at ${mouseX}px ${mouseY}px, white, transparent)`;
+	let maskImage = useMotionTemplate`radial-gradient(150px at ${mouseX}px ${mouseY}px, white, transparent)`;
 	let style = { maskImage, WebkitMaskImage: maskImage };
 
 	return (

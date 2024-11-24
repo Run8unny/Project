@@ -1,6 +1,6 @@
 const SpanTextBig = ({ children }) => {
 	return (
-		<div className='flex flex-row items-start justify-start py-0 pl-[11px] pr-3'>
+		<div className='flex flex-row items-start justify-start py-0 pl-[11px] pr-3 outline'>
 			<span className='[text-decoration:none] self-stretch relative text-[15px] text-center'>
 				{children}
 			</span>

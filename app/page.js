@@ -31,7 +31,7 @@ export default function Home() {
 					</Nav>
 					<Heading>CREATIVE DEVELOPER</Heading>
 				</header>
-				<main className='w-auto'>
+				<main className='w-auto outline'>
 					<Scene>
 						<Water />
 					</Scene>
