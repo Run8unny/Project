@@ -6,12 +6,12 @@ import ContactHeading from '../components/ContactHeading';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center'>
+		<div className='w-full text-center outline'>
 			<SmallNav>
 				<MenuItem href='/'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
-			<div className='h-full w-full cursor-none flex flex-col justify-center items-center mt-20'>
+			<div className='h-full w-full cursor-none flex flex-col justify-center items-center mt-20 outline'>
 				<ContactForm />
 			</div>
 			<SecondCursor />

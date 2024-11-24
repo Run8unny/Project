@@ -5,8 +5,8 @@ import { Canvas } from '@react-three/fiber';
 
 export default function Scene({ children }) {
 	return (
-		<div className='flex items-center justify-center h-full w-screen'>
-			<div className='p-3 mb-5 relative w-[85vw] h-[85vh] md:w-2/3 md:h-2/3'>
+		<div className='flex items-center justify-center h-full w-screen outline'>
+			<div className='p-3 mb-5 relative w-[85vw] h-[85vh] md:w-2/3 md:h-2/3 outline'>
 				<Canvas
 					camera={{
 						fov: 8,

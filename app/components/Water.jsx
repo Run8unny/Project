@@ -174,9 +174,13 @@ export default function Water() {
 		<>
 			{/* <Perf position='top-left' /> */}
 			<Center>
-				<OrbitControls minDistance={2} maxDistance={15} />
+				<OrbitControls minDistance={2} maxDistance={28} />
 				<PresentationControls rotation={[0, 1.5, -0.35]}>
-					<mesh geometry={waterGeometry} rotation-x={Math.PI * 0.4}>
+					<mesh
+						scale={[0.5, 0.5, 0.5]}
+						geometry={waterGeometry}
+						rotation-x={Math.PI * 0.4}
+					>
 						<waterShaderMaterial
 							ref={waterShaderMaterial}
 							toneMapped={false}

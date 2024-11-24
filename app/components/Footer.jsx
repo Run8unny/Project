@@ -8,7 +8,7 @@ export default function Footer() {
 	return (
 		<div className='px-1 py-4 m-3 bg-transparent'>
 			<ul className='flex flex-row justify-evenly items-center gap-1'>
-				<li>
+				<li className='mq750:hidden'>
 					<FooterDiv>
 						<SpanTextSmall>[ Copyrights ]</SpanTextSmall>
 						<SpanTextBig>©folio 2024</SpanTextBig>
@@ -20,7 +20,7 @@ export default function Footer() {
 				<li>
 					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
 				</li>
-				<li>
+				<li className='mq750:hidden'>
 					<FooterDiv>
 						<SpanTextSmall>[ Location ]</SpanTextSmall>
 						<SpanTextBig>warsaw PL</SpanTextBig>
@@ -34,7 +34,7 @@ export default function Footer() {
 						pinterest
 					</FooterItem>
 				</li>
-				<li>
+				<li className='mq750:hidden'>
 					<FooterDiv>
 						<SpanTextSmall>[ Design&code by ]</SpanTextSmall>
 						<SpanTextBig>zan wardaszka</SpanTextBig>
