@@ -18,7 +18,7 @@ export default function HomeContact() {
 				<Circle>
 					<Link
 						href='/contact'
-						className='flex justify-center items-center p-2 outline'
+						className='flex justify-center items-center p-2'
 					>{`contact`}</Link>
 				</Circle>
 			</div>
