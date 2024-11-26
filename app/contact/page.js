@@ -14,7 +14,7 @@ export default function Page() {
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
 			<ContactHeading />
-			<div className='h-full w-full cursor-none flex flex-col justify-center items-center mt-8 outline'>
+			<div className='min-h-[40vw] w-full cursor-none flex flex-col flex-grow justify-center items-center mt-4 outline'>
 				<ContactForm />
 			</div>
 			<div className='w-full flex flex-row justify-between items-center mt-7'>

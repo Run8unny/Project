@@ -3,7 +3,7 @@ import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
-import LayoutGridContainer from '../components/LayoutGridContainer';
+import LayoutGridWork from '../components/LayoutGridWork';
 
 export default function Page() {
 	return (
