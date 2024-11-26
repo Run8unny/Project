@@ -16,7 +16,7 @@ export default function Page() {
 				<Circle>
 					<Link
 						href='/'
-						className='flex justify-center items-center'
+						className='flex font-array text-[2rem] justify-center items-center'
 					>{`ENTER`}</Link>
 				</Circle>
 			</div>
