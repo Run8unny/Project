@@ -1,6 +1,6 @@
 export default function ContactForm() {
 	return (
-		<form className='h-full w-full flex flex-wrap justify-center items-center m-4 text-black outline'>
+		<form className='h-full w-full flex flex-wrap justify-center items-center m-4 text-black'>
 			<input
 				className='border-2 rounded-full h-80 w-80 m-4 text-center p-10  placeholder-gray-800'
 				type='text'
@@ -18,7 +18,7 @@ export default function ContactForm() {
 			></textarea>
 
 			<button
-				className='border-2 border-solid border-white rounded-full h-80 w-80 text-white text-2xl mx-11'
+				className='border-2 border-solid border-white rounded-full h-80 w-80 text-white text-2xl mx-4'
 				type='submit'
 			>
 				Send →
