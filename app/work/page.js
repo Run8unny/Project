@@ -18,7 +18,7 @@ export default function Page() {
 			</div>
 
 			<div className='w-full'>
-				<LayoutGridContainer />
+				<LayoutGridWork />
 			</div>
 			<SmallFooter>
 				<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
