@@ -1,5 +1,5 @@
 import Image from 'next/image';
-export default function LayoutGridContainer() {
+export default function LayoutGridWork() {
 	return (
 		<div className='w-full h-screen grid grid-rows-6 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-10 text-[12px] relative overflow-hidden box-border leading-normal mt-6 tracking-normal'>
 			<div className='row-start-1 row-end-5 col-start-3 col-end-7 flex flex-col flex-grow items-start justify-start p-6 outline'>
