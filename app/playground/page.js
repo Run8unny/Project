@@ -1,28 +1,21 @@
 import Image from 'next/image';
-import SmallNav from '../components/SmallNav';
-import Button from '../components/Button';
 import Link from 'next/link';
-import ContactButton from '../components/ContactButton';
 import SecondCursor from '../components/SecondCursor';
+import SmallNav from '../components/SmallNav';
+import MenuItem from '../components/MenuItem';
+import SmallFooter from '../components/SmallFooter';
+import FooterItem from '../components/FooterItem';
 
 export default function Page() {
 	return (
 		<div className='w-full h-full text-center'>
 			<SmallNav>
-				<div className='flex-shrink-0'>
-					<Button>
-						<Link href='/'>back</Link>
-					</Button>
-				</div>
-				<div className='flex-shrink-0'>
-					<Button>
-						<Link href='/work'>work</Link>
-					</Button>
-				</div>
+				<MenuItem href='/'>back</MenuItem>
+				<MenuItem href='./work'>work</MenuItem>
 			</SmallNav>
 			<div>
-				<div className='flex items-start justify-center text-[12rem] px-10'>
-					<h1 className='custom-font'>PLAYGROUND</h1>
+				<div className='flex items-start justify-center text-[14rem] px-10'>
+					<h1 className='custom-font uppercase'>PLAYGROUND</h1>
 				</div>
 			</div>
 			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-16 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal'>
@@ -145,25 +138,14 @@ export default function Page() {
 					/>
 				</div>
 			</div>
-			<div className='w-full flex flex-row justify-between items-center mt-10'>
-				<div className='flex justify-center items-start gap-7'>
-					<div className='flex-shrink-0 my-10 mx-10'>
-						<Button>↖︎top</Button>
-					</div>
-					<div className='flex-shrink-0 my-10 mx-5'>
-						<Button>
-							<Link href='https://github.com/Run8unny'>github</Link>
-						</Button>
-					</div>
-					<div className='flex-shrink-0 my-10 mx-5'>
-						<Button>
-							<Link href='https://www.linkedin.com/'>linkedIn</Link>
-						</Button>
-					</div>
-				</div>
-				<div className='flex-shrink-0 fixed bottom-5 right-5'>
-					<ContactButton />
-				</div>
+			<div className='w-full flex flex-row justify-between items-center mt-7'>
+				<SmallFooter>
+					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
+					<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
+					<FooterItem href='https://pl.pinterest.com/zanwardaszka/'>
+						pinterest
+					</FooterItem>
+				</SmallFooter>
 			</div>
 			<SecondCursor />
 		</div>
