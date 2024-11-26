@@ -9,7 +9,7 @@ import LayoutGridPlayground from '../components/LayoutGridPlayground';
 
 export default function Page() {
 	return (
-		<div className='w-full h-full text-center'>
+		<div className='w-full h-full text-center outline'>
 			<SmallNav>
 				<MenuItem href='/'>back</MenuItem>
 				<MenuItem href='./work'>work</MenuItem>
