@@ -3,20 +3,23 @@ import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
+import LayoutGridContainer from '../components/LayoutGridContainer';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center'>
+		<div className='w-full text-center outline'>
 			<Cursor />
 			<SmallNav>
 				<MenuItem href='/'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
-			<div className='flex items-start justify-center text-[14rem] px-10 outline'>
+			<div className='flex items-start justify-center text-[11rem] px-10 outline'>
 				<h1 className='custom-font uppercase'>WORK</h1>
 			</div>
 
-			<div className='w-full'></div>
+			<div className='w-full'>
+				<LayoutGridContainer />
+			</div>
 			<SmallFooter>
 				<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
 				<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
