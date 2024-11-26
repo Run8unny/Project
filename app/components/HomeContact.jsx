@@ -6,7 +6,7 @@ export default function HomeContact() {
 	return (
 		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-center text-[1rem] p-[70px] mq850:m-5 mq850:p-12 outline'>
 			<div className='row-start-1 row-end-2 col-start-1 col-end-8 flex items-start justify-center h-44 text-[8.35rem] outline'>
-				<h1 className='custom-font px-4 mq1050:text-[6.7rem] mq850:text-[5.7rem] mq450:text-[4.7rem] outline'>
+				<h1 className='px-4 mq1050:text-[6.7rem] mq850:text-[5.7rem] mq450:text-[4.7rem] outline'>
 					GET IN TOUCH
 				</h1>
 			</div>
@@ -18,8 +18,8 @@ export default function HomeContact() {
 				<Circle>
 					<Link
 						href='/contact'
-						className='flex justify-center items-center p-2'
-					>{`contact`}</Link>
+						className='flex text-[32px] justify-center font-array items-center p-2'
+					>{`let's talk`}</Link>
 				</Circle>
 			</div>
 
