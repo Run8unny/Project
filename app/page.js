@@ -35,9 +35,9 @@ export default function Home() {
 					<Scene>
 						<Water />
 					</Scene>
-					<Homefooter>
+					{/* <Homefooter>
 						<ToggleThemeButton />
-					</Homefooter>
+					</Homefooter> */}
 				</main>
 				<EvervaultCardContainer />
 			</div>

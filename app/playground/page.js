@@ -5,7 +5,8 @@ import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
-import LayoutGridPlayground from '../components/LayoutGridPlayground';
+// import LayoutGridPlayground from '../components/LayoutGridPlayground';
+import ParallaxScrollBox from '../components/ui/ParallaxScroll';
 
 export default function Page() {
 	return (
@@ -19,7 +20,7 @@ export default function Page() {
 					<h1 className='custom-font uppercase outline'>PLAYGROUND</h1>
 				</div>
 			</div>
-			<LayoutGridPlayground />
+			<ParallaxScrollBox />
 
 			<div className='w-full flex flex-row justify-between items-center mt-7 outline'>
 				<SmallFooter>
