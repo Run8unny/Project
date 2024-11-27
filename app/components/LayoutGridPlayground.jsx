@@ -56,8 +56,6 @@ export default function LayoutGridPlayground() {
 			</div>
 			<div className='w-full h-screen grid grid-rows-4 md:grid-rows-4 grid-cols-5 md:grid-cols-5 gap-6 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal outline'>
 				<div className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-start justify-start outline'>
-					<p>[ CODE VARIATION ]</p>
-
 					<ImagePlayground src='/assets/playground_page/pic11.png' />
 				</div>
 				<div className='row-start-1 row-end-2 col-start-3 col-end-4 flex flex-col items-center justify-center'>
