@@ -3,7 +3,7 @@ import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
-import LayoutGridWork from '../components/LayoutGridWork';
+import LayoutWork from '../components/LayoutWork';
 
 export default function Page() {
 	return (
@@ -13,12 +13,12 @@ export default function Page() {
 				<MenuItem href='/'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
-			<div className='flex items-start justify-center text-[11rem] px-10 outline'>
-				<h1 className='custom-font uppercase'>WORK</h1>
+			<div className='flex items-start justify-center text-[10rem] px-10 outline'>
+				<h1 className='custom-font uppercase outline'>WORK</h1>
 			</div>
 
 			<div className='w-full'>
-				<LayoutGridWork />
+				<LayoutWork />
 			</div>
 			<SmallFooter>
 				<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
