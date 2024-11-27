@@ -15,13 +15,13 @@ export default function Page() {
 				<MenuItem href='./work'>work</MenuItem>
 			</SmallNav>
 			<div>
-				<div className='flex items-start justify-center text-[11rem] px-10'>
-					<h1 className='custom-font uppercase'>PLAYGROUND</h1>
+				<div className='flex items-start justify-center text-[10rem] px-10 outline'>
+					<h1 className='custom-font uppercase outline'>PLAYGROUND</h1>
 				</div>
 			</div>
 			<LayoutGridPlayground />
 
-			<div className='w-full flex flex-row justify-between items-center mt-7'>
+			<div className='w-full flex flex-row justify-between items-center mt-7 outline'>
 				<SmallFooter>
 					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
 					<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
