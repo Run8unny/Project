@@ -8,9 +8,9 @@ export default function Logo() {
 			<Link href='/' className='flex flex-row'>
 				<div className='text-[40px] hover:text-orange-500 self-center'>
 					<Image
-						width={90}
+						width={100}
 						height={70}
-						src={'/assets/home/logo.png'}
+						src={'/assets/home/logo1.svg'}
 						alt='logo sign'
 					/>
 				</div>

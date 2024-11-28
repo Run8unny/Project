@@ -121,6 +121,9 @@ module.exports = {
 				max: '1350px',
 			},
 			md: {
+				max: '768px',
+			},
+			mq1225: {
 				raw: 'screen and (max-width: 1225px)',
 			},
 			mq1050: {
