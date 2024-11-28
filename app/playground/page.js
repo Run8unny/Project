@@ -17,7 +17,9 @@ export default function Page() {
 			</SmallNav>
 			<div>
 				<div className='flex items-start justify-center text-[10rem] px-10 outline'>
-					<h1 className='uppercase outline font-extrabold'>PLAYGROUND</h1>
+					<h1 className='uppercase outline custom-font font-bold '>
+						PLAYGROUND
+					</h1>
 				</div>
 			</div>
 			<ParallaxScrollBox />

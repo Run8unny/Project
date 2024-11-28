@@ -6,7 +6,7 @@ const CTA = () => {
 	return (
 		<div className='h-[45rem] flex flex-col justify-center items-center text-center text-[4.55rem] mq850:text-[3.55rem] relative z-20 mt-36'>
 			<div className='relative w-3/4'>
-				<h1 className='mt-3 outline'>
+				<h1 className='mt-3 custom-font'>
 					LET’S <FlipWords words={words} /> <br />
 					TOGETHER. I’M NOT JUST AN EMPLOYEE. I TRULY AM IN YOUR TEAM.
 				</h1>

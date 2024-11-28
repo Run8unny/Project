@@ -4,6 +4,13 @@
 	font-weight: 400;
 }
 
+@font-face {
+	font-family: 'Vipnagorgialla';
+	src: url('/fonts/Vipnagorgialla_Rg.otf') format('opentype');
+	font-weight: regular;
+	font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -76,11 +83,11 @@ textarea.text-center::placeholder {
 }
 
 .custom-font {
-	font-family: 'Pilsen Plakat';
+	font-family: 'Vipnagorgialla';
 }
 
 .outline {
-	outline: 5px solid rgba(140, 205, 205, 0.1);
+	outline: 5px solid rgba(166, 239, 242, 0.1);
 }
 .header {
 	writing-mode: vertical-lr;
