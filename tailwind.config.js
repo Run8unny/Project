@@ -41,7 +41,6 @@ module.exports = {
 			spacing: {},
 			fontFamily: {
 				array: 'Array',
-				inter: 'Inter',
 			},
 			borderRadius: {
 				'481xl': '500px',
