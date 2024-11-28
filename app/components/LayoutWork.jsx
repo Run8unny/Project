@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function LayoutWork() {
 	return (
-		<div className='w-full h-full flex flex-col justify-center items-center gap-10 text-[15px] relative overflow-hidden box-border leading-normal mt-6 tracking-normal outline mq850:inline-block'>
+		<div className='w-full h-full flex flex-wrap gap-10 text-[15px] items-center justify-center relative overflow-hidden box-border leading-normal mt-6 tracking-normal outline mq850:inline-block'>
 			<SkeletonOne />
 			<SkeletonTwo />
 			<SkeletonThree />

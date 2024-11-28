@@ -9,13 +9,10 @@ export default function Logo() {
 				<div className='text-[40px] hover:text-orange-500 self-center'>
 					<Image
 						width={100}
-						height={70}
+						height={80}
 						src={'/assets/home/logo1.svg'}
 						alt='logo sign'
 					/>
-				</div>
-				<div>
-					<LogoIcon />
 				</div>
 			</Link>
 		</div>
