@@ -39,9 +39,7 @@ module.exports = {
 				},
 			},
 			spacing: {},
-			fontFamily: {
-				array: 'Array',
-			},
+			fontFamily: {},
 			borderRadius: {
 				'481xl': '500px',
 				'6xl': '25px',
