@@ -18,6 +18,7 @@ const SkeletonOne = () => {
 				height={400}
 				src={'/assets/work_page/FunnyBunny.png'}
 				alt='game pic'
+				className='rounded-lg'
 			/>
 			<p className='font-normal text-[0.9rem] my-1 max-w-lg mq850:hidden'>
 				[ A desktop game developed using React Three Fiber, incorporating custom
@@ -38,6 +39,7 @@ const SkeletonThree = () => {
 				height={400}
 				src={'/assets/work_page/VanillaJS.png'}
 				alt='website'
+				className='rounded-lg'
 			/>
 			<p className='font-normal text-[0.9rem] my-4 max-w-lg mq850:hidden'>
 				[ An interactive website built using Vanilla JavaScript. ]
@@ -56,6 +58,7 @@ const SkeletonTwo = () => {
 				height={400}
 				src={'/assets/work_page/BestShop.png'}
 				alt='website'
+				className='rounded-lg'
 			/>
 			<p className='font-normal text-[0.9rem] my-4 max-w-lg mq850:hidden'>
 				[ A single-page website developed using HTML and SASS, featuring a fully
@@ -75,6 +78,7 @@ const SkeletonFour = () => {
 				height={400}
 				src={'/assets/work_page/shader.png'}
 				alt='website'
+				className='rounded-lg'
 			/>
 			<p className='font-normal text-[0.9rem] my-4 max-w-lg mq850:hidden'>
 				[ A gallery built with React Three Fiber and WebGL, featuring custom

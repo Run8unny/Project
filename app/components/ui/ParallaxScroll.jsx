@@ -6,22 +6,22 @@ import Image from 'next/image';
 import { cn } from '@/app/lib/utils';
 export default function ParallaxScrollBox() {
 	return (
-		<div className='flex flex-col justify-center items-center'>
-			<ParallaxScroll images={images} />
-			<div className='outline w-1/2 h-50 grid grid-rows-1 grid-cols-2 md:grid-cols-1 gap-6 box-border'>
-				<div className='row-start-1 row-end-2 col-start-1 col-end-2 p-20 flex flex-col items-center justify-center '>
-					<video className='w-80 max-w-md' controls>
+		<div className='flex flex-col justify-center items-center mt-10'>
+			<div className='outline w-2/3 h-50 grid grid-rows-1 grid-cols-2 mq1050:grid-rows-2 mq1050:grid-cols-1 box-border'>
+				<div className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-center justify-center'>
+					<video className='w-80 max-w-md rounded-lg' controls>
 						<source src='/assets/playground_page/video2.mp4' type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
 				</div>
-				<div className='row-start-1 row-end-2 col-start-2 col-end-3 flex flex-col items-center justify-center p-20'>
-					<video className='w-80 max-w-md' controls>
+				<div className='row-start-1 row-end-2 col-start-2 col-end-3 mq1050:row-start-2 mq1050:col-start-1 flex flex-col items-center justify-center'>
+					<video className='w-80 max-w-md rounded-lg' controls>
 						<source src='/assets/playground_page/video1.mp4' type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
 				</div>
 			</div>
+			<ParallaxScroll images={images} />
 		</div>
 	);
 }
@@ -29,6 +29,7 @@ export default function ParallaxScrollBox() {
 const images = [
 	'/assets/playground_page/pic19.png',
 	'/assets/playground_page/pic27.png',
+	'/assets/playground_page/pic15.png',
 	'/assets/playground_page/pic.png',
 	'/assets/playground_page/pic1.png',
 	'/assets/playground_page/pic2.png',
@@ -37,26 +38,25 @@ const images = [
 	'/assets/playground_page/pic5.png',
 	'/assets/playground_page/pic6.png',
 	'/assets/playground_page/pic7.png',
-	'/assets/playground_page/pic8.png',
 	'/assets/playground_page/pic9.png',
 	'/assets/playground_page/pic11.png',
-	'/assets/playground_page/pic12.png',
 	'/assets/playground_page/pic13.png',
-	'/assets/playground_page/pic14.png',
-	'/assets/playground_page/pic15.png',
 	'/assets/playground_page/pic16.png',
 	'/assets/playground_page/pic17.png',
 	'/assets/playground_page/pic18.png',
-	'/assets/playground_page/pic21.png',
 	'/assets/playground_page/pic22.png',
 	'/assets/playground_page/pic23.png',
-	'/assets/playground_page/pic24.png',
 	'/assets/playground_page/pic25.png',
 	'/assets/playground_page/pic26.png',
 	'/assets/playground_page/pic28.png',
 	'/assets/playground_page/pic29.png',
 	'/assets/playground_page/pic30.png',
 	'/assets/playground_page/pic35.png',
+	'/assets/playground_page/pic14.png',
+	'/assets/playground_page/pic12.png',
+	'/assets/playground_page/pic24.png',
+	'/assets/playground_page/pic8.png',
+	'/assets/playground_page/pic21.png',
 ];
 
 export const ParallaxScroll = ({ images, className }) => {
@@ -78,11 +78,11 @@ export const ParallaxScroll = ({ images, className }) => {
 
 	return (
 		<div
-			className={cn('h-[70vw] items-start overflow-y-auto w-full', className)}
+			className={cn('h-[90vw] items-start overflow-y-auto w-full', className)}
 			ref={gridRef}
 		>
 			<div
-				className='grid grid-cols-3 md:grid-cols-1 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-40 px-10'
+				className='grid grid-cols-3 md:grid-cols-1 lg:grid-cols-3 items-start max-w-6xl mx-auto gap-16 py-40 px-10'
 				ref={gridRef}
 			>
 				<div className='grid gap-10'>
