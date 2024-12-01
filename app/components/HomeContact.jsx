@@ -1,6 +1,7 @@
-import Button from './Button';
 import Circle from './Circle';
 import Link from 'next/link';
+import MailMeButton from './MailMeButton';
+import CallMeButton from './CallMeButton';
 
 export default function HomeContact() {
 	return (
@@ -11,7 +12,7 @@ export default function HomeContact() {
 				</h1>
 			</div>
 			<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex justify-center items-end justify-self-center mq850:hidden'>
-				<Button>call me</Button>
+				<CallMeButton />
 			</div>
 
 			<div className='text-[1.25rem] mt-52 mb-8 row-start-2 row-end-3 col-start-2 col-end-7 flex flex-initial justify-center items-center'>
@@ -22,9 +23,8 @@ export default function HomeContact() {
 					>{`let's talk`}</Link>
 				</Circle>
 			</div>
-
 			<div className='row-start-2 row-end-3 col-start-7 col-end-8 flex justify-center items-end justify-self-center mq850:hidden'>
-				<Button>mail me</Button>
+				<MailMeButton />
 			</div>
 		</div>
 	);

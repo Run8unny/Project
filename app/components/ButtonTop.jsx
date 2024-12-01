@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import Button from './Button';
 
 const ButtonTop = ({ targetId, children }) => {
 	const handleButtonClick = useCallback(() => {
@@ -8,7 +9,7 @@ const ButtonTop = ({ targetId, children }) => {
 		}
 	}, [targetId]);
 
-	return <button onClick={handleButtonClick}>{children}</button>;
+	return <Button onClick={handleButtonClick}>{children}</Button>;
 };
 
 export default ButtonTop;
