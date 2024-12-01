@@ -16,7 +16,7 @@ export default function Page() {
 				<MenuItem href='./work'>work</MenuItem>
 			</SmallNav>
 			<div>
-				<div className='flex items-start justify-center text-[10rem] px-10 outline'>
+				<div className='flex items-start justify-center text-[10rem] px-10 outline xl:text-[9.8rem] lg:text-[8.5rem] mq1225:text-[7.5rem] mq1050:text-[6rem] mq850:text-[4.5rem] mq650:text-[3.8rem]'>
 					<h1 className='uppercase outline custom-font font-bold '>
 						PLAYGROUND
 					</h1>
