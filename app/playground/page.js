@@ -1,16 +1,17 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import SecondCursor from '../components/SecondCursor';
 import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
-// import LayoutGridPlayground from '../components/LayoutGridPlayground';
 import ParallaxScrollBox from '../components/ui/ParallaxScroll';
+import ButtonTop from '../components/ButtonTop';
 
 export default function Page() {
 	return (
-		<div className='w-full h-full text-center outline'>
+		<div
+			className='w-full h-full text-center outline'
+			data-scroll-to='top-of-page2'
+		>
 			<SmallNav>
 				<MenuItem href='/'>back</MenuItem>
 				<MenuItem href='./work'>work</MenuItem>
@@ -31,6 +32,7 @@ export default function Page() {
 					<FooterItem href='https://pl.pinterest.com/zanwardaszka/'>
 						pinterest
 					</FooterItem>
+					<ButtonTop targetId={'top-of-page2'}>↖︎top</ButtonTop>
 				</SmallFooter>
 			</div>
 			<SecondCursor />
