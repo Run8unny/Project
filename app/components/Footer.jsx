@@ -6,7 +6,7 @@ import FooterItem from './FooterItem';
 
 export default function Footer() {
 	return (
-		<div className='px-1 py-4 m-3 bg-transparent border-white border-t'>
+		<div className='px-1 py-5 m-3 bg-transparent border-white border-t'>
 			<ul className='flex flex-row justify-evenly items-center gap-1'>
 				<li className='mq850:hidden'>
 					<FooterDiv>

@@ -4,7 +4,7 @@ import { FlipWords } from './ui/FlipWords';
 const CTA = () => {
 	const words = ['CREATE', 'BUILD', 'HAVE FUN', 'WORK'];
 	return (
-		<div className='h-[45rem] flex flex-col justify-center items-center text-center text-[4.55rem] mq850:text-[3.55rem] relative z-20 mt-36'>
+		<div className='h-[45rem] flex flex-col justify-center items-center text-center text-[4rem] lg:text-[3.7rem] mq850:text-[3rem] relative z-20 mt-36'>
 			<div className='relative w-3/4'>
 				<h1 className='mt-3 custom-font'>
 					LET’S <FlipWords words={words} /> <br />
