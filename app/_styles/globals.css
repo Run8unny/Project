@@ -81,7 +81,7 @@ textarea.text-center::placeholder {
 }
 
 .outline {
-	outline: 5px solid rgba(166, 239, 242, 0.1);
+	outline: 5px solid rgba(93, 240, 215, 0.1);
 }
 .header {
 	writing-mode: vertical-lr;
