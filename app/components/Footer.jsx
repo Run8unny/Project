@@ -3,6 +3,7 @@ import FooterDiv from './FooterDiv';
 import SpanTextBig from './SpanTextBig';
 import SpanTextSmall from './SpanTextSmall';
 import FooterItem from './FooterItem';
+import ButtonTop from './ButtonTop';
 
 export default function Footer() {
 	return (
@@ -15,7 +16,7 @@ export default function Footer() {
 					</FooterDiv>
 				</li>
 				<li>
-					<Button>↖︎top</Button>
+					<ButtonTop targetId={'top-of-page'}>↖︎top</ButtonTop>
 				</li>
 				<li>
 					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
