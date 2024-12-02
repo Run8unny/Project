@@ -11,7 +11,7 @@ export default function Nav({ children }) {
 				<Logo />
 			</div>
 			<div className='flex-grow'>{children}</div>
-			<span className='text-[2rem] custom-font pr-4 hover:text-white mq850:hidden'>
+			<span className='text-[2rem] custom-font pr-5 hover:text-white mq850:hidden'>
 				<Link href='/contact'>{`let's talk`}</Link>
 			</span>
 		</div>

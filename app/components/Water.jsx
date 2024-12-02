@@ -11,8 +11,8 @@ import { OrbitControls } from '@react-three/drei';
 const WaterShaderMaterial = shaderMaterial(
 	{
 		uTime: 0,
-		uDepthColor: new THREE.Color('#e56815'),
-		uSurfaceColor: new THREE.Color('#454b4f'),
+		uDepthColor: new THREE.Color('#e57123'),
+		uSurfaceColor: new THREE.Color('#6f767a'),
 		uBigWavesElevation: 0.2,
 		uBigWavesFrequency: new THREE.Vector2(4.5, 1.5),
 		uBigWavesSpeed: 0.2,

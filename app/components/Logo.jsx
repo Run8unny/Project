@@ -8,8 +8,8 @@ export default function Logo() {
 			<Link href='/' className='flex flex-row'>
 				<div className='text-[40px] hover:text-orange-500 self-center'>
 					<Image
-						width={100}
-						height={80}
+						width={105}
+						height={90}
 						src={'/assets/home/logo1.svg'}
 						alt='logo sign'
 					/>
