@@ -21,7 +21,7 @@ module.exports = {
 				white: '#fff',
 				black: '#000',
 				darkgray: {
-					100: '#b9b3b3',
+					100: '#d6d7d7',
 					200: 'rgba(152, 148, 148, 0)',
 					300: 'rgba(152, 148, 148, 0.27)',
 				},
@@ -32,7 +32,8 @@ module.exports = {
 				},
 				silver: '#c5bfbf',
 				limegreen: '#34cb5e',
-				plum: '#270d27',
+				neongreen: '#b6ff00',
+				bgblack: '#242834',
 				darkslategray: {
 					100: '#333',
 					200: 'rgba(51, 51, 51, 0)',

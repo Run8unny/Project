@@ -4,6 +4,7 @@ import MenuItem from '../components/MenuItem';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
 import LayoutWork from '../components/LayoutWork';
+import ContactButton from '../components/ContactButton';
 
 export default function Page() {
 	return (
