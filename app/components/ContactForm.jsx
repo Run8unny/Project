@@ -1,4 +1,6 @@
 export default function ContactForm() {
+	const formStyle =
+		'border-2 rounded-full h-80 w-80 m-4 text-center p-10 placeholder-gray-800';
 	return (
 		<form
 			className='h-full w-full flex flex-wrap justify-center items-center m-4 text-black'
@@ -9,7 +11,7 @@ export default function ContactForm() {
 			</label>
 			<input
 				id='name'
-				className='border-2 rounded-full h-80 w-80 m-4 text-center p-10 placeholder-gray-800'
+				className={formStyle}
 				type='text'
 				placeholder='[ name ]'
 				required
@@ -20,7 +22,7 @@ export default function ContactForm() {
 			</label>
 			<input
 				id='email'
-				className='border-2 rounded-full h-80 w-80 m-4 text-center p-10 placeholder-gray-800'
+				className={formStyle}
 				type='email'
 				placeholder='[ e-mail ]'
 				required
