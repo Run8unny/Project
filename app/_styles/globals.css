@@ -87,3 +87,17 @@ textarea.text-center::placeholder {
 	writing-mode: vertical-lr;
 	text-orientation: upright;
 }
+
+.neon {
+	animation: animate 30s linear infinite;
+	text-shadow: 0 0 0.125em #298238, 0 0 0.45em #eb810e;
+}
+
+@keyframes animate {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
