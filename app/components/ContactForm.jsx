@@ -11,6 +11,7 @@ export default function ContactForm() {
 			</label>
 			<input
 				id='name'
+				name='userName'
 				className={formStyle}
 				type='text'
 				placeholder='[ name ]'
@@ -22,6 +23,7 @@ export default function ContactForm() {
 			</label>
 			<input
 				id='email'
+				name='userEmail'
 				className={formStyle}
 				type='email'
 				placeholder='[ e-mail ]'
@@ -33,6 +35,7 @@ export default function ContactForm() {
 			</label>
 			<textarea
 				id='message'
+				name='message'
 				className='border-2 rounded-full h-80 w-80 m-4 resize-none text-center pt-[140px] p-10 placeholder-gray-800'
 				placeholder='[ message ]'
 				required
