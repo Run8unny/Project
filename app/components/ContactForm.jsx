@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
 	const form = useRef();
+	const [isSent, setIsSent] = useState(false);
 	const [data, setData] = useState({
 		name: '',
 		email: '',
@@ -20,6 +21,12 @@ export default function ContactForm() {
 			.then(
 				() => {
 					console.log('SUCCESS!');
+					setIsSent(true);
+					setData({
+						name: '',
+						email: '',
+						message: '',
+					});
 				},
 				(error) => {
 					console.log('FAILED...', error.text);
@@ -46,6 +53,12 @@ export default function ContactForm() {
 				placeholder='[ name ]'
 				minLength={2}
 				value={data.name}
+				onChange={(e) => {
+					setData({
+						...data,
+						name: e.target.value,
+					});
+				}}
 				required
 			/>
 
@@ -60,6 +73,12 @@ export default function ContactForm() {
 				placeholder='[ e-mail ]'
 				required
 				value={data.email}
+				onChange={(e) => {
+					setData({
+						...data,
+						email: e.target.value,
+					});
+				}}
 				minLength={5}
 			/>
 
@@ -72,6 +91,12 @@ export default function ContactForm() {
 				className='border-2 rounded-full h-80 w-80 m-4 resize-none text-center pt-[140px] p-10 placeholder-gray-800 focus:outline-pink-900'
 				placeholder='[ message ]'
 				value={data.message}
+				onChange={(e) => {
+					setData({
+						...data,
+						message: e.target.value,
+					});
+				}}
 				required
 			></textarea>
 
@@ -81,7 +106,7 @@ export default function ContactForm() {
 				value='send'
 				aria-label='Send your message'
 			>
-				Send →
+				{isSent ? 'I’ve got your message! I’ll reply soon.' : 'Send →'}
 			</button>
 		</form>
 	);
