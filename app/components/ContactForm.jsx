@@ -1,22 +1,41 @@
 'use client';
 import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
 	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm('service_zbxdob6', 'template_gs7sgr4', form.current, {
+				publicKey: 'S15El92hTdxIZyS_N',
+			})
+			.then(
+				() => {
+					console.log('SUCCESS!');
+				},
+				(error) => {
+					console.log('FAILED...', error.text);
+				}
+			);
+	};
+
 	const formStyle =
 		'border-2 rounded-full h-80 w-80 m-4 text-center p-10 placeholder-gray-800 focus:outline-orange-600';
 	return (
 		<form
 			ref={form}
 			className='h-full w-full flex flex-wrap justify-center items-center m-4 text-black'
-			// onSubmit={(e) => e.preventDefault()}
+			onSubmit={sendEmail}
 		>
 			<label className='sr-only' htmlFor='name'>
 				Name
 			</label>
 			<input
 				id='name'
-				name='userName'
+				name='name'
 				className={formStyle}
 				type='text'
 				placeholder='[ name ]'
@@ -29,7 +48,7 @@ export default function ContactForm() {
 			</label>
 			<input
 				id='email'
-				name='userEmail'
+				name='email'
 				className={formStyle}
 				type='email'
 				placeholder='[ e-mail ]'
