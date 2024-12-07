@@ -7,7 +7,7 @@ export default function Nav({ children }) {
 			className='flex flex-row justify-between items-center gap-4 md:gap-10 px-4 py-5 mb-1 bg-transparent mq750:p-3'
 			data-scroll-to='top-of-page'
 		>
-			<div className='mb-2 md:mb-0 mq750:hidden'>
+			<div className='mb-2 md:mb-0 mq850:hidden'>
 				<Logo />
 			</div>
 			<div className='flex-grow'>{children}</div>
