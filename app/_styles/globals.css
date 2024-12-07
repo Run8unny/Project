@@ -93,6 +93,10 @@ textarea.text-center::placeholder {
 	text-shadow: 0 0 0.125em #298238, 0 0 0.45em #eb810e;
 }
 
+.button-neon {
+	box-shadow: inset 0 0 1.5em 0 #702459, 0 0 1.5em 0 #702459;
+}
+
 @keyframes animate {
 	from {
 		filter: hue-rotate(0deg);
