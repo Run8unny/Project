@@ -1,9 +1,15 @@
 'use client';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
 	const form = useRef();
+	const [isSent, setIsSent] = useState(false);
+	const [data, setData] = useState({
+		name: '',
+		email: '',
+		message: '',
+	});
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -15,6 +21,12 @@ export default function ContactForm() {
 			.then(
 				() => {
 					console.log('SUCCESS!');
+					setIsSent(true);
+					setData({
+						name: '',
+						email: '',
+						message: '',
+					});
 				},
 				(error) => {
 					console.log('FAILED...', error.text);
@@ -23,7 +35,7 @@ export default function ContactForm() {
 	};
 
 	const formStyle =
-		'border-2 rounded-full h-80 w-80 m-4 text-center p-10 placeholder-gray-800 focus:outline-orange-600';
+		'border-2 rounded-full h-80 w-80 m-4 text-center p-10 placeholder-gray-800 focus:outline-pink-900';
 	return (
 		<form
 			ref={form}
@@ -40,6 +52,13 @@ export default function ContactForm() {
 				type='text'
 				placeholder='[ name ]'
 				minLength={2}
+				value={data.name}
+				onChange={(e) => {
+					setData({
+						...data,
+						name: e.target.value,
+					});
+				}}
 				required
 			/>
 
@@ -53,6 +72,13 @@ export default function ContactForm() {
 				type='email'
 				placeholder='[ e-mail ]'
 				required
+				value={data.email}
+				onChange={(e) => {
+					setData({
+						...data,
+						email: e.target.value,
+					});
+				}}
 				minLength={5}
 			/>
 
@@ -62,18 +88,25 @@ export default function ContactForm() {
 			<textarea
 				id='message'
 				name='message'
-				className='border-2 rounded-full h-80 w-80 m-4 resize-none text-center pt-[140px] p-10 placeholder-gray-800 focus:outline-orange-600'
+				className='border-2 rounded-full h-80 w-80 m-4 resize-none text-center pt-[140px] p-10 placeholder-gray-800 focus:outline-pink-900'
 				placeholder='[ message ]'
+				value={data.message}
+				onChange={(e) => {
+					setData({
+						...data,
+						message: e.target.value,
+					});
+				}}
 				required
 			></textarea>
 
 			<button
-				className='border-2 border-solid cursor-pointer border-white rounded-full h-80 w-80 text-white text-2xl mx-4 hover:bg-orange-600 hover:border-0'
+				className='border-2 border-solid cursor-pointer border-white rounded-full h-80 w-80 text-white text-2xl mx-4 hover:bg-pink-900 hover:border-0'
 				type='submit'
 				value='send'
 				aria-label='Send your message'
 			>
-				Send →
+				{isSent ? 'I’ve got your message! I’ll reply soon.' : 'Send →'}
 			</button>
 		</form>
 	);

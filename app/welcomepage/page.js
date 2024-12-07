@@ -8,7 +8,7 @@ export default function Page() {
 			<div className='row-start-1 row-end-2 col-start-2 col-end-7 flex items-start justify-center'>
 				<span>[ WELCOME ]</span>
 			</div>
-			<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex flex-initial justify-start items-center w-[100px]'>
+			<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex flex-initial justify-start items-center w-[100px] mq850:hidden'>
 				<span>[ ŻANETA]</span>
 			</div>
 
@@ -21,7 +21,7 @@ export default function Page() {
 				</Circle>
 			</div>
 
-			<div className='row-start-2 row-end-3 col-start-7 col-end-8 flex justify-end items-center w-[125px] justify-self-end'>
+			<div className='row-start-2 row-end-3 col-start-7 col-end-8 flex justify-end items-center w-[125px] justify-self-end mq850:hidden'>
 				<span>[ WARDASZKA ]</span>
 			</div>
 			<div className='row-start-3 row-end-4 col-start-2 col-end-7 flex items-end justify-center'>
