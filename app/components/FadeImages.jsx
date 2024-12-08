@@ -5,11 +5,10 @@ import { useFrame } from '@react-three/fiber';
 import { useTexture, PresentationControls, Center } from '@react-three/drei';
 import { FadeImagesMaterial } from './FadeImagesMaterial';
 import { OrbitControls } from '@react-three/drei';
-import { Stage } from '@react-three/drei';
-import { EffectComposer, Pixelation } from '@react-three/postprocessing';
 
 export default function FadingImages() {
 	const ref = useRef();
+	const sunRef = useRef();
 	const [texture1, texture2, dispTexture] = useTexture([
 		'./assets/about_page/me1.png',
 		'./assets/about_page/about1.png',
@@ -26,7 +25,6 @@ export default function FadingImages() {
 	return (
 		<>
 			<OrbitControls minDistance={3} maxDistance={7} />
-			<Stage preset='rembrandt' intensity={1} environment='city' />
 			<Center>
 				<mesh
 					onPointerOver={(e) => setHover(true)}
