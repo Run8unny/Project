@@ -4,7 +4,6 @@ import MenuItem from '../components/MenuItem';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
 import LayoutWork from '../components/LayoutWork';
-import ContactButton from '../components/ContactButton';
 
 export default function Page() {
 	return (
@@ -15,7 +14,7 @@ export default function Page() {
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
 			<div className='flex items-start justify-center text-[10rem] px-10 outline xl:text-[9.8rem] lg:text-[8.5rem] mq1225:text-[7.5rem] mq1050:text-[6rem] mq850:text-[4.5rem] mq650:text-[3.8rem]'>
-				<h1 className='custom-font font-bold uppercase outline px-6 text-pink-900'>
+				<h1 className='custom-font font-bold uppercase outline px-6 text-pink-800 bg-black'>
 					WORK
 				</h1>
 			</div>

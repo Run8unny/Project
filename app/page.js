@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import SecondCursor from './components/SecondCursor';
 import Circle from './components/Circle';
+import { BackgroundGradientAnimation } from './components/ui/BackgroundGradientAnimation';
 
 export default function Page() {
 	return (
@@ -16,8 +17,10 @@ export default function Page() {
 				<Circle>
 					<Link
 						href='/home'
-						className='flex custom-font text-[2rem] justify-center items-center'
-					>{`ENTER`}</Link>
+						className='flex custom-font text-[2rem] justify-center items-center z-100'
+					>
+						{`enter`}
+					</Link>
 				</Circle>
 			</div>
 

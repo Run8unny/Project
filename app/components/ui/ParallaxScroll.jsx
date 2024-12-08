@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { cn } from '@/app/lib/utils';
+
 export default function ParallaxScrollBox() {
 	return (
 		<div className='flex flex-col justify-center items-center mt-10'>
@@ -21,6 +22,7 @@ export default function ParallaxScrollBox() {
 					</video>
 				</div>
 			</div>
+
 			<ParallaxScroll images={images} />
 		</div>
 	);

@@ -10,7 +10,7 @@ export default function FadingImages() {
 	const ref = useRef();
 	const sunRef = useRef();
 	const [texture1, texture2, dispTexture] = useTexture([
-		'./assets/about_page/me1.png',
+		'./assets/about_page/about.png',
 		'./assets/about_page/about1.png',
 		'./assets/about_page/displacement.jpg',
 	]);

@@ -7,6 +7,9 @@ const questrial = Questrial({ weight: '400', subsets: ['latin'] });
 export const metadata = {
 	title: 'ZanWardaszka',
 	description: 'Portfolio',
+	icons: {
+		icon: '/icons/zw_icon.svg',
+	},
 };
 
 export default function RootLayout({ children }) {
