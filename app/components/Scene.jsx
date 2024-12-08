@@ -18,7 +18,7 @@ export default function Scene({ children }) {
 					}}
 				>
 					<Suspense fallback={<Loader />}>
-						<ScrollControls damping={0.2} pages={3}>
+						<ScrollControls damping={1} pages={3}>
 							{children}
 						</ScrollControls>
 					</Suspense>
