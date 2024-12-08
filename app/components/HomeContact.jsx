@@ -7,7 +7,7 @@ export default function HomeContact() {
 	return (
 		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:h-svh relative overflow-hidden box-border leading-normal tracking-normal text-center text-[1rem] mq850:m-5 mq850:p-12 outline'>
 			<div className='row-start-1 row-end-2 col-start-1 col-end-8 flex items-start justify-center h-44 text-[8.35rem] outline'>
-				<h1 className='px-4 custom-font text-center text-[10rem] text-purple-300 xl:text-[8.8rem] lg:text-[7.5rem] mq1225:text-[6.5rem] mq1050:text-[5rem] mq850:text-[4.5rem] mq650:text-[3.8rem] outline'>
+				<h1 className='px-4 custom-font text-center text-[10rem] text_shadow xl:text-[8.8rem] lg:text-[7.5rem] mq1225:text-[6.5rem] mq1050:text-[5rem] mq850:text-[4.5rem] mq650:text-[3.8rem] outline'>
 					GET IN TOUCH
 				</h1>
 			</div>
