@@ -10,7 +10,7 @@ export default function Page() {
 	return (
 		<div className='w-full h-full text-center outline'>
 			<SmallNav>
-				<MenuItem href='/'>back</MenuItem>
+				<MenuItem href='./home'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
 			<ContactHeading />

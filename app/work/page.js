@@ -11,7 +11,7 @@ export default function Page() {
 		<div className='w-full text-center outline'>
 			<Cursor />
 			<SmallNav>
-				<MenuItem href='/'>back</MenuItem>
+				<MenuItem href='./home'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
 			<div className='flex items-start justify-center text-[10rem] px-10 outline xl:text-[9.8rem] lg:text-[8.5rem] mq1225:text-[7.5rem] mq1050:text-[6rem] mq850:text-[4.5rem] mq650:text-[3.8rem]'>
