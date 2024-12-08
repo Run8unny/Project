@@ -6,11 +6,7 @@ import Footer from './components/Footer';
 import Cursor from './components/Cursor';
 import { useState } from 'react';
 import NavMenu from './components/NavMenu';
-import CTA from './components/CTA';
-import Homefooter from './components/Homefooter';
-import ToggleThemeButton from './components/ToggleThemeButton';
 import HomeContact from './components/HomeContact';
-import Water from './components/Water';
 import Heading from './components/Heading';
 import EvervaultCardContainer from './components/ui/EvervaultCard';
 
@@ -32,14 +28,12 @@ export default function Home() {
 					<Heading>{`CREATIVE DEV`}</Heading>
 				</header>
 				<main className='w-auto outline'>
-					<Scene>
-						<Water />
-					</Scene>
+					<Scene></Scene>
 					{/* <Homefooter>
 						<ToggleThemeButton />
 					</Homefooter> */}
+					<EvervaultCardContainer />
 				</main>
-				<EvervaultCardContainer />
 			</div>
 			<HomeContact />
 			<Footer />
