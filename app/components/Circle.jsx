@@ -10,9 +10,9 @@ const Circle = ({ children }) => {
 				height: '40vw',
 				minWidth: '240px',
 				minHeight: '240px',
-				maxWidth: '320px',
-				maxHeight: '320px',
-				background: 'radial-gradient(circle, #050505 35%, #f86903 70%',
+				maxWidth: '270px',
+				maxHeight: '270px',
+				background: 'radial-gradient(circle, #050505 35%, #ffffff 70%',
 			}}
 		>
 			<div className={`absolute inset-0 flex items-center justify-center`}>
