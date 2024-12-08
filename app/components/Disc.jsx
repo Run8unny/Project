@@ -20,7 +20,7 @@ export default function Disc() {
 	useFrame(
 		() =>
 			(actions['Rotate'].time =
-				actions['Rotate'].getClip().duration * scroll.offset)
+				actions['Rotate'].getClip().duration * scroll.offset) / 4
 	);
 
 	return (
