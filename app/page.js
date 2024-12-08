@@ -9,6 +9,8 @@ import NavMenu from './components/NavMenu';
 import HomeContact from './components/HomeContact';
 import Heading from './components/Heading';
 import EvervaultCardContainer from './components/ui/EvervaultCard';
+import Water from './components/Water';
+import Disc from './components/Disc';
 
 const Scene = dynamic(() => import('./components/Scene'), { ssr: false });
 
@@ -28,7 +30,11 @@ export default function Home() {
 					<Heading>{`CREATIVE DEV`}</Heading>
 				</header>
 				<main className='w-auto outline'>
-					<Scene></Scene>
+					<Scene>
+						{' '}
+						<Water />
+						<Disc />
+					</Scene>
 					{/* <Homefooter>
 						<ToggleThemeButton />
 					</Homefooter> */}

@@ -3,8 +3,6 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useProgress, Html, ScrollControls } from '@react-three/drei';
-import Water from './Water';
-import Disc from './Disc';
 
 export default function Scene({ children }) {
 	return (
@@ -20,12 +18,9 @@ export default function Scene({ children }) {
 					}}
 				>
 					<Suspense fallback={<Loader />}>
-						<Water />
 						<ScrollControls damping={0.2} pages={3}>
-							<Disc />
+							{children}
 						</ScrollControls>
-
-						{children}
 					</Suspense>
 				</Canvas>
 			</div>
