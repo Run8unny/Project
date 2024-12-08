@@ -6,7 +6,7 @@ export default function Logo() {
 	return (
 		<div className={`pl-4`}>
 			<Link href='/' className='flex flex-row'>
-				<div className='text-[40px] hover:text-orange-500 self-center'>
+				<div className='text-[40px] hover:text-orange-500 self-center w-auto h-auto'>
 					<Image
 						width={105}
 						height={90}

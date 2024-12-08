@@ -6,13 +6,11 @@ import Footer from './components/Footer';
 import Cursor from './components/Cursor';
 import { useState } from 'react';
 import NavMenu from './components/NavMenu';
-import CTA from './components/CTA';
-import Homefooter from './components/Homefooter';
-import ToggleThemeButton from './components/ToggleThemeButton';
 import HomeContact from './components/HomeContact';
-import Water from './components/Water';
 import Heading from './components/Heading';
 import EvervaultCardContainer from './components/ui/EvervaultCard';
+import Water from './components/Water';
+import Disc from './components/Disc';
 
 const Scene = dynamic(() => import('./components/Scene'), { ssr: false });
 
@@ -33,13 +31,15 @@ export default function Home() {
 				</header>
 				<main className='w-auto outline'>
 					<Scene>
+						{' '}
 						<Water />
+						<Disc />
 					</Scene>
 					{/* <Homefooter>
 						<ToggleThemeButton />
 					</Homefooter> */}
+					<EvervaultCardContainer />
 				</main>
-				<EvervaultCardContainer />
 			</div>
 			<HomeContact />
 			<Footer />
