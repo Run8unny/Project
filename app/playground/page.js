@@ -13,7 +13,7 @@ export default function Page() {
 			data-scroll-to='top-of-page2'
 		>
 			<SmallNav>
-				<MenuItem href='/'>back</MenuItem>
+				<MenuItem href='./home'>back</MenuItem>
 				<MenuItem href='./work'>work</MenuItem>
 			</SmallNav>
 			<div>
