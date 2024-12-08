@@ -177,7 +177,7 @@ export default function Water() {
 				{/* <OrbitControls minDistance={2} maxDistance={15} /> */}
 				<PresentationControls rotation={[0, 1.5, -0.35]}>
 					<mesh
-						scale={[0.5, 0.5, 0.5]}
+						scale={[0.38, 0.38, 0.38]}
 						geometry={waterGeometry}
 						rotation-x={Math.PI * 0.4}
 					>

@@ -41,7 +41,7 @@ const Loader = () => {
 			<div
 				className={`inline-block [-webkit-text-stroke:1px_#f6f6f6] custom-font opacity-[1] text-[3vw] md:text-2vw]`}
 			>
-				{progress.toFixed(1)}%
+				{progress?.toFixed(1)}%
 			</div>
 		</Html>
 	);
