@@ -11,7 +11,7 @@ export default function CTA() {
 					TOGETHER. I’M NOT JUST AN EMPLOYEE. I TRULY AM IN YOUR TEAM.
 				</h1>
 
-				<div className='text-[1.4rem] text-left w-[26rem] h-[11.25rem] m-10 ml-auto pr-[20px] xs400:text-[1.2rem] xs400:h-[6rem] xs400:m-0'>
+				<div className='text-[1.4rem] text-left w-[26rem] h-[11.25rem] m-10 ml-auto pr-[20px] xs400:text-[1.2rem] xs400:h-[7rem] xs400:m-0'>
 					<p className='xs400:m-14 xs400:mb-0'>
 						I’m your partner in the project and a helping hand when you need
 						one. I always give my best to create something unique together.

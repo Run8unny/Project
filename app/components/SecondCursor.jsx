@@ -12,14 +12,16 @@ export default function SecondCursor() {
 
 	const lerp = (x, y, a) => x * (1 - a) + y * a;
 
-	const handleMouseMove = (e) => {
-		const { clientX, clientY } = e;
-		mouse.current = { x: clientX, y: clientY };
+	const handlePointerMove = (e) => {
+		const x = e.touches?.[0]?.clientX || e.clientX;
+		const y = e.touches?.[0]?.clientY || e.clientY;
 
-		const { x, y } = delayedMouse.current;
+		mouse.current = { x, y };
+
+		const { x: delayedX, y: delayedY } = delayedMouse.current;
 		delayedMouse.current = {
-			x: lerp(x, mouse.current.x, 0.08),
-			y: lerp(y, mouse.current.y, 0.08),
+			x: lerp(delayedX, mouse.current.x, 0.08),
+			y: lerp(delayedY, mouse.current.y, 0.08),
 		};
 
 		moveCircle(delayedMouse.current.x, delayedMouse.current.y);
@@ -32,10 +34,12 @@ export default function SecondCursor() {
 	};
 
 	useEffect(() => {
-		window.addEventListener('mousemove', handleMouseMove);
+		window.addEventListener('mousemove', handlePointerMove);
+		window.addEventListener('touchmove', handlePointerMove);
 
 		return () => {
-			window.removeEventListener('mousemove', handleMouseMove);
+			window.removeEventListener('mousemove', handlePointerMove);
+			window.removeEventListener('touchmove', handlePointerMove);
 		};
 	}, []);
 
