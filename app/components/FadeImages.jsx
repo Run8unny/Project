@@ -2,7 +2,7 @@
 import * as THREE from 'three';
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { useTexture, PresentationControls, Center } from '@react-three/drei';
+import { useTexture, Center } from '@react-three/drei';
 import { FadeImagesMaterial } from './FadeImagesMaterial';
 import { OrbitControls } from '@react-three/drei';
 
