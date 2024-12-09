@@ -11,7 +11,7 @@ export default function Page() {
 		<div className='w-full text-center'>
 			<Cursor />
 			<SmallNav>
-				<MenuItem href='/'>back</MenuItem>
+				<MenuItem href='/home'>back</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
 			<Scene>
