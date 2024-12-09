@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const MailMeButton = () => {
+export default function MailMeButton() {
 	const email = 'zaneta.wardaszka@gmail.com';
 	const subject = 'Hello!';
 	const body = 'I wanted to get in touch with you.';
@@ -15,6 +15,4 @@ const MailMeButton = () => {
 			<Button>mail me</Button>
 		</a>
 	);
-};
-
-export default MailMeButton;
+}

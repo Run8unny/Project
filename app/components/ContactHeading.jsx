@@ -2,16 +2,16 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
-const ContactHeading = () => {
+export default function ContactHeading() {
 	return (
 		<motion.div
-			initial={{ x: '-100%' }} // Start off-screen on the left
-			animate={{ x: '100%' }} // Move to off-screen on the right
+			initial={{ x: '-100%' }}
+			animate={{ x: '100%' }}
 			transition={{
-				repeat: Infinity, // Infinite looping
-				repeatType: 'loop', // Loop back to the start
-				duration: 40, // Time to complete the animation
-				ease: 'linear', // Smooth constant motion
+				repeat: Infinity,
+				repeatType: 'loop',
+				duration: 40,
+				ease: 'linear',
 			}}
 			style={{
 				position: 'absolute',
@@ -28,10 +28,8 @@ const ContactHeading = () => {
 			</div>
 		</motion.div>
 	);
-};
+}
 
 ContactHeading.propTypes = {
 	className: PropTypes.string,
 };
-
-export default ContactHeading;

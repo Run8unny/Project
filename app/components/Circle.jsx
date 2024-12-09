@@ -1,7 +1,7 @@
 'use client';
 import PropTypes from 'prop-types';
 
-const Circle = ({ children }) => {
+export default function Circle({ children }) {
 	return (
 		<div
 			className={`rounded-full aspect-square box-border max-w-full max-h-full overflow-hidden leading-[normal] tracking-[normal] relative`}
@@ -20,11 +20,9 @@ const Circle = ({ children }) => {
 			</div>
 		</div>
 	);
-};
+}
 
 Circle.propTypes = {
 	className: PropTypes.string,
 	children: PropTypes.node,
 };
-
-export default Circle;

@@ -1,7 +1,7 @@
 import React from 'react';
-import { FlipWords } from './ui/FlipWords';
+import FlipWords from './ui/FlipWords';
 
-const CTA = () => {
+export default function CTA() {
 	const words = ['CREATE', 'BUILD', 'HAVE FUN', 'WORK'];
 	return (
 		<div className='h-[45rem] flex flex-col justify-center items-center text-center text-[4rem] lg:text-[3.7rem] mq850:text-[3rem] relative z-20 mt-36'>
@@ -20,6 +20,4 @@ const CTA = () => {
 			</div>
 		</div>
 	);
-};
-
-export default CTA;
+}
