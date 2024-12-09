@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import SecondCursor from './components/SecondCursor';
 import Circle from './components/Circle';
-import { BackgroundGradientAnimation } from './components/ui/BackgroundGradientAnimation';
 
 export default function Page() {
 	return (
