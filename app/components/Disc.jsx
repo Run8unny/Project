@@ -11,7 +11,6 @@ export default function Disc() {
 		'./assets/home/disc1.glb'
 	);
 	const { actions, clips } = useAnimations(animations, scene);
-	console.log(actions);
 	const scroll = useScroll();
 
 	useEffect(() => {
