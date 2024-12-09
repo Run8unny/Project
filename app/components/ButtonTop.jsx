@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 import Button from './Button';
 
-const ButtonTop = ({ targetId, children }) => {
+export default function ButtonTop({ targetId, children }) {
 	const handleButtonClick = useCallback(() => {
 		const anchor = document.querySelector(`[data-scroll-to='${targetId}']`);
 		if (anchor) {
@@ -11,6 +11,4 @@ const ButtonTop = ({ targetId, children }) => {
 	}, [targetId]);
 
 	return <Button onClick={handleButtonClick}>{children}</Button>;
-};
-
-export default ButtonTop;
+}

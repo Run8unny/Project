@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const CallMeButton = () => {
+export default function CallMeButton() {
 	const phoneNumber = '+48517452020';
 
 	return (
@@ -9,6 +9,4 @@ const CallMeButton = () => {
 			<Button>call me</Button>
 		</a>
 	);
-};
-
-export default CallMeButton;
+}

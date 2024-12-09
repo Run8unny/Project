@@ -1,4 +1,3 @@
-import Button from './Button';
 import FooterDiv from './FooterDiv';
 import SpanTextBig from './SpanTextBig';
 import SpanTextSmall from './SpanTextSmall';

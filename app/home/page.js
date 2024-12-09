@@ -1,10 +1,10 @@
 'use client';
 
-import Nav from '../components/Nav';
 import dynamic from 'next/dynamic';
+import { useState } from 'react';
+import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Cursor from '../components/Cursor';
-import { useState } from 'react';
 import NavMenu from '../components/NavMenu';
 import HomeContact from '../components/HomeContact';
 import Heading from '../components/Heading';
