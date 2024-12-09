@@ -4,7 +4,7 @@ export default function Button({ onClick, children }) {
 	return (
 		<button
 			onClick={onClick}
-			className='w-full px-4 rounded-[25px] border-[1px] border-white border-solid box-border h-[2.35rem] hover:text-black hover:bg-white'
+			className='w-full px-4 rounded-[25px] border-[1px] border-white border-solid box-border h-[2.3rem] hover:text-black hover:bg-white'
 		>
 			{children}
 		</button>
