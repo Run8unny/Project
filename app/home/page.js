@@ -17,26 +17,26 @@ const Scene = dynamic(() => import('../components/Scene'), { ssr: false });
 export default function Home() {
 	const [isHovered, setIsHovered] = useState(false);
 	return (
-		<div>
+		<div className='felx flex-col justify-center items-center w-full'>
 			<Cursor isHovered={isHovered} />
 			<div
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => setIsHovered(false)}
 			>
-				<header className='h-18'>
+				<header className='h-50'>
 					<Nav>
 						<NavMenu />
 					</Nav>
 					<Heading>{`CREATIVE DEV`}</Heading>
 				</header>
-				<main className='w-auto outline felx just items-center xs400:p-0 xs400:m-0 xs400:w-fit'>
+				<main>
 					<Scene>
 						<Water />
 						<Disc />
 					</Scene>
-					<EvervaultCardContainer />
 				</main>
 			</div>
+			<EvervaultCardContainer />
 			<HomeContact />
 			<Footer />
 		</div>

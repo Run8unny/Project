@@ -6,24 +6,22 @@ import { useProgress, Html, ScrollControls } from '@react-three/drei';
 
 export default function Scene({ children }) {
 	return (
-		<div className='flex items-center justify-center h-full w-screen outline'>
-			<div className='p-3 mb-5 relative w-[85vw] h-[85vh] md:w-2/3 md:h-2/3 outline'>
-				<Canvas
-					gl={{ antialias: true }}
-					camera={{
-						fov: 8,
-						near: 0.3,
-						far: 50,
-						position: [1, 3, 3],
-					}}
-				>
-					<Suspense fallback={<Loader />}>
-						<ScrollControls damping={1} pages={3}>
-							{children}
-						</ScrollControls>
-					</Suspense>
-				</Canvas>
-			</div>
+		<div className='w-screen h-screen flex flex-col justify-center items-center px-4 py-5 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0'>
+			<Canvas
+				gl={{ antialias: true }}
+				camera={{
+					fov: 8,
+					near: 0.3,
+					far: 50,
+					position: [1, 3, 3],
+				}}
+			>
+				<Suspense fallback={<Loader />}>
+					<ScrollControls damping={1} pages={3}>
+						{children}
+					</ScrollControls>
+				</Suspense>
+			</Canvas>
 		</div>
 	);
 }

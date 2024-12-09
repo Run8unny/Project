@@ -5,18 +5,17 @@ import gsap from 'gsap';
 export default function Cursor({ isHovered }) {
 	const size = isHovered ? 80 : 160;
 	const circle = useRef();
-	const mouse = useRef({
+	const pointer = useRef({
 		x: 0,
 		y: 0,
 	});
 
-	function handleMouseMove(e) {
-		const { clientX, clientY } = e;
-		mouse.current = {
-			x: clientX,
-			y: clientY,
-		};
-		moveCircle(mouse.current.x, mouse.current.y);
+	function handlePointerMove(e) {
+		const x = e.touches?.[0]?.clientX || e.clientX;
+		const y = e.touches?.[0]?.clientY || e.clientY;
+
+		pointer.current = { x, y };
+		moveCircle(pointer.current.x, pointer.current.y);
 	}
 
 	function moveCircle(x, y) {
@@ -24,9 +23,13 @@ export default function Cursor({ isHovered }) {
 	}
 
 	useEffect(() => {
-		window.addEventListener('mousemove', handleMouseMove);
+		window.addEventListener('mousemove', handlePointerMove);
+		window.addEventListener('touchmove', handlePointerMove);
 
-		return () => window.removeEventListener('mousemove', handleMouseMove);
+		return () => {
+			window.removeEventListener('mousemove', handlePointerMove);
+			window.removeEventListener('touchmove', handlePointerMove);
+		};
 	}, []);
 
 	return (
