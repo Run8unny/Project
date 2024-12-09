@@ -31,13 +31,9 @@ export default function Home() {
 				</header>
 				<main className='w-auto outline'>
 					<Scene>
-						{' '}
 						<Water />
 						<Disc />
 					</Scene>
-					{/* <Homefooter>
-						<ToggleThemeButton />
-					</Homefooter> */}
 					<EvervaultCardContainer />
 				</main>
 			</div>
