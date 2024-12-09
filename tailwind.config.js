@@ -20,20 +20,10 @@ module.exports = {
 			colors: {
 				white: '#fff',
 				black: '#000',
-				darkgray: {
-					100: '#d6d7d7',
-					200: 'rgba(152, 148, 148, 0)',
-					300: 'rgba(152, 148, 148, 0.27)',
-				},
-				gray: {
-					100: '#080808',
-					200: 'rgba(255, 255, 255, 0)',
-					300: 'rgba(0, 0, 0, 0)',
-				},
+				darkgray: 'rgba(152, 148, 148, 0.27)',
 				silver: '#c5bfbf',
 				limegreen: '#34cb5e',
 				neongreen: '#b6ff00',
-				bgblack: '#242834',
 				darkslategray: {
 					100: '#333',
 					200: 'rgba(51, 51, 51, 0)',
@@ -132,6 +122,9 @@ module.exports = {
 			},
 			mq650: {
 				raw: 'screen and (max-width: 650px)',
+			},
+			xs400: {
+				max: '400px',
 			},
 		},
 	},
