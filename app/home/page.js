@@ -29,7 +29,7 @@ export default function Home() {
 					</Nav>
 					<Heading>{`CREATIVE DEV`}</Heading>
 				</header>
-				<main className='w-auto outline'>
+				<main className='w-auto outline felx just items-center xs400:p-0 xs400:m-0 xs400:w-fit'>
 					<Scene>
 						<Water />
 						<Disc />

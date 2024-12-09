@@ -6,8 +6,8 @@ import ButtonTop from './ButtonTop';
 
 export default function Footer() {
 	return (
-		<div className='px-1 py-5 m-3 bg-transparent border-white border-t'>
-			<ul className='flex flex-row justify-evenly items-center gap-1'>
+		<div className='px-1 py-5 m-3 bg-transparent felx justify-center items-center border-white border-t xs400:w-fit xs400:p-0 xs400:m-3'>
+			<ul className='flex flex-row justify-evenly items-center gap-1 xs400:w-fit xs400:p-0 xs400:m-3 xs400:gap-2'>
 				<li className='mq850:hidden'>
 					<FooterDiv>
 						<SpanTextSmall>[ Copyrights ]</SpanTextSmall>
