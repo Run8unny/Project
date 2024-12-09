@@ -24,7 +24,16 @@ export default function FadingImages() {
 	});
 	return (
 		<>
-			<OrbitControls minDistance={3} maxDistance={7} />
+			<OrbitControls
+				minDistance={3}
+				maxDistance={7}
+				enablePan={true}
+				enableZoom={true}
+				enableRotate={true}
+				zoomSpeed={0.5}
+				panSpeed={0.5}
+				rotateSpeed={0.5}
+			/>
 			<Center>
 				<mesh
 					onPointerOver={(e) => setHover(true)}
