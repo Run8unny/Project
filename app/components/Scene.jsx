@@ -26,7 +26,7 @@ export default function Scene({ children }) {
 	);
 }
 
-const Loader = () => {
+export const Loader = () => {
 	const { progress, active } = useProgress;
 
 	return (

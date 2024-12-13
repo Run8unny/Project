@@ -1,13 +1,10 @@
-import Scene from '../components/Scene';
+import SceneTwo from '../components/SceneTwo';
 import FadingImages from '../components/FadeImages';
 import MenuItem from '../components/MenuItem';
 import SmallNav from '../components/SmallNav';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
 import Cursor from '../components/Cursor';
-import Nav from '../components/Nav';
-import NavMenu from '../components/NavMenu';
-import Footer from '../components/Footer';
 
 export default function Page() {
 	return (
@@ -18,10 +15,10 @@ export default function Page() {
 					<MenuItem href='./home'>back</MenuItem>
 					<MenuItem href='./playground'>playground</MenuItem>
 				</SmallNav>
-				<main className='w-screen'>
-					<Scene>
+				<main>
+					<SceneTwo>
 						<FadingImages />
-					</Scene>
+					</SceneTwo>
 				</main>
 			</div>
 			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>

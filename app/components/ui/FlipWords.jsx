@@ -49,7 +49,7 @@ export default function FlipWords({ words, duration = 3000, className }) {
 					position: 'absolute',
 				}}
 				className={cn(
-					'z-10 inline-block relative text-left text-pink-800 px-2 font-bold',
+					'z-10 inline-block relative text-left px-2 font-bold',
 					className
 				)}
 				key={currentWord}
