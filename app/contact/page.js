@@ -1,4 +1,4 @@
-import SecondCursor from '../components/SecondCursor';
+import Cursor from '../components/Cursor';
 import ContactForm from '../components/ContactForm';
 import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
@@ -9,7 +9,7 @@ import FooterItem from '../components/FooterItem';
 export default function Page() {
 	return (
 		<div className='felx flex-col justify-center items-center w-full'>
-			<SecondCursor />
+			<Cursor />
 			<div>
 				<SmallNav>
 					<MenuItem href='./home'>back</MenuItem>

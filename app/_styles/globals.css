@@ -81,7 +81,7 @@ textarea.text-center::placeholder {
 }
 
 .outline {
-	outline: 3px solid rgba(149, 239, 207, 0.15);
+	outline: 3px solid rgba(255, 255, 255, 0.15);
 }
 .header {
 	writing-mode: vertical-lr;
@@ -110,12 +110,12 @@ textarea.text-center::placeholder {
 }
 
 .shadow_two {
-	background-color: #97266d;
+	background-color: #ffffff;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
 	color: transparent;
-	text-shadow: #97266d 0px 3px 3px;
+	text-shadow: #ffffff 0px 3px 3px;
 }
 
 .text_shadow {

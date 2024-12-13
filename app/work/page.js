@@ -14,12 +14,12 @@ export default function Page() {
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
 			<div className='flex items-start justify-center px-10 outline text-[11rem] xl:text-[9.8rem] lg:text-[8.5rem] mq1225:text-[8rem] mq1050:text-[7.5rem] mq850:text-[5.5rem] mq650:text-[3rem] xs400:text-[2.8rem] text_shadow xs400:p-0 xs400:m-3'>
-				<h1 className='w-full custom-font font-bold uppercase outline px-6 bg-black shadow_two'>
+				<h1 className='w-full custom-font font-bold uppercase px-6 bg-black shadow_two'>
 					WORK
 				</h1>
 			</div>
 			<LayoutWork />
-			<div className='w-full flex flex-row justify-between items-center mt-7 outline'>
+			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>
 				<SmallFooter>
 					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
 					<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
