@@ -18,13 +18,13 @@ export default function Page() {
 					<MenuItem href='./home'>back</MenuItem>
 					<MenuItem href='./playground'>playground</MenuItem>
 				</SmallNav>
-				<main>
+				<main className='w-screen'>
 					<Scene>
 						<FadingImages />
 					</Scene>
 				</main>
 			</div>
-			<div className='w-full flex flex-row justify-between items-center mt-7 outline'>
+			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>
 				<SmallFooter>
 					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
 					<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
