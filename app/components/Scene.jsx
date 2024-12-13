@@ -6,14 +6,14 @@ import { useProgress, Html, ScrollControls } from '@react-three/drei';
 
 export default function Scene({ children }) {
 	return (
-		<div className='w-screen h-screen flex flex-col justify-center items-center px-4 py-5 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0'>
+		<div className='w-full h-screen flex flex-col justify-center items-center px-4 py-5 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0'>
 			<Canvas
 				gl={{ antialias: true }}
 				camera={{
 					fov: 8,
 					near: 0.3,
 					far: 50,
-					position: [1, 3, 3],
+					position: [1, 3, 3.5],
 				}}
 			>
 				<Suspense fallback={<Loader />}>
@@ -26,7 +26,7 @@ export default function Scene({ children }) {
 	);
 }
 
-const Loader = () => {
+export const Loader = () => {
 	const { progress, active } = useProgress;
 
 	return (

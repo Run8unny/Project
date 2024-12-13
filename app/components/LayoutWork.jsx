@@ -1,18 +1,18 @@
 import Image from 'next/image';
 export default function LayoutWork() {
 	return (
-		<div className='w-full h-full flex flex-wrap gap-10 text-[15px] items-center justify-center relative overflow-hidden box-border leading-normal mt-6 tracking-normal outline mq850:inline-block'>
+		<div className='w-full h-full flex flex-wrap gap-10 text-[15px] items-center justify-center relative overflow-hidden box-border leading-normal mt-6 tracking-normal mq850:inline-block'>
 			<SkeletonOne />
 			<SkeletonTwo />
 			<SkeletonThree />
-			<SkeletonFour />
+			{/* <SkeletonFour /> */}
 		</div>
 	);
 }
 
 const SkeletonOne = () => {
 	return (
-		<div className='flex flex-col justify-center items-center outline'>
+		<div className='flex flex-col justify-center items-center p-10'>
 			<Image
 				width={600}
 				height={400}
@@ -33,7 +33,7 @@ const SkeletonOne = () => {
 
 const SkeletonThree = () => {
 	return (
-		<div className='flex flex-col justify-center items-center outline'>
+		<div className='flex flex-col justify-center items-center p-10'>
 			<Image
 				width={600}
 				height={400}
@@ -52,7 +52,7 @@ const SkeletonThree = () => {
 };
 const SkeletonTwo = () => {
 	return (
-		<div className='flex flex-col justify-center items-center outline'>
+		<div className='flex flex-col justify-center items-center p-10'>
 			<Image
 				width={600}
 				height={400}
@@ -70,21 +70,21 @@ const SkeletonTwo = () => {
 		</div>
 	);
 };
-const SkeletonFour = () => {
-	return (
-		<div className='flex flex-col justify-center items-center outline'>
-			<Image
-				width={600}
-				height={400}
-				src={'/assets/work_page/shader.png'}
-				alt='website'
-				className='rounded-lg'
-			/>
-			<p className='font-normal text-[0.9rem] my-4 max-w-lg mq850:hidden'>
-				[ A gallery built with React Three Fiber and WebGL, featuring custom
-				shaders. Coming soon. Check PLAYGROUND.]
-			</p>
-			{/* <p className='uppercase'>TBC</p> */}
-		</div>
-	);
-};
+// const SkeletonFour = () => {
+// 	return (
+// 		<div className='flex flex-col justify-center items-center p-10'>
+// 			<Image
+// 				width={600}
+// 				height={400}
+// 				src={'/assets/work_page/shader.png'}
+// 				alt='website'
+// 				className='rounded-lg'
+// 			/>
+// 			<p className='font-normal text-[0.9rem] my-4 max-w-lg mq850:hidden'>
+// 				[ A gallery built with React Three Fiber and WebGL, featuring custom
+// 				shaders. Coming soon. Check PLAYGROUND.]
+// 			</p>
+// 			{/* <p className='uppercase'>TBC</p> */}
+// 		</div>
+// 	);
+// };
