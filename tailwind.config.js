@@ -1,11 +1,11 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 const svgToDataUri = require('mini-svg-data-uri');
 
 const colors = require('tailwindcss/colors');
 const {
 	default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette');
+
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 
@@ -17,20 +17,12 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			colors: {
-				white: '#fff',
-				black: '#000',
-				darkgray: 'rgba(152, 148, 148, 0.27)',
-				silver: '#c5bfbf',
-				limegreen: '#34cb5e',
-				neongreen: '#b6ff00',
-				darkslategray: {
-					100: '#333',
-					200: 'rgba(51, 51, 51, 0)',
-				},
-			},
 			spacing: {},
-			fontFamily: {},
+			fontFamily: {
+				cotham: ['var(--font-cotham)', 'sans-serif'],
+				cooper: ['var(--font-cooper)', 'sans-serif'],
+				cooper: ['var(--font-outward)', 'sans-serif'],
+			},
 			borderRadius: {
 				'481xl': '500px',
 				'6xl': '25px',
@@ -80,10 +72,11 @@ module.exports = {
 			},
 		},
 		fontSize: {
+			xxs: '0.618rem',
 			xs: ['1rem', { lineHeight: '1.5rem' }],
 			sm: ['1.618rem', { lineHeight: '2.427rem' }],
 			base: ['2.617rem', { lineHeight: '3.925rem' }],
-			lg: ['4.235rem', { lineHeight: '6.325rem' }],
+			lg: '4.235rem',
 			xl: '11.089rem',
 			'2xl': '17.942rem',
 			'3xl': '29.030rem',

@@ -13,7 +13,9 @@ export default function Page() {
 			<div>
 				<SmallNav>
 					<MenuItem href='./home'>back</MenuItem>
+					<MenuItem href='./contact'>contact</MenuItem>
 					<MenuItem href='./playground'>playground</MenuItem>
+					<MenuItem href='./work'>work</MenuItem>
 				</SmallNav>
 				<main>
 					<SceneTwo>

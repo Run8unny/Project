@@ -8,7 +8,6 @@ import { OrbitControls } from '@react-three/drei';
 
 export default function FadingImages() {
 	const ref = useRef();
-	const sunRef = useRef();
 	const [texture1, texture2, dispTexture] = useTexture([
 		'./assets/about_page/about.png',
 		'./assets/about_page/about1.png',
@@ -26,18 +25,18 @@ export default function FadingImages() {
 		<>
 			<OrbitControls
 				minDistance={3}
-				maxDistance={7}
+				maxDistance={10}
 				enablePan={true}
 				enableZoom={true}
 				enableRotate={true}
 				zoomSpeed={0.5}
 				panSpeed={0.5}
-				rotateSpeed={0.5}
+				rotateSpeed={0.3}
 			/>
 			<Center>
 				<mesh
 					onPointerOver={(e) => setHover(true)}
-					onPointerOut={(e) => setHover(false)}
+					onClick={(e) => setHover(false)}
 				>
 					<planeGeometry />
 					<fadeImagesMaterial

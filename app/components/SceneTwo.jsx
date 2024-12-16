@@ -7,7 +7,7 @@ import { Loader } from './Scene';
 
 export default function SceneTwo({ children }) {
 	return (
-		<div className='w-screen h-screen flex flex-col justify-center items-center px-4 py-5 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0'>
+		<div className='w-screen h-screen flex flex-col justify-center items-center px-4 py-5 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0 md:w-full'>
 			<Canvas
 				gl={{ antialias: true }}
 				camera={{
