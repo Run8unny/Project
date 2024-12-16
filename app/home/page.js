@@ -11,6 +11,7 @@ import Heading from '../components/Heading';
 import EvervaultCardContainer from '../components/ui/EvervaultCard';
 import Water from '../components/Water';
 import Disc from '../components/Disc';
+import MenuItem from '../components/MenuItem';
 
 const Scene = dynamic(() => import('../components/Scene'), { ssr: false });
 
@@ -25,9 +26,14 @@ export default function Home() {
 			>
 				<header className='h-50'>
 					<Nav>
-						<NavMenu />
+						<NavMenu>
+							<MenuItem href='/about'>about</MenuItem>
+							<MenuItem href='./playground'>playground</MenuItem>
+							<MenuItem href='./contact'>contact</MenuItem>
+							<MenuItem href='./work'>work</MenuItem>
+						</NavMenu>
 					</Nav>
-					<Heading>{`CREATIVE DEV`}</Heading>
+					<Heading>CREATIVE DEVELOPER</Heading>
 				</header>
 				<main>
 					<Scene>

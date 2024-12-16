@@ -7,16 +7,16 @@ import LayoutWork from '../components/LayoutWork';
 
 export default function Page() {
 	return (
-		<div className='w-full text-center outline'>
+		<div className='felx flex-col justify-center items-center w-full'>
 			<Cursor />
 			<SmallNav>
 				<MenuItem href='./home'>back</MenuItem>
+				<MenuItem href='./about'>about</MenuItem>
+				<MenuItem href='./contact'>contact</MenuItem>
 				<MenuItem href='./playground'>playground</MenuItem>
 			</SmallNav>
-			<div className='flex items-start justify-center px-10 outline text-[11rem] xl:text-[9.8rem] lg:text-[8.5rem] mq1225:text-[8rem] mq1050:text-[7.5rem] mq850:text-[5.5rem] mq650:text-[3rem] xs400:text-[2.8rem] text_shadow xs400:p-0 xs400:m-3'>
-				<h1 className='w-full custom-font font-bold uppercase px-6 bg-black shadow_two'>
-					WORK
-				</h1>
+			<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-2xl xl:text-2xl lg:text-2xl mq1225:text-2xl mq1050:text-2xl mq850:text-xl mq650:text-[6.5] xs400:text-[5.5rem] xs400:p-0 xs400:m-3 min-w-3.5'>
+				<h1 className='uppercase mt-6'>WORK</h1>
 			</div>
 			<LayoutWork />
 			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>
