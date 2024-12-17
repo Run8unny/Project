@@ -8,7 +8,7 @@ import Cursor from '../components/Cursor';
 
 export default function Page() {
 	return (
-		<div className='felx flex-col justify-center items-center w-full'>
+		<div className='felx flex-col justify-center items-center w-full cursor-pointer'>
 			<Cursor />
 			<div>
 				<SmallNav>

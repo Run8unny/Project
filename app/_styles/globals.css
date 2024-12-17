@@ -107,9 +107,29 @@ body {
 	overflow-x: hidden;
 }
 
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 90%; /* Scale fonts down */
 	}
 }
 
@@ -149,24 +169,6 @@ textarea.text-center::placeholder {
 .header {
 	writing-mode: vertical-lr;
 	text-orientation: upright;
-}
-
-.shadow_two {
-	background-color: #ffffff;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	text-shadow: #ffffff 0px 3px 3px;
-}
-
-.text_shadow {
-	background-color: #d55b0f;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	text-shadow: rgba(216, 92, 21, 0.821) 0px 3px 3px;
 }
 
 @keyframes animate {
