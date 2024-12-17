@@ -8,7 +8,7 @@ export default function Circle({ children }) {
                 rounded-full aspect-square box-border 
                 overflow-hidden leading-normal tracking-normal 
                 relative flex items-center justify-center 
-                w-[50vw] h-[50vw] min-w-[80px] min-h-[80px] 
+                w-[50vw] h-[50vw] min-w-[60px] min-h-[60px] 
                 max-w-[180px] max-h-[180px]
                 bg-[radial-gradient(circle,_#050505_40%,_#ffffff_70%)]
             `}

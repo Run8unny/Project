@@ -11,16 +11,16 @@ export default function CTA() {
 		<div
 			className={`
                 flex flex-col justify-center items-center text-left
-                text-[6rem] lg:text-[5rem] mq850:text-[4rem] mq850:w-full relative z-20 mt-20 
+                text-[6rem] lg:text-[5rem] md:text-[4rem] mq850:w-full relative z-20 mt-32 
                 xs400:text-[4rem] xs400:p-0 xs400:my-20 xs400:w-full
             `}
 		>
-			<div className='relative w-full md:w-7/12'>
+			<div className='relative w-full md:w-8/12 mq1050:w-8/12'>
 				<h1 className='mt-3'>
 					LET’S{' '}
 					<span aria-live='polite'>
 						<FlipWords words={words} />
-					</span>{' '}
+					</span>
 					TOGETHER. <br /> I’M NOT JUST AN EMPLOYEE. <br /> I TRULY AM IN YOUR
 					TEAM.
 				</h1>
@@ -28,7 +28,7 @@ export default function CTA() {
 				<div
 					className={`
                         text-[1.5rem] text-left w-[30rem] h-[11.25rem] m-10 ml-auto pr-[20px]
-                        xs400:text-[1.2rem] xs400:h-[7rem] xs400:m-0 xs400:w-10/12
+                        xs400:text-[1.2rem] xs400:h-[7rem] xs400:m-0 xs400:w-10/12 md:hidden
                     `}
 				>
 					<p className='xs400:m-14 xs400:mb-0'>{subText}</p>
