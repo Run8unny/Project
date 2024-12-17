@@ -21,7 +21,7 @@ export default function ContactHeading() {
 					whiteSpace: 'nowrap',
 				}}
 			>
-				<h1 className='w-auto uppercase flex justify-center items-center max-w-full text-[10rem] custom-font text-white xs400:text-[5.5rem]'>
+				<h1 className='w-auto uppercase font-bold flex justify-center items-center max-w-full text-[10rem] custom-font text-white xs400:text-[5.5rem]'>
 					* Let’s CHAT * MAIL ME * leave a msg * CALL ME * LET’S TALK * Let’s
 					CHAT *
 				</h1>
