@@ -21,7 +21,7 @@ module.exports = {
 			fontFamily: {
 				cotham: ['var(--font-cotham)', 'sans-serif'],
 				cooper: ['var(--font-cooper)', 'sans-serif'],
-				cooper: ['var(--font-outward)', 'sans-serif'],
+				outward: ['var(--font-outward)', 'sans-serif'],
 			},
 			borderRadius: {
 				'481xl': '500px',

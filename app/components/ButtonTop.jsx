@@ -10,5 +10,13 @@ export default function ButtonTop({ targetId, children }) {
 		}
 	}, [targetId]);
 
-	return <Button onClick={handleButtonClick}>{children}</Button>;
+	return (
+		<Button
+			onClick={handleButtonClick}
+			title={`Scroll to ${targetId}`}
+			aria-label={`Scroll to ${targetId}`}
+		>
+			{children}
+		</Button>
+	);
 }

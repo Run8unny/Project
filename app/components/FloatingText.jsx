@@ -1,36 +1,36 @@
-import React, { useRef, useState } from 'react';
-import { useFrame } from '@react-three/fiber';
+import React, { useRef } from 'react';
+import { useFrame, useThree } from '@react-three/fiber';
 import { Text } from '@react-three/drei';
 
 export default function FloatingText({ textContent }) {
 	const textRef = useRef();
-	const [position, setPosition] = useState([-10, 0, 0]);
 
+	// Access viewport width to adjust text animation responsively
+	const { viewport } = useThree();
+	const screenLimit = viewport.width / 2 + 2; // Adjust limits dynamically based on viewport
+
+	// Animation logic
 	useFrame((state, delta) => {
-		setPosition((prevPosition) => {
-			const newX = prevPosition[0] + delta * 0.3;
-			return [newX > 10 ? -10 : newX, prevPosition[1], prevPosition[2]];
-		});
-
 		if (textRef.current) {
-			textRef.current.position.x = position[0];
+			textRef.current.position.x += delta * 0.3; // Move the text horizontally
+			if (textRef.current.position.x > screenLimit) {
+				textRef.current.position.x = -screenLimit; // Reset position if out of bounds
+			}
 		}
 	});
 
 	return (
 		<Text
 			ref={textRef}
-			position={position}
-			fontSize={1}
-			fontWeight={600}
-			color='hotpink'
-			anchorX='right'
-			anchorY='top'
-			maxWidth={9}
+			position={[-screenLimit, 0, 0]} // Start text off-screen
+			fontSize={0.5} // Adjust text size
+			anchorX='center'
+			anchorY='middle'
+			maxWidth={viewport.width / 1.5} // Responsive text width
 			lineHeight={1.2}
 			letterSpacing={0.02}
 			textAlign='center'
-			font='../../fonts/Poppins-SemiBold.ttf'
+			font='/fonts/CothamSans.otf'
 		>
 			{textContent}
 		</Text>

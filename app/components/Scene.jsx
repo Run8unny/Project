@@ -13,7 +13,7 @@ export default function Scene({ children }) {
 					fov: 8,
 					near: 0.3,
 					far: 50,
-					position: [1, 3, 3.5],
+					position: [1, 3, 2.5],
 				}}
 			>
 				<Suspense fallback={<Loader />}>
@@ -32,7 +32,7 @@ export const Loader = () => {
 	return (
 		<Html center>
 			<div
-				className={`inline-block [-webkit-text-stroke:1px_#f6f6f6] custom-font opacity-[1] text-[3vw] md:text-2vw]`}
+				className={`inline-block [-webkit-text-stroke:1px_#ffffff] font-cotham opacity-[1] text-[6vw] md:text-4vw]`}
 			>
 				{progress?.toFixed(1)}%
 			</div>

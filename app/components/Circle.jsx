@@ -4,20 +4,16 @@ import PropTypes from 'prop-types';
 export default function Circle({ children }) {
 	return (
 		<div
-			className={`rounded-full aspect-square box-border max-w-full max-h-full overflow-hidden leading-[normal] tracking-[normal] relative`}
-			style={{
-				width: '40vw',
-				height: '40vw',
-				minWidth: '240px',
-				minHeight: '240px',
-				maxWidth: '270px',
-				maxHeight: '270px',
-				background: 'radial-gradient(circle, #050505 35%, #ffffff 70%',
-			}}
+			className={`
+                rounded-full aspect-square box-border 
+                overflow-hidden leading-normal tracking-normal 
+                relative flex items-center justify-center 
+                w-[50vw] h-[50vw] min-w-[100px] min-h-[70px] 
+                max-w-[280px] max-h-[180px]
+                bg-[radial-gradient(circle,_#050505_40%,_#ffffff_70%)]
+            `}
 		>
-			<div className={`absolute inset-0 flex items-center justify-center`}>
-				{children}
-			</div>
+			{children}
 		</div>
 	);
 }

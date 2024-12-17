@@ -10,8 +10,8 @@ import * as THREE from 'three';
 const WaterShaderMaterial = shaderMaterial(
 	{
 		uTime: 0,
-		uDepthColor: new THREE.Color('#e57123'),
-		uSurfaceColor: new THREE.Color('#6f767a'),
+		uDepthColor: new THREE.Color('#ef6ac3'),
+		uSurfaceColor: new THREE.Color('#e57123'),
 		uBigWavesElevation: 0.2,
 		uBigWavesFrequency: new THREE.Vector2(4.5, 1.5),
 		uBigWavesSpeed: 0.2,

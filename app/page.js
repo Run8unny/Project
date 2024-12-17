@@ -16,7 +16,7 @@ export default function Page() {
 				<Circle>
 					<Link
 						href='/home'
-						className='flex custom-font text-[2rem] justify-center items-center z-100'
+						className='flex text-[2rem] justify-center items-center z-100'
 					>
 						{`enter`}
 					</Link>

@@ -1,44 +1,63 @@
 'use client';
 import * as THREE from 'three';
 import { useRef, useState } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { useTexture, Center } from '@react-three/drei';
+import { useFrame, useThree } from '@react-three/fiber';
+import { useTexture, Center, OrbitControls } from '@react-three/drei';
 import { FadeImagesMaterial } from './FadeImagesMaterial';
-import { OrbitControls } from '@react-three/drei';
+
+// Preload textures
+useTexture.preload([
+	'./assets/about_page/about.png',
+	'./assets/about_page/about1.png',
+	'./assets/about_page/displacement.jpg',
+]);
 
 export default function FadingImages() {
 	const ref = useRef();
+	const [hovered, setHover] = useState(false);
+
+	// Load textures
 	const [texture1, texture2, dispTexture] = useTexture([
 		'./assets/about_page/about.png',
 		'./assets/about_page/about1.png',
 		'./assets/about_page/displacement.jpg',
 	]);
-	const [hovered, setHover] = useState(false);
+
+	// Access viewport dimensions
+	const { viewport } = useThree();
+	const planeWidth = viewport.width * 0.8;
+	const planeHeight = planeWidth * 0.6;
+
+	// Update dispFactor for hover effect
 	useFrame(() => {
-		ref.current.dispFactor = THREE.MathUtils.lerp(
-			ref.current.dispFactor,
-			hovered ? 1 : 0,
-			0.075
-		);
+		if (ref.current) {
+			ref.current.dispFactor = THREE.MathUtils.lerp(
+				ref.current.dispFactor,
+				hovered ? 1 : 0,
+				0.075
+			);
+		}
 	});
+
 	return (
 		<>
 			<OrbitControls
-				minDistance={3}
+				minDistance={2}
 				maxDistance={10}
-				enablePan={true}
+				enablePan={false}
 				enableZoom={true}
 				enableRotate={true}
-				zoomSpeed={0.5}
-				panSpeed={0.5}
-				rotateSpeed={0.3}
+				zoomSpeed={0.8}
+				rotateSpeed={0.4}
+				maxPolarAngle={Math.PI / 2}
 			/>
 			<Center>
 				<mesh
-					onPointerOver={(e) => setHover(true)}
-					onClick={(e) => setHover(false)}
+					onPointerOver={() => setHover(true)}
+					onClick={() => setHover(false)}
 				>
-					<planeGeometry />
+					{/* Responsive plane geometry */}
+					<planeGeometry args={[planeWidth, planeHeight]} />
 					<fadeImagesMaterial
 						ref={ref}
 						texture1={texture1}

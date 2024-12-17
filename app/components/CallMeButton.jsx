@@ -5,7 +5,7 @@ export default function CallMeButton() {
 	const phoneNumber = '+48517452020';
 
 	return (
-		<a href={`tel:${phoneNumber}`}>
+		<a href={`tel:${phoneNumber}`} aria-label={`Call us at ${phoneNumber}`}>
 			<Button>call me</Button>
 		</a>
 	);
