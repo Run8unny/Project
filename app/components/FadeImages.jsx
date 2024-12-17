@@ -25,8 +25,8 @@ export default function FadingImages() {
 
 	// Access viewport dimensions
 	const { viewport } = useThree();
-	const planeWidth = viewport.width * 0.8;
-	const planeHeight = planeWidth * 0.6;
+	const planeWidth = viewport.width * 0.9;
+	const planeHeight = planeWidth * 0.7;
 
 	// Update dispFactor for hover effect
 	useFrame(() => {
@@ -43,7 +43,7 @@ export default function FadingImages() {
 		<>
 			<OrbitControls
 				minDistance={2}
-				maxDistance={10}
+				maxDistance={20}
 				enablePan={false}
 				enableZoom={true}
 				enableRotate={true}
