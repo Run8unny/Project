@@ -1,6 +1,14 @@
 import '@/app/_styles/globals.css';
 import localFont from 'next/font/local';
 
+export const metadata = {
+	title: 'ZanWardaszka',
+	description: 'ZanWardaszka Portfolio 2024',
+	icons: {
+		icon: '/icons/zw_icon.svg',
+	},
+};
+
 const cotham = localFont({
 	src: '/fonts/CothamSans.woff',
 	variable: '--font-cotham',
