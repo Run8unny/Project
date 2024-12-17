@@ -5,15 +5,16 @@ export default function LayoutWork() {
 			<div className='row-start-1 row-end-2 col-start-3 col-end-5 md:col-start-1'>
 				<SkeletonOne />
 			</div>
-			<div className='row-start-4 row-end-6 col-start-3 col-end-4 md:col-start-1 md:row-start-2'>
+			<div className='row-start-4 row-end-6 col-start-3 col-end-5 md:col-start-1 md:row-start-2'>
 				<SkeletonThree />
 			</div>
 			<div className='row-start-2 row-end-3 col-start-1 col-end-3 md:col-start-1 md:row-start-4'>
 				<SkeletonTwo />
 			</div>
-			{/* <div className='row-start-3 row-end-5 col-start-4 col-end-5'>
-				<SkeletonFour />
-			</div> */}
+
+			<div className='row-start-4 row-end-6 col-start-1 col-end-2 flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-xl xs400:p-0 xs400:m-3'>
+				<h1 className='uppercase mt-6'>TBC</h1>
+			</div>
 		</div>
 	);
 }

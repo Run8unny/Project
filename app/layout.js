@@ -2,7 +2,7 @@ import '@/app/_styles/globals.css';
 import localFont from 'next/font/local';
 
 const cotham = localFont({
-	src: '/fonts/CothamSans.otf',
+	src: '/fonts/CothamSans.woff',
 	variable: '--font-cotham',
 });
 

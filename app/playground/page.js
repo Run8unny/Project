@@ -5,6 +5,7 @@ import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
 import ParallaxScrollBox from '../components/ui/ParallaxScroll';
 import ButtonTop from '../components/ButtonTop';
+import ContactHeading from '../components/ContactHeading';
 
 export default function Page() {
 	return (
@@ -24,6 +25,12 @@ export default function Page() {
 
 			<ParallaxScrollBox />
 
+			<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-xl  mq850:text-lg xs400:text-[5.5rem] xs400:p-0 xs400:m-3'>
+				<h3 className='uppercas mt-6'>
+					I’ve done all of these |except my dog| with shaders, R3F, and creative
+					coding. It’s 3d & it’s moving. There’ll be the gallery soon.
+				</h3>
+			</div>
 			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>
 				<SmallFooter>
 					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>

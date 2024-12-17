@@ -1,70 +1,15 @@
 @font-face {
 	font-family: 'Cotham Sans';
-	src: url('/fonts/CothamSans.otf') format('opentype');
+	src: url('/fonts/CothamSans.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Outward Block';
 	src: url('/fonts/outward-block-webfont.woff') format('woff');
 	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Cooper Hewitt';
-	src: url('/fonts/CooperHewitt/CooperHewitt-Thin.otf') format('opentype');
-	font-weight: 100;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Cooper Hewitt';
-	src: url('/fonts/CooperHewitt/CooperHewitt-Light.otf') format('opentype');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Cooper Hewitt';
-	src: url('/fonts/CooperHewitt/CooperHewitt-Book.otf') format('opentype');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Cooper Hewitt';
-	src: url('/fonts/CooperHewitt/CooperHewitt-Medium.otf') format('opentype');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Cooper Hewitt';
-	src: url('/fonts/CooperHewitt/CooperHewitt-Semibold.otf') format('opentype');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Cooper Hewitt';
-	src: url('/fonts/CooperHewitt/CooperHewitt-Bold.otf') format('opentype');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Cooper Hewitt';
-	src: url('/fonts/CooperHewitt/CooperHewitt-Heavy.otf') format('opentype');
-	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
 }
