@@ -14,7 +14,7 @@ export default function SceneTwo({ children }) {
 					fov: 8,
 					near: 0.3,
 					far: 50,
-					position: [0, 3, 3.5],
+					position: [0, 3, 8],
 				}}
 			>
 				<Suspense fallback={<Loader />}>{children}</Suspense>

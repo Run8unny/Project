@@ -28,7 +28,7 @@ export default function CTA() {
 				<div
 					className={`
                         text-[1.5rem] text-left w-[30rem] h-[11.25rem] m-10 ml-auto pr-[20px]
-                        xs400:text-[1.2rem] xs400:h-[7rem] xs400:m-0 md:w-1/2
+                        xs400:text-[1.2rem] xs400:h-[7rem] xs400:m-0 xs400:w-10/12
                     `}
 				>
 					<p className='xs400:m-14 xs400:mb-0'>{subText}</p>
