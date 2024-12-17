@@ -11,47 +11,6 @@ const outward = localFont({
 	variable: '--font-outward',
 });
 
-const cooper = localFont({
-	src: [
-		{
-			path: '/fonts/CooperHewitt/CooperHewitt-Thin.otf',
-			weight: '100',
-			style: 'normal',
-		},
-		{
-			path: '/fonts/CooperHewitt/CooperHewitt-Light.otf',
-			weight: '300',
-			style: 'normal',
-		},
-		{
-			path: '/fonts/CooperHewitt/CooperHewitt-Book.otf',
-			weight: '400',
-			style: 'normal',
-		},
-		{
-			path: '/fonts/CooperHewitt/CooperHewitt-Medium.otf',
-			weight: '500',
-			style: 'normal',
-		},
-		{
-			path: '/fonts/CooperHewitt/CooperHewitt-Semibold.otf',
-			weight: '600',
-			style: 'normal',
-		},
-		{
-			path: '/fonts/CooperHewitt/CooperHewitt-Bold.otf',
-			weight: '700',
-			style: 'normal',
-		},
-		{
-			path: '/fonts/CooperHewitt/CooperHewitt-Heavy.otf',
-			weight: '800',
-			style: 'normal',
-		},
-	],
-	variable: '--font-cooper',
-});
-
 export default function RootLayout({ children }) {
 	return (
 		<html
