@@ -160,7 +160,7 @@ void main(){
 
 extend({ WaterShaderMaterial });
 
-const waterGeometry = new THREE.PlaneGeometry(2, 3, 512, 512);
+const waterGeometry = new THREE.PlaneGeometry(2, 4, 256, 256);
 
 export default function Water() {
 	const waterShaderMaterial = useRef();

@@ -74,7 +74,7 @@ body {
 
 @media (max-width: 768px) {
 	html {
-		font-size: 90%; /* Scale fonts down */
+		font-size: 80%; /* Scale fonts down */
 	}
 }
 
