@@ -32,6 +32,9 @@ module.exports = {
 				},
 			},
 			spacing: {},
+			letterSpacing: {
+				wider: '0.005em',
+			},
 			fontFamily: {
 				cotham: ['var(--font-cotham)', 'sans-serif'],
 				cooper: ['var(--font-cooper)', 'sans-serif'],

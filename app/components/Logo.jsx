@@ -7,7 +7,7 @@ export default function Logo() {
 			<Link href='/' className='flex flex-row'>
 				<div className='text-[40px] hover:text-orange-500 self-center w-auto h-auto m-5'>
 					<Image
-						width={70}
+						width={65}
 						height={50}
 						src={'/icons/zw_icon.svg'}
 						alt='logo sign'
