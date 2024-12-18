@@ -19,8 +19,8 @@ export default function Page() {
 					<MenuItem href='./work'>work</MenuItem>
 				</SmallNav>
 				<main>
-					<div className='flex font-bold items-center justify-center text-center leading-none text-xl lg:text-[9rem] mq1225:text[8.5rem] mq1050:text-[8rem] mq850:text-[6rem] xs400:text-[3.2rem] xs400:p-0 xs400:m-3'>
-						<h1 className='mt-6'>HELLO (. ͡❛ ‿ ͡❛.)</h1>
+					<div className='flex font-bold items-center justify-center text-center leading-none text-xl lg:text-[8.8rem] mq1225:text[8.2rem] mq1050:text-[7.8rem] mq850:text-[5.8rem] xs400:text-[3rem] xs400:p-0 xs400:mt-3'>
+						<h1 className='mt-6'>HELLO(. ͡❛ ‿ ͡❛.)</h1>
 					</div>
 					<div className='flex justify-center items-center mq1050:flex-col'>
 						<SceneTwo>
