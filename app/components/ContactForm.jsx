@@ -104,8 +104,8 @@ export default function ContactForm() {
 			<button
 				className={
 					isSent
-						? 'border-2 border-solid cursor-pointer border-pink-900 rounded-full h-80 w-80 text-white text-[3.8rem] mx-4 button-neon'
-						: 'border-2 border-solid cursor-pointer border-white rounded-full h-80 w-80 text-white text-[3.8rem] mx-4 hover:bg-pink-900 hover:border-0'
+						? 'border-2 border-solid cursor-pointer border-pink-900 rounded-full h-80 w-80 text-[3.8rem] mx-4 button-neon'
+						: 'border-2 border-solid cursor-pointer border-white rounded-full h-80 w-80 text-[3.8rem] mx-4 hover:bg-pink-900 hover:border-0'
 				}
 				type='submit'
 				value='send'
