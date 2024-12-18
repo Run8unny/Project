@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function LayoutWork() {
 	return (
-		<div className='w-full h-screen grid grid-rows-5 md:grid-rows-3 grid-cols-4 md:grid-cols-1 gap-6 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal md:h-fit mt-4 '>
+		<div className='w-full h-[60rem] grid grid-rows-5 md:grid-rows-3 grid-cols-4 md:grid-cols-1 gap-6 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal md:h-fit mt-4 '>
 			<div className='row-start-1 row-end-2 col-start-3 col-end-5 md:col-start-1 '>
 				<SkeletonOne />
 			</div>

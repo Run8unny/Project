@@ -7,7 +7,7 @@ import CTA from '../CTA';
 
 export default function EvervaultCardContainer() {
 	return (
-		<div className='w-full h-screen flex flex-col justify-center items-center px-4 bg-transparent mq750:p-3 my-80 xs400:p-0 xs400:my-36'>
+		<div className='w-full h-8/12 flex flex-col justify-center items-center px-4 bg-transparent mq750:p-3 my-20 xs400:p-0 md:h-screen'>
 			<EvervaultCard text={<CTA />} />
 		</div>
 	);

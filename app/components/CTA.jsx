@@ -2,7 +2,7 @@ import React from 'react';
 import FlipWords from './ui/FlipWords';
 
 export default function CTA() {
-	const words = ['CREATE', 'BUILD', 'HAVE FUN', 'WORK'];
+	const words = ['CREATE', 'BUILD', 'DESIGN', 'WORK'];
 	const subText =
 		'I’m your partner in the project and a helping hand when you need one. ' +
 		'I always give my best to create something unique together.';
@@ -11,7 +11,7 @@ export default function CTA() {
 		<div
 			className={`
                 flex flex-col justify-center items-center text-left px-10 mq1225:text-[5rem]
-                text-[6rem] md:text-[4.8rem] relative z-20 mt-24 
+                text-[5.8rem] md:text-[4.8rem] relative z-20 mt-24 
                 xs400:p-0 xs400:my-20 xs400:w-full mq1225:text-center
             `}
 		>

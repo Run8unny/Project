@@ -13,7 +13,7 @@ export default function HomeContact() {
 						GET IN
 					</h1>
 				</div>
-				<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex justify-center items-center justify-self-center mq650:hidden'>
+				<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex justify-start items-center justify-self-center mq650:hidden'>
 					<CallMeButton />
 				</div>
 
@@ -26,7 +26,7 @@ export default function HomeContact() {
 					</Circle>
 					{/* <GridComponent /> */}
 				</div>
-				<div className='row-start-2 row-end-3 col-start-5 col-end-6 flex justify-center items-center justify-self-center mq650:hidden'>
+				<div className='row-start-2 row-end-3 col-start-5 col-end-6 flex justify-end items-center justify-self-center mq650:hidden'>
 					<MailMeButton />
 				</div>
 				<div className='row-start-3 row-end-4 col-start-1 col-end-8 flex items-center  justify-end mq1050:justify-center text-[8.35rem] xs400:items-center xs400:p-0 xs400:m-0 xs400:w-full'>
