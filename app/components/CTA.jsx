@@ -10,12 +10,12 @@ export default function CTA() {
 	return (
 		<div
 			className={`
-                flex flex-col justify-center items-center text-left
-                text-[6rem] lg:text-[5rem] md:text-[4rem] mq850:w-full relative z-20 mt-32 
-                xs400:text-[4rem] xs400:p-0 xs400:my-20 xs400:w-full
+                flex flex-col justify-center items-center text-left px-10 mq1225:text-[5rem]
+                text-[6rem] md:text-[4.8rem] relative z-20 mt-24 
+                xs400:p-0 xs400:my-20 xs400:w-full mq1225:text-center
             `}
 		>
-			<div className='relative w-full md:w-8/12 mq1050:w-8/12'>
+			<div className='relative w-full font-bold md:w-8/12 mq1050:w-11/12'>
 				<h1 className='mt-3'>
 					LET’S{' '}
 					<span aria-live='polite'>
