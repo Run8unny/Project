@@ -31,7 +31,7 @@ export default function AboutText() {
 	return (
 		<div className='flex flex-col justify-between items-center w-1/2 mb-20 xs400:mb-10 p-20 mq1050:p-10 mq1050:w-full'>
 			<div className='mb-20'>
-				<h1 className='font-bold text-lg mb-4'>I can</h1>
+				<h1 className='font-bold text-lg mb-4 flex justify-start'>I can</h1>
 				<div className='flex flex-wrap gap-2'>
 					{can.map((el, index) => (
 						<Button key={index}>{el}</Button>
@@ -39,8 +39,10 @@ export default function AboutText() {
 				</div>
 			</div>
 			<div>
-				<h1 className='font-bold text-lg mb-4 mt-10'>I learn</h1>
-				<div className='flex flex-wrap gap-2'>
+				<h1 className='font-bold text-lg mb-4 mt-10 flex justify-end'>
+					I learn
+				</h1>
+				<div className='flex flex-wrap gap-2 justify-end'>
 					{learn.map((el, index) => (
 						<Button key={index}>{el}</Button>
 					))}
