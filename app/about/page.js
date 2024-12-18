@@ -5,6 +5,7 @@ import SmallNav from '../components/SmallNav';
 import SmallFooter from '../components/SmallFooter';
 import FooterItem from '../components/FooterItem';
 import Cursor from '../components/Cursor';
+import AboutText from '../components/AboutText';
 
 export default function Page() {
 	return (
@@ -18,12 +19,15 @@ export default function Page() {
 					<MenuItem href='./work'>work</MenuItem>
 				</SmallNav>
 				<main>
-					<div className='flex font-bold items-center justify-center text-center leading-none text-xl lg:text-[9rem] mq1225:text[8.5rem] mq1050:text-[8rem] mq850:text-[6rem] xs400:text-[3.5rem] xs400:p-0 xs400:m-3'>
+					<div className='flex font-bold items-center justify-center text-center leading-none text-xl lg:text-[9rem] mq1225:text[8.5rem] mq1050:text-[8rem] mq850:text-[6rem] xs400:text-[3.2rem] xs400:p-0 xs400:m-3'>
 						<h1 className='mt-6'>HELLO (. ͡❛ ‿ ͡❛.)</h1>
 					</div>
-					<SceneTwo>
-						<FadingImages />
-					</SceneTwo>
+					<div className='flex justify-center items-center mq1050:flex-col'>
+						<SceneTwo>
+							<FadingImages />
+						</SceneTwo>
+						<AboutText />
+					</div>
 				</main>
 			</div>
 			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>
