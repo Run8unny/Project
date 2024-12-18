@@ -17,6 +17,20 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			colors: {
+				// Light Theme Colors
+				light: {
+					bg: colors.zinc[200],
+					text: colors.zinc[950],
+					primary: colors.orange[500],
+				},
+				// Dark Theme Colors
+				dark: {
+					bg: colors.zinc[950],
+					text: colors.white,
+					primary: colors.orange[500],
+				},
+			},
 			spacing: {},
 			fontFamily: {
 				cotham: ['var(--font-cotham)', 'sans-serif'],
