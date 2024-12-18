@@ -21,7 +21,7 @@ export default function HomeContact() {
 					<Circle>
 						<Link
 							href='/contact'
-							className='flex text-[1.6rem] justify-center items-center p-15 xs400:text-[1.3rem]'
+							className='flex text-[1.6rem] text-white font-cotham justify-center items-center p-15 xs400:text-[1.3rem]'
 						>{`let's talk`}</Link>
 					</Circle>
 					{/* <GridComponent /> */}

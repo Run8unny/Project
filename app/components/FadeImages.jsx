@@ -42,8 +42,8 @@ export default function FadingImages() {
 	return (
 		<>
 			<OrbitControls
-				minDistance={2}
-				maxDistance={20}
+				minDistance={0}
+				maxDistance={40}
 				enablePan={false}
 				enableZoom={true}
 				enableRotate={true}

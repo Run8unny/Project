@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Cursor from '../components/Cursor';
@@ -12,11 +12,29 @@ import EvervaultCardContainer from '../components/ui/EvervaultCard';
 import Water from '../components/Water';
 import Disc from '../components/Disc';
 import MenuItem from '../components/MenuItem';
+import ThemeToggler from '../components/ThemeToggler';
+import Button from '../components/Button';
 
 const Scene = dynamic(() => import('../components/Scene'), { ssr: false });
 
 export default function Home() {
 	const [isHovered, setIsHovered] = useState(false);
+	const [theme, setTheme] = useState('light');
+
+	useEffect(() => {
+		// Check localStorage for the saved theme preference
+		const savedTheme = localStorage.getItem('theme') || 'light';
+		setTheme(savedTheme);
+		document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+	}, []);
+
+	const toggleTheme = () => {
+		const newTheme = theme === 'light' ? 'dark' : 'light';
+		setTheme(newTheme);
+		document.documentElement.classList.toggle('dark', newTheme === 'dark');
+		localStorage.setItem('theme', newTheme);
+	};
+
 	return (
 		<div className='felx flex-col justify-center items-center w-full'>
 			<Cursor isHovered={isHovered} />
@@ -40,6 +58,11 @@ export default function Home() {
 						<Water />
 						<Disc />
 					</Scene>
+					<ThemeToggler>
+						<Button onClick={toggleTheme}>
+							{theme === 'light' ? 'theme dark' : 'theme light'}
+						</Button>
+					</ThemeToggler>
 				</main>
 			</div>
 			<EvervaultCardContainer />
