@@ -4,11 +4,11 @@ import Circle from './components/Circle';
 
 export default function Page() {
 	return (
-		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-[1rem] p-[30px]'>
-			<div className='row-start-1 row-end-2 col-start-2 col-end-7 flex items-start justify-center'>
+		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-[1rem] p-[30px] md:w-full md:p-0 md:m-0 md:text-[0.7rem] '>
+			<div className='w-full row-start-1 row-end-2 col-start-2 col-end-7 flex items-start justify-center'>
 				<span>[ WELCOME ]</span>
 			</div>
-			<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex flex-initial justify-start items-center w-[100px] mq850:hidden'>
+			<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex flex-initial justify-start items-center w-[100px]'>
 				<span>[ ŻANETA]</span>
 			</div>
 
@@ -23,7 +23,7 @@ export default function Page() {
 				</Circle>
 			</div>
 
-			<div className='row-start-2 row-end-3 col-start-7 col-end-8 flex justify-end items-center w-[125px] justify-self-end mq850:hidden'>
+			<div className='row-start-2 row-end-3 col-start-7 col-end-8 flex justify-end items-center w-[125px] justify-self-end'>
 				<span>[ WARDASZKA ]</span>
 			</div>
 			<div className='row-start-3 row-end-4 col-start-2 col-end-7 flex items-end justify-center'>
