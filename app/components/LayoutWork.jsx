@@ -1,11 +1,11 @@
 import Image from 'next/image';
 export default function LayoutWork() {
 	return (
-		<div className='w-full h-[60rem] grid grid-rows-5 md:grid-rows-3 grid-cols-4 md:grid-cols-1 gap-6 text-[12px] relative overflow-hidden box-border leading-normal tracking-normal md:h-fit mt-4 '>
+		<div className='w-full h-[60rem] grid grid-rows-5 md:grid-rows-3 grid-cols-4 md:grid-cols-1 gap-6 text-[12px] relative overflow-hidden leading-normal tracking-normal md:h-fit mt-4 mb-4 '>
 			<div className='row-start-1 row-end-2 col-start-3 col-end-5 md:col-start-1 '>
 				<SkeletonOne />
 			</div>
-			<div className='row-start-4 row-end-6 col-start-3 col-end-5 md:col-start-1 md:row-start-2'>
+			<div className='row-start-3 row-end-5 col-start-3 col-end-5 md:col-start-1 md:row-start-2'>
 				<SkeletonTwo />
 			</div>
 			<div className='row-start-2 row-end-3 col-start-1 col-end-3 md:col-start-1 md:row-start-3 md:col-span-4'>
@@ -21,7 +21,7 @@ export default function LayoutWork() {
 
 const SkeletonOne = () => {
 	return (
-		<div className='flex flex-col justify-center items-center p-10'>
+		<div className='flex flex-col justify-center items-center transform transition-transform duration-300 hover:scale-150 relative z-10 md:hover:scale-110'>
 			<Image
 				width={550}
 				height={450}
@@ -42,7 +42,7 @@ const SkeletonOne = () => {
 
 const SkeletonThree = () => {
 	return (
-		<div className='flex flex-col justify-center items-center p-10 mb-10'>
+		<div className='flex flex-col justify-center items-center transform transition-transform duration-300 hover:scale-150 md:hover:scale-110'>
 			<Image
 				width={550}
 				height={450}
@@ -61,7 +61,7 @@ const SkeletonThree = () => {
 };
 const SkeletonTwo = () => {
 	return (
-		<div className='flex flex-col justify-center items-center p-10 '>
+		<div className='flex flex-col justify-center items-center transform transition-transform duration-300 hover:scale-150 md:hover:scale-110'>
 			<Image
 				width={550}
 				height={450}

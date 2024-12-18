@@ -44,7 +44,13 @@ module.exports = {
 				'481xl': '500px',
 				'6xl': '25px',
 			},
-
+			scale: {
+				160: '1.6',
+				175: '1.75',
+				200: '2', // 200% scaling
+				250: '2.5', // 250% scaling
+				300: '3', // 300% scaling
+			},
 			animation: {
 				first: 'moveVertical 30s ease infinite',
 				second: 'moveInCircle 20s reverse infinite',

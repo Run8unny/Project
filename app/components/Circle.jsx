@@ -10,7 +10,7 @@ export default function Circle({ children }) {
                 relative flex items-center justify-center 
                 w-[50vw] h-[50vw] min-w-[60px] min-h-[60px] 
                 max-w-[180px] max-h-[180px]
-                bg-[radial-gradient(circle,_#050505_40%,_#ffffff_70%)]
+                bg-[radial-gradient(circle,_#050505_40%,_#ffffff_70%)] hover:animate-spin
             `}
 		>
 			{children}

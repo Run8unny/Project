@@ -2,10 +2,9 @@ import SceneTwo from '../components/SceneTwo';
 import FadingImages from '../components/FadeImages';
 import MenuItem from '../components/MenuItem';
 import SmallNav from '../components/SmallNav';
-import SmallFooter from '../components/SmallFooter';
-import FooterItem from '../components/FooterItem';
 import Cursor from '../components/Cursor';
 import AboutText from '../components/AboutText';
+import Footer from '../components/Footer';
 
 export default function Page() {
 	return (
@@ -32,15 +31,7 @@ export default function Page() {
 					</div>
 				</main>
 			</div>
-			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>
-				<SmallFooter>
-					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
-					<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
-					<FooterItem href='https://pl.pinterest.com/zanwardaszka/'>
-						pinterest
-					</FooterItem>
-				</SmallFooter>
-			</div>
+			<Footer />
 		</div>
 	);
 }

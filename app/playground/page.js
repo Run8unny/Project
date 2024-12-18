@@ -1,11 +1,9 @@
 import Cursor from '../components/Cursor';
 import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
-import SmallFooter from '../components/SmallFooter';
-import FooterItem from '../components/FooterItem';
 import ParallaxScrollBox from '../components/ui/ParallaxScroll';
 import ButtonTop from '../components/ButtonTop';
-import ContactHeading from '../components/ContactHeading';
+import Footer from '../components/Footer';
 
 export default function Page() {
 	return (
@@ -13,6 +11,7 @@ export default function Page() {
 			className='felx flex-col justify-center items-center w-full'
 			data-scroll-to='top-of-page2'
 		>
+			<Cursor />
 			<SmallNav>
 				<MenuItem href='./home'>back</MenuItem>
 				<MenuItem href='./about'>about</MenuItem>
@@ -31,17 +30,7 @@ export default function Page() {
 					coding. It’s 3d & it’s moving. There’ll be the gallery soon.
 				</h3>
 			</div>
-			<div className='w-full flex flex-row justify-between items-center mt-7 border-white border-t'>
-				<SmallFooter>
-					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
-					<FooterItem href='https://www.linkedin.com/'>linkedIn</FooterItem>
-					<FooterItem href='https://pl.pinterest.com/zanwardaszka/'>
-						pinterest
-					</FooterItem>
-					<ButtonTop targetId={'top-of-page2'}>↖︎top</ButtonTop>
-				</SmallFooter>
-			</div>
-			<Cursor />
+			<Footer />
 		</div>
 	);
 }
