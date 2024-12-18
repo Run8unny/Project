@@ -10,10 +10,10 @@ export default function Scene({ children }) {
 			<Canvas
 				gl={{ antialias: true }}
 				camera={{
-					fov: 8,
+					fov: 3.2,
 					near: 0.3,
 					far: 50,
-					position: [1, 3, 2],
+					position: [1, 3, 8],
 				}}
 			>
 				<Suspense fallback={<Loader />}>

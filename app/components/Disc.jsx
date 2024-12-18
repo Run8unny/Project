@@ -35,11 +35,11 @@ export default function Disc() {
 	return (
 		<group
 			ref={group}
-			position={[-0.2, 0.26, 0]}
-			rotation={[0.5, 0.6, 0.7]}
+			position={[-0.2, 0, 0]}
+			rotation={[0.5, 0.6, 1.5]}
 			dispose={null} // Add this for cleanup
 		>
-			<primitive object={scene} scale={0.09} />
+			<primitive object={scene} scale={0.06} />
 		</group>
 	);
 }

@@ -11,10 +11,10 @@ export default function SceneTwo({ children }) {
 			<Canvas
 				gl={{ antialias: true }}
 				camera={{
-					fov: 50,
-					near: 10,
-					far: 100,
-					position: [0, 3, 32],
+					fov: 0.5,
+					near: 0.3,
+					far: 50,
+					position: [1, 3, 8],
 				}}
 			>
 				<Suspense fallback={<Loader />}>{children}</Suspense>

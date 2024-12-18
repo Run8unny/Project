@@ -19,7 +19,7 @@ export default function Page() {
 				<MenuItem href='./contact'>contact</MenuItem>
 				<MenuItem href='./work'>work</MenuItem>
 			</SmallNav>
-			<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-2xl xl:text-2xl lg:text-2xl mq1225:text-2xl mq1050:text-2xl mq850:text-xl mq650:text-[6.5] xs400:text-[5.5rem] xs400:p-0 xs400:m-3'>
+			<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-2xl mq850:text-xl xs400:p-0 xs400:m-3'>
 				<h1 className='uppercas mt-6'>PLAY GROUND</h1>
 			</div>
 
