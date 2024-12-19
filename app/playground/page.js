@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 export default function Page() {
 	return (
 		<div
-			className='felx flex-col justify-center items-center w-full bg-dot-zinc-950/[0.25]'
+			className='felx flex-col justify-center items-center w-full'
 			data-scroll-to='top-of-page2'
 		>
 			<Cursor />
