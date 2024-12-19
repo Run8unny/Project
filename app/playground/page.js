@@ -2,7 +2,6 @@ import Cursor from '../components/Cursor';
 import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
 import ParallaxScrollBox from '../components/ui/ParallaxScroll';
-import ButtonTop from '../components/ButtonTop';
 import Footer from '../components/Footer';
 
 export default function Page() {

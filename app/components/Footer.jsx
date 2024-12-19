@@ -15,7 +15,7 @@ export default function Footer() {
 					</FooterDiv>
 				</li>
 				<li>
-					<ButtonTop targetId={'top-of-page'}>↖︎top</ButtonTop>
+					<ButtonTop targetId={'top-of-page'}>⇡top</ButtonTop>
 				</li>
 				<li>
 					<FooterItem href='https://github.com/Run8unny'>github</FooterItem>
