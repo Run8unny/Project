@@ -4,7 +4,7 @@ import Circle from './components/Circle';
 
 export default function Page() {
 	return (
-		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-[1rem] p-[30px] md:w-full md:p-0 md:m-0 md:text-[0.6rem] '>
+		<div className='w-full h-screen grid grid-rows-3 md:grid-rows-3 grid-cols-7 md:grid-cols-7 relative overflow-hidden box-border leading-normal tracking-normal text-left text-xs p-[30px] md:w-full md:p-0 md:m-0 md:text-[0.6rem] '>
 			<div className='w-full row-start-1 row-end-2 col-start-2 col-end-7 flex items-start justify-center'>
 				<span>[ WELCOME ]</span>
 			</div>
@@ -16,7 +16,7 @@ export default function Page() {
 				<Circle>
 					<Link
 						href='/home'
-						className='flex text-[1.7rem] text-white justify-center items-center z-100 '
+						className='flex text-sm text-white justify-center items-center z-100 '
 					>
 						{`enter`}
 					</Link>

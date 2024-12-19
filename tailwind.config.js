@@ -100,10 +100,9 @@ module.exports = {
 			sm: ['1.618rem', { lineHeight: '2.427rem' }],
 			base: ['2.617rem', { lineHeight: '3.925rem' }],
 			lg: '4.235rem',
-			xl: '11.089rem',
-			'2xl': '17.942rem',
-			'3xl': '29.030rem',
-			'4xl': '46.970rem',
+			xl: '9rem',
+			'2xl': '23rem',
+			'3xl': '50rem',
 			inherit: 'inherit',
 		},
 		screens: {
@@ -113,9 +112,6 @@ module.exports = {
 			lg: {
 				max: '1350px',
 			},
-			md: {
-				max: '768px',
-			},
 			mq1225: {
 				raw: 'screen and (max-width: 1225px)',
 			},
@@ -124,6 +120,9 @@ module.exports = {
 			},
 			mq850: {
 				raw: 'screen and (max-width: 920px)',
+			},
+			md: {
+				max: '768px',
 			},
 			mq650: {
 				raw: 'screen and (max-width: 650px)',

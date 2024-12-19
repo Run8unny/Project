@@ -1,21 +1,26 @@
 import Cursor from '../components/Cursor';
-import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+import Nav from '../components/Nav';
+import NavMenu from '../components/NavMenu';
 
 export default function Page() {
 	return (
-		<div className='felx flex-col justify-center items-center w-full h-screen bg-dot-zinc-950/[0.25]'>
+		<div className='w-full inline-block h-screen'>
 			<Cursor />
-			<SmallNav>
-				<MenuItem href='./home'>back</MenuItem>
-				<MenuItem href='./about'>about</MenuItem>
-				<MenuItem href='./contact'>contact</MenuItem>
-				<MenuItem href='./playground'>playground</MenuItem>
-			</SmallNav>
-			<div className='flex inset-0 sticky z-100 flex-col font-bold items-center justify-center px-10 my-20 leading-none text-2xl mq850:text-xl xs400:text-[7.5rem] xs400:p-0 xs400:m-3 min-w-3.5 hover:animate-bounce '>
-				<h1 className='uppercase font-bold'>WORK</h1>
+			<Nav>
+				<NavMenu>
+					<MenuItem href='./home'>home</MenuItem>
+					<MenuItem href='/about'>about</MenuItem>
+					<MenuItem href='./contact'>contact</MenuItem>
+					<MenuItem href='./playground'>playground</MenuItem>
+				</NavMenu>
+			</Nav>
+			<div className='flex font-bold items-center justify-center  my-20 leading-none text-2xl mq850:text-xl xs400:text-[7.5rem] xs400:p-0 xs400:m-3 hover:animate-bounce '>
+				<h1 className='uppercase font-bold '>
+					<span className='xl:hidden'>↘︎</span>WORK
+				</h1>
 			</div>
 			{/* <LayoutWork /> */}
 			<div className='inset-2 flex justify-center sticky items-center z-30'>
