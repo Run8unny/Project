@@ -10,7 +10,7 @@ export default function CTA() {
 		<div
 			className={`
                 flex flex-col justify-center items-center 
-                text-2xl md:text-[11.5rem] relative z-80 
+                text-2xl md:text-xl relative z-80 
                 xs400:p-0 xs400:my-40 xs400:w-full mq1225:text-center 
             `}
 		>
@@ -25,7 +25,7 @@ export default function CTA() {
 				<div
 					className={`
                         text-sm text-left w-[30rem] h-[30rem] m-10 ml-auto pr-[20px] 
-                        xs400:text-[1.3rem] xs400:h-[5rem] xs400:m-0 xs400:w-9/12 relative 
+                        xs400:text-xs xs400:h-[5rem] xs400:m-0 xs400:w-9/12 relative 
                     `}
 				>
 					<p className='absolute top-10 left-20 md:left-36 xs400:mb-0 uppercase '>
