@@ -2,7 +2,6 @@
 
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { useProgress, Html, ScrollControls } from '@react-three/drei';
 import { Loader } from './Scene';
 
 export default function SceneTwo({ children }) {

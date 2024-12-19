@@ -40,7 +40,7 @@ export default function ContactForm() {
 	return (
 		<form
 			ref={form}
-			className='h-full w-full flex flex-wrap justify-center items-center m-4 xl:mt-16 lg:mt-28 text-black'
+			className='h-full w-full flex flex-wrap justify-center items-center m-4 xl:mt-16 lg:mt-28 '
 			onSubmit={sendEmail}
 		>
 			<label className='sr-only' htmlFor='name'>

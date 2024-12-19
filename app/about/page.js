@@ -1,10 +1,14 @@
-import SceneTwo from '../components/SceneTwo';
+import dynamic from 'next/dynamic';
 import FadingImages from '../components/FadeImages';
 import MenuItem from '../components/MenuItem';
 import SmallNav from '../components/SmallNav';
 import Cursor from '../components/Cursor';
 import AboutText from '../components/AboutText';
 import Footer from '../components/Footer';
+
+const SceneTwo = dynamic(() => import('../components/SceneTwo'), {
+	ssr: false,
+});
 
 export default function Page() {
 	return (
@@ -23,7 +27,18 @@ export default function Page() {
 							HELLO THERE <br /> (. ͡❛ ‿ ͡❛.)
 						</h1>
 					</div>
-					<div className='flex justify-center items-center mq1050:flex-col'>
+					<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-base mt-10 mq850:text-sm xs400:text-xs xs400:p-0 xs400:m-2'>
+						<h3 className=''>
+							Hi! I’m Zan. Front-end developer who loves design, creative
+							programming, and 3D art. I always strive to make a lasting
+							positive impact on the digital landscape and business with a
+							passion for problem-solving and development. I am happy to create
+							custom-coded websites that are tailored to your brand. I also
+							focus on accessibility, performance, and scalability. When I’m not
+							working, I enjoy climbing & knitting. Dog lover.
+						</h3>
+					</div>
+					<div className='flex justify-center items-center mq1050:flex-col m-10'>
 						<SceneTwo>
 							<FadingImages />
 						</SceneTwo>
