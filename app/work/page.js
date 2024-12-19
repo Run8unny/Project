@@ -1,7 +1,6 @@
 import Cursor from '../components/Cursor';
 import SmallNav from '../components/SmallNav';
 import MenuItem from '../components/MenuItem';
-import LayoutWork from '../components/LayoutWork';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 
