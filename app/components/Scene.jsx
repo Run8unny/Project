@@ -27,14 +27,14 @@ export default function Scene({ children }) {
 }
 
 export const Loader = () => {
-	const { progress, active } = useProgress;
+	const { progress, active } = useProgress();
 
 	return (
 		<Html center>
 			<div
-				className={`inline-block [-webkit-text-stroke:1px_#000000] font-cotham opacity-[1] text-[6vw] md:text-4vw]`}
+				className={`w-full flex justify-start items-end [-webkit-text-stroke:1px_#fdfdfd] text-transparent font-cotham font-bold opacity-[1] text-[9vw] md:text-5vw]`}
 			>
-				{progress?.toFixed(1)}%
+				<p>{progress?.toFixed(1)}%</p>
 			</div>
 		</Html>
 	);

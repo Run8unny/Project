@@ -2,7 +2,6 @@ import Circle from './Circle';
 import Link from 'next/link';
 import MailMeButton from './MailMeButton';
 import CallMeButton from './CallMeButton';
-// import GridComponent from './GridComponent';
 
 export default function HomeContact() {
 	return (
@@ -24,7 +23,6 @@ export default function HomeContact() {
 							className='flex text-[1.6rem] text-white font-cotham justify-center items-center p-15 xs400:text-[1.3rem]'
 						>{`let's talk`}</Link>
 					</Circle>
-					{/* <GridComponent /> */}
 				</div>
 				<div className='row-start-2 row-end-3 col-start-5 col-end-6 flex justify-end items-center justify-self-center mq650:hidden'>
 					<MailMeButton />
