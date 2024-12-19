@@ -19,7 +19,7 @@ export default function Page() {
 				</SmallNav>
 				<main>
 					<div className='flex font-bold items-center justify-center text-center leading-none text-xl mt-10 mq850:text-lg xs400:text-[5.5rem] xs400:p-0 xs400:mt-3'>
-						<h1 className='mt-6'>
+						<h1 className='my-6'>
 							HELLO THERE <br /> (. ͡❛ ‿ ͡❛.)
 						</h1>
 					</div>

@@ -7,7 +7,7 @@ export default function Nav({ children }) {
 			className='w-full flex flex-row justify-between items-center gap-4 md:gap-2 px-4 mb-1 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0 xs400:w-full  '
 			data-scroll-to='top-of-page'
 		>
-			<div className='md:mb-0 '>
+			<div className='md:mb-0 hover:scale-150'>
 				<Logo />
 			</div>
 			<div className='flex-grow'>{children}</div>

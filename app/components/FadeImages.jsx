@@ -18,15 +18,15 @@ export default function FadingImages() {
 
 	// Load textures
 	const [texture1, texture2, dispTexture] = useTexture([
+		'./assets/about_page/about0.png',
 		'./assets/about_page/about.png',
-		'./assets/about_page/about1.png',
 		'./assets/about_page/displacement.jpg',
 	]);
 
 	// Access viewport dimensions
 	const { viewport } = useThree();
-	const planeWidth = viewport.width * 0.9;
-	const planeHeight = planeWidth * 0.7;
+	const planeWidth = viewport.width * 1.2;
+	const planeHeight = planeWidth * 0.82;
 
 	// Update dispFactor for hover effect
 	useFrame(() => {
