@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Page() {
 	return (
-		<div className='felx flex-col justify-center items-center w-full h-screen '>
+		<div className='felx flex-col justify-center items-center w-full h-screen bg-dot-zinc-950/[0.25]'>
 			<Cursor />
 			<SmallNav>
 				<MenuItem href='./home'>back</MenuItem>
