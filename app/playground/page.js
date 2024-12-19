@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 export default function Page() {
 	return (
 		<div
-			className='felx flex-col justify-center items-center w-full'
+			className='felx flex-col justify-center items-center w-full bg-dot-zinc-950/[0.23]'
 			data-scroll-to='top-of-page2'
 		>
 			<Cursor />
@@ -25,8 +25,8 @@ export default function Page() {
 			<ParallaxScrollBox />
 
 			<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-xl mt-10 mq850:text-lg xs400:text-[5.5rem] xs400:p-0 xs400:m-2'>
-				<h3 className='uppercas'>
-					I’ve done all of these |except my dog| with shaders, R3F, and creative
+				<h3 className=''>
+					I’ve done all of these [except my dog] with shaders, R3F, and creative
 					coding. It’s 3d & it’s moving. There’ll be the gallery soon.
 				</h3>
 			</div>

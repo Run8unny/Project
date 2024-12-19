@@ -10,13 +10,13 @@ export default function ParallaxScrollBox() {
 		<div className='flex flex-col justify-center items-center mt-10'>
 			<div className='w-2/3 h-50 grid grid-rows-1 grid-cols-2 mq1050:grid-rows-2 mq1050:grid-cols-1 box-border'>
 				<div className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-center justify-center md:mb-10'>
-					<video className='w-80 max-w-md md:w-full' controls>
+					<video className='w-80 max-w-md md:w-full rounded-3xl' controls>
 						<source src='/assets/playground_page/video2.mp4' type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
 				</div>
 				<div className='row-start-1 row-end-2 col-start-2 col-end-3 mq1050:row-start-2 mq1050:col-start-1 flex flex-col items-center justify-center'>
-					<video className='w-80 max-w-md md:w-full' controls>
+					<video className='w-80 max-w-md md:w-full rounded-3xl' controls>
 						<source src='/assets/playground_page/video1.mp4' type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
@@ -57,8 +57,8 @@ const images = [
 	'/assets/playground_page/pic14.png',
 	'/assets/playground_page/pic12.png',
 	'/assets/playground_page/pic24.png',
-	'/assets/playground_page/pic8.png',
 	'/assets/playground_page/pic21.png',
+	'/assets/playground_page/lola.jpeg',
 ];
 
 export const ParallaxScroll = ({ images, className }) => {
@@ -99,7 +99,7 @@ export const ParallaxScroll = ({ images, className }) => {
 						>
 							<Image
 								src={el}
-								className='h-90 w-full object-cover object-left-top gap-10 !m-0 !p-0'
+								className='h-90 w-full object-cover object-left-top gap-10 !m-0 !p-0 rounded-3xl'
 								height='400'
 								width='500'
 								alt='creative coding images'
@@ -112,7 +112,7 @@ export const ParallaxScroll = ({ images, className }) => {
 						<motion.div style={{ y: translateSecond }} key={'grid-2' + idx}>
 							<Image
 								src={el}
-								className='h-90 w-full object-cover object-left-top gap-10 !m-0 !p-0'
+								className='h-90 w-full object-cover object-left-top gap-10 !m-0 !p-0 rounded-3xl'
 								height='400'
 								width='500'
 								alt='creative coding images'
@@ -125,7 +125,7 @@ export const ParallaxScroll = ({ images, className }) => {
 						<motion.div style={{ y: translateThird }} key={'grid-3' + idx}>
 							<Image
 								src={el}
-								className='h-90 w-full object-cover object-left-top gap-10 !m-0 !p-0'
+								className='h-90 w-full object-cover object-left-top gap-10 !m-0 !p-0 rounded-3xl'
 								height='400'
 								width='500'
 								alt='creative coding images'

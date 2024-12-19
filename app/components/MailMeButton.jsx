@@ -11,6 +11,7 @@ export default function MailMeButton() {
 			href={`mailto:${email}?subject=${encodeURIComponent(
 				subject
 			)}&body=${encodeURIComponent(body)}`}
+			className='hover:scale-175'
 		>
 			<Button>mail me</Button>
 		</a>
