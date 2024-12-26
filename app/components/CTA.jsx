@@ -9,9 +9,9 @@ export default function CTA() {
 	return (
 		<div
 			className={`
-                flex flex-col justify-center items-center 
+                flex flex-col justify-center items-center w-full
                 text-2xl lg:text-xl relative z-80 
-                xs400:p-0 xs400:my-40 xs400:w-full mq1225:text-center 
+                xs400:p-2 xs400:my-40 xs400:w-full mq1225:text-center pl-5
             `}
 		>
 			<div className='relative w-full md:w-8/12 mq1050:w-11/12'>
