@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function ContactHeading() {
 	return (
 		<div
-			className={`overflow-hidden flex flex-row items-center justify-center box-border leading-[normal] tracking-[normal] text-center pt-0 px-24 border-b-2 border-white h-36 mt-2`}
+			className={`overflow-hidden flex flex-row items-center justify-center box-border leading-[normal] tracking-[normal] text-center pt-0 px-24 border-b-2 border-white h-36 md:h-32 mt-2`}
 		>
 			<motion.div
 				initial={{ x: '-60%' }}
@@ -21,7 +21,7 @@ export default function ContactHeading() {
 					whiteSpace: 'nowrap',
 				}}
 			>
-				<h1 className='w-auto uppercase font-bold flex justify-center items-center max-w-full text-xl xs400:text-[5.5rem]'>
+				<h1 className='w-auto uppercase font-bold flex justify-center items-center max-w-full text-xl xs400:text-[5rem]'>
 					* Let’s CHAT * MAIL ME * leave a msg * CALL ME * LET’S TALK * Let’s
 					CHAT *
 				</h1>

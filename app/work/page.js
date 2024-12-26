@@ -17,7 +17,7 @@ export default function Page() {
 					<MenuItem href='./playground'>playground</MenuItem>
 				</NavMenu>
 			</Nav>
-			<div className='h-50 top-20 relative flex font-bold items-center justify-center  my-20 leading-none text-2xl mq850:text-xl xs400:text-[7.5rem] xs400:p-0 xs400:m-3 '>
+			<div className='h-50 top-20 xs400:top-10 relative flex font-bold items-center justify-center  my-20 leading-none text-2xl mq850:text-xl xs400:text-[7.5rem] xs400:p-0 xs400:m-3 pb-10'>
 				<h1 className='uppercase font-bold z-50'>
 					<span className='xl:hidden'>↘︎</span>WORK
 				</h1>

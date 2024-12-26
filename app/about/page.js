@@ -25,13 +25,13 @@ export default function Page() {
 			<Cursor />
 			<div>
 				<main>
-					<div className='top-20 relative flex font-bold items-center justify-center text-center leading-none text-xl mt-10 mq850:text-lg xs400:text-[5.5rem] xs400:p-0 xs400:mt-3'>
+					<div className='top-20 relative flex font-bold items-center justify-center text-center leading-none text-xl mt-10 mq850:text-lg xs400:text-[5.5rem] xs400:p-0 xs400:mt-1'>
 						<h1 className='my-8'>
 							HELLO THERE <br /> (. ͡❛ ‿ ͡❛.)
 						</h1>
 					</div>
 					<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-base mt-10 mq850:text-sm xs400:text-xs xs400:p-0 xs400:m-2'>
-						<h3 className='my-4'>
+						<h3 className='my-4 py-20'>
 							Hi! I’m Zan. Front-end developer who loves design, creative
 							programming, and 3D art. I always strive to make a lasting
 							positive impact on the digital landscape and business with a

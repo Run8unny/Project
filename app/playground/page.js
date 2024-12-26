@@ -20,7 +20,7 @@ export default function Page() {
 				</NavMenu>
 			</Nav>
 			<Cursor />
-			<div className='h-50 top-20 relative flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-2xl lg:text-xl xs400:text-[7.5rem] xs400:p-0 xs400:m-3'>
+			<div className='h-50 top-20 xs400:top-10 relative flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-2xl lg:text-xl xs400:text-[7.5rem] xs400:p-0 xs400:m-3'>
 				<h1 className='uppercas mt-6'>
 					<span className='pl-20'>PLAY</span> <span>GROUND</span>
 				</h1>
