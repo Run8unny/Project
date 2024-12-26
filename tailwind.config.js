@@ -41,10 +41,11 @@ module.exports = {
 				outward: ['var(--font-outward)', 'sans-serif'],
 			},
 			borderRadius: {
-				'481xl': '500px',
+				'4xl': '290px',
 				'6xl': '25px',
 			},
 			scale: {
+				115: '1.2',
 				160: '1.6',
 				175: '1.75',
 				200: '2', // 200% scaling

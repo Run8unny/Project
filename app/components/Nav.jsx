@@ -4,7 +4,7 @@ import Logo from './Logo';
 export default function Nav({ children }) {
 	return (
 		<div
-			className='min-w-full flex-grow flex flex-row justify-between items-center gap-4 md:gap-2 px-4 mb-1 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0 xs400:w-full  '
+			className='fixed top-0 left-0 z-50 bg-dark-bg min-w-full text-dark-text flex-grow flex flex-row justify-between items-center gap-4 md:gap-2 px-4 mb-1 bg-transparent mq750:p-3 xs400:p-0 xs400:m-0 xs400:w-full  '
 			data-scroll-to='top-of-page'
 		>
 			<div className='md:mb-0 hover:scale-150'>
