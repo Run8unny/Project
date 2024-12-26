@@ -10,7 +10,7 @@ export default function CTA() {
 		<div
 			className={`
                 flex flex-col justify-center items-center 
-                text-2xl md:text-xl relative z-80 
+                text-2xl lg:text-xl relative z-80 
                 xs400:p-0 xs400:my-40 xs400:w-full mq1225:text-center 
             `}
 		>

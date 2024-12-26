@@ -42,15 +42,15 @@ export default function Home() {
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => setIsHovered(false)}
 			>
-				<header className='w-full h-50'>
-					<Nav>
-						<NavMenu>
-							<MenuItem href='/about'>about</MenuItem>
-							<MenuItem href='./playground'>playground</MenuItem>
-							<MenuItem href='./contact'>contact</MenuItem>
-							<MenuItem href='./work'>work</MenuItem>
-						</NavMenu>
-					</Nav>
+				<Nav>
+					<NavMenu>
+						<MenuItem href='/about'>about</MenuItem>
+						<MenuItem href='./contact'>contact</MenuItem>
+						<MenuItem href='./playground'>playground</MenuItem>
+						<MenuItem href='./work'>work</MenuItem>
+					</NavMenu>
+				</Nav>
+				<header className='w-full h-50 top-20 relative'>
 					<Heading>CREATIVE DEVELOPER</Heading>
 				</header>
 				<main>
