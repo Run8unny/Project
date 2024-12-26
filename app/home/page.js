@@ -50,7 +50,7 @@ export default function Home() {
 						<MenuItem href='./work'>work</MenuItem>
 					</NavMenu>
 				</Nav>
-				<header className='w-full h-50 top-20 relative'>
+				<header className='w-full h-50 top-20 xs400:top-16 relative'>
 					<Heading>CREATIVE DEVELOPER</Heading>
 				</header>
 				<main>
