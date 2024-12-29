@@ -51,7 +51,7 @@ const SkeletonOne = () => {
 				A desktop game developed using React Three Fiber, incorporating custom
 				shaders and 3D assets designed in Blender.
 			</p>
-			<p className='uppercase text-orange-500 pb-20'>
+			<p className='uppercase text-orange-500 pb-20 font-bold'>
 				<a href='https://funnybunny-r3f-game-lac.vercel.app/'>Play</a>
 			</p>
 		</div>
