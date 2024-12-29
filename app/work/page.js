@@ -51,7 +51,7 @@ const SkeletonOne = () => {
 				A desktop game developed using React Three Fiber, incorporating custom
 				shaders and 3D assets designed in Blender.
 			</p>
-			<p className='uppercase text-orange-500 pb-20'>
+			<p className='uppercase text-orange-500 pb-20 font-bold'>
 				<a href='https://funnybunny-r3f-game-lac.vercel.app/'>Play</a>
 			</p>
 		</div>
@@ -71,7 +71,7 @@ const SkeletonThree = () => {
 			<p className='font-normal text-xxs my-4 max-w-[26rem] hover:scale-125'>
 				An interactive website built using Vanilla JavaScript.
 			</p>
-			<p className='uppercase text-orange-500 pb-20'>
+			<p className='uppercase text-orange-500 pb-20 font-bold'>
 				<a href='https://vanillajspage.vercel.app/'>Check</a>
 			</p>
 		</div>
@@ -91,7 +91,7 @@ const SkeletonTwo = () => {
 				A single-page website developed using HTML and SASS, featuring a fully
 				responsive design.
 			</p>
-			<p className='uppercase text-orange-500 pb-20 '>
+			<p className='uppercase text-orange-500 pb-20 font-bold'>
 				<a href='https://run8unny.github.io/Workshop__BestShop/'>Check</a>
 			</p>
 		</div>
