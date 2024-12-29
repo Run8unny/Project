@@ -91,7 +91,7 @@ const SkeletonTwo = () => {
 				A single-page website developed using HTML and SASS, featuring a fully
 				responsive design.
 			</p>
-			<p className='uppercase text-orange-500 pb-20'>
+			<p className='uppercase text-orange-500 pb-20 font-bold'>
 				<a href='https://run8unny.github.io/Workshop__BestShop/'>Check</a>
 			</p>
 		</div>
