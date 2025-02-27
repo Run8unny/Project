@@ -1,4 +1,3 @@
-import MenuItem from './MenuItem';
 import MailMeButton from './MailMeButton';
 
 export default function NavMenu({ children }) {

@@ -18,24 +18,9 @@ const Scene = dynamic(() => import('./components/Scene'), { ssr: false });
 
 export default function Home() {
 	const [isHovered, setIsHovered] = useState(false);
-	const [theme, setTheme] = useState('light');
-
-	useEffect(() => {
-		// Check localStorage for the saved theme preference
-		const savedTheme = localStorage.getItem('theme') || 'light';
-		setTheme(savedTheme);
-		document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-	}, []);
-
-	const toggleTheme = () => {
-		const newTheme = theme === 'light' ? 'dark' : 'light';
-		setTheme(newTheme);
-		document.documentElement.classList.toggle('dark', newTheme === 'dark');
-		localStorage.setItem('theme', newTheme);
-	};
 
 	return (
-		<div className='felx flex-col justify-center items-center w-full'>
+		<div className='felx bg-myblack flex-col justify-center items-center w-full'>
 			<Cursor isHovered={isHovered} />
 			<div
 				onMouseEnter={() => setIsHovered(true)}

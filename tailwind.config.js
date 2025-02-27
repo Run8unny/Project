@@ -18,18 +18,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				// Light Theme Colors
-				light: {
-					bg: colors.zinc[200],
-					text: colors.zinc[950],
-					primary: colors.orange[500],
-				},
-				// Dark Theme Colors
-				dark: {
-					bg: colors.zinc[950],
-					text: colors.white,
-					primary: colors.orange[500],
-				},
+				myblack: '#OAOAOB',
 			},
 			spacing: {},
 			letterSpacing: {
@@ -38,7 +27,6 @@ module.exports = {
 			fontFamily: {
 				cotham: ['var(--font-cotham)', 'sans-serif'],
 				cooper: ['var(--font-cooper)', 'sans-serif'],
-				outward: ['var(--font-outward)', 'sans-serif'],
 			},
 			borderRadius: {
 				'4xl': '290px',
@@ -100,9 +88,9 @@ module.exports = {
 			xs: ['1rem', { lineHeight: '1.5rem' }],
 			sm: ['1.4rem', { lineHeight: '2.4rem' }],
 			base: ['1.6rem', { lineHeight: '2.7rem' }],
-			lg: '6.5rem',
+			lg: '2.7rem',
 			xl: '16rem',
-			'2xl': '18rem',
+			'2xl': '19rem',
 			'3xl': '28rem',
 			inherit: 'inherit',
 		},

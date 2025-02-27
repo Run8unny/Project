@@ -1,0 +1,41 @@
+<svg width="732" height="250" viewBox="0 0 732 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_362_92)">
+<rect width="732" height="250" fill="#0A0A0B"/>
+<g clip-path="url(#clip1_362_92)">
+<path d="M414 100C441.614 100 464 122.386 464 150V200C464 227.614 441.614 250 414 250V100Z" fill="white"/>
+<path d="M268 200H414V250H318C290.386 250 268 227.614 268 200Z" fill="white"/>
+<path d="M318 100H414C414 127.614 391.614 150 364 150H318V100Z" fill="white"/>
+<path d="M268 0H464V50H318C290.386 50 268 27.6142 268 0Z" fill="white"/>
+<path d="M268 100C268 72.3858 290.386 50 318 50V100H268Z" fill="white"/>
+<rect width="50" height="50" transform="translate(268 100)" fill="white"/>
+</g>
+<g clip-path="url(#clip2_362_92)">
+<path d="M50 150C22.3858 150 0 127.614 0 100L0 0C27.6142 0 50 22.3858 50 50L50 150Z" fill="white"/>
+<rect width="150" height="50" transform="matrix(0 -1 1 0 204 150)" fill="white"/>
+<rect width="50" height="50" transform="translate(50 150)" fill="white"/>
+<rect width="50" height="50" transform="translate(104 200)" fill="white"/>
+<rect width="50" height="50" transform="translate(154 150)" fill="white"/>
+</g>
+<g clip-path="url(#clip3_362_92)">
+<path d="M478 150L478 0C505.614 0 528 22.3858 528 50V150L478 150Z" fill="white"/>
+<path d="M682 150V0L732 0V100C732 127.614 709.614 150 682 150Z" fill="white"/>
+<rect width="50" height="50" transform="translate(528 150)" fill="white"/>
+<rect width="50" height="50" transform="translate(582 200)" fill="white"/>
+<rect width="50" height="50" transform="translate(632 150)" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_362_92">
+<rect width="732" height="250" fill="white"/>
+</clipPath>
+<clipPath id="clip1_362_92">
+<rect width="196" height="250" fill="white" transform="translate(268)"/>
+</clipPath>
+<clipPath id="clip2_362_92">
+<rect width="254" height="282" fill="white" transform="translate(0 -32)"/>
+</clipPath>
+<clipPath id="clip3_362_92">
+<rect width="254" height="282" fill="white" transform="translate(478 -32)"/>
+</clipPath>
+</defs>
+</svg>
