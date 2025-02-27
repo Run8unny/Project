@@ -26,7 +26,7 @@ export default function Page() {
 							HELLO THERE <br /> (. ͡❛ ‿ ͡❛.)
 						</h1>
 					</div>
-					<div className='flex flex-col font-bold items-start justify-center leading-none text-base mt-10 mq850:text-sm xs400:text-xs xs400:m-2'>
+					<div className='flex flex-col font-bold items-start justify-center leading-none text-lg mt-10 mq850:text-sm xs400:text-xs xs400:m-2'>
 						<h3 className='my-4 py-20 px-10'>
 							Hi! I’m Zan. Front-end developer who loves design, creative
 							programming, and 3D art. I always strive to make a lasting
@@ -42,7 +42,7 @@ export default function Page() {
 					</div>
 				</main>
 			</div>
-			<div className='w-full h-[20rem] md:h-[35rem] pt-0 pb-10 flex flex-col justify-center items-center gap-8 md:gap-6 bg-transparent'>
+			<div className='w-full h-[20rem] md:h-[35rem] pt-0 pb-10 flex flex-col justify-center items-center gap-8 md:gap-6 bg-myblack'>
 				<div className='w-full grid grid-rows-3 md:grid-rows-3 grid-cols-5 md:grid-cols-4 relative overflow-hidden box-border leading-normal xs400:w-full xs400:gap-2 xs400:h-[35rem] mq850:h-[55rem] mq650:h-[45rem] mq1225:h-[55rem] '>
 					<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex justify-start items-center justify-self-center mq650:hidden'>
 						<CallMeButton />

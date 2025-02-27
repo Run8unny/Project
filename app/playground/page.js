@@ -1,14 +1,13 @@
 import Cursor from '../components/Cursor';
 import MenuItem from '../components/MenuItem';
 import ParallaxScrollBox from '../components/ui/ParallaxScroll';
-import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import NavMenu from '../components/NavMenu';
 
 export default function Page() {
 	return (
 		<div
-			className='felx flex-col justify-center items-center w-full'
+			className='felx flex-col justify-center items-center w-full bg-myblack'
 			data-scroll-to='top-of-page2'
 		>
 			<Nav>
@@ -19,9 +18,9 @@ export default function Page() {
 				</NavMenu>
 			</Nav>
 			<Cursor />
-			<div className='h-50 top-20 xs400:top-10 relative flex flex-col font-bold items-start justify-center leading-none text-2xl lg:text-xl xs400:text-[7.5rem] xs400:p-0'>
-				<h1 className='uppercas m-6'>
-					<span className='pl-20'>PLAY</span> <span>GROUND</span>
+			<div className='h-50 top-20 xs400:top-10 relative flex flex-col font-bold items-center justify-center text-xl mq850:text-lg xs400:text-[5.5rem] xs400:mt-1 xs400:p-0'>
+				<h1 className='uppercase text-center mt-16'>
+					<span>PLAY</span> <span>GROUND</span>
 				</h1>
 			</div>
 

@@ -2,7 +2,6 @@ import FooterDiv from './FooterDiv';
 import SpanTextBig from './SpanTextBig';
 import SpanTextSmall from './SpanTextSmall';
 import FooterItem from './FooterItem';
-import ButtonTop from './ButtonTop';
 
 export default function Footer() {
 	return (

@@ -8,7 +8,7 @@ export default function CTA() {
 		<div
 			className={`
                 flex justify-center items-center text-center
-                text-xl z-80 py-16
+                text-2xl z-80 py-16
             `}
 		>
 			<FlipWords words={words} />

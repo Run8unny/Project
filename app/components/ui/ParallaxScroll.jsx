@@ -9,10 +9,10 @@ export default function ParallaxScrollBox() {
 	return (
 		<div className='flex flex-col justify-center items-center mt-4 mb-8'>
 			<ParallaxScroll images={images} />
-			<div className='w-10/12 h-50 grid grid-rows-1 grid-cols-2 mq1050:grid-rows-2 mq1050:grid-cols-1 box-border'>
+			<div className='w-8/12 h-50 grid grid-rows-1 grid-cols-2 mq1050:grid-rows-2 mq1050:grid-cols-1 box-border'>
 				<div
 					className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-start
-				 justify-center md:mb-10'
+				 justify-center md:mb-10 p-10'
 				>
 					<video className='w-80 max-w-md md:w-full rounded-3xl' controls>
 						<source src='/assets/playground_page/video2.mp4' type='video/mp4' />

@@ -1,9 +1,8 @@
 export default function Heading({ children }) {
 	return (
 		<div className='flex flex-row justify-center items-center bg-transparent px-20'>
-			{/* <h1 className={`font-extrabold self-center text-center text-[20rem]`}> */}
 			{children}
-			<div className='text-base text-white w-full mb-40'>
+			<div className='text-lg text-white w-full mb-52 mq850:text-sm xs400:text-xs xs400:m-2'>
 				<p>
 					This website showcases my journey as a frontend developer, learning
 					and mastering modern web technologies like React, React Three Fiber,
@@ -22,7 +21,6 @@ export default function Heading({ children }) {
 					innovation.
 				</p>
 			</div>
-			{/* </h1> */}
 		</div>
 	);
 }
