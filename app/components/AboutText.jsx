@@ -29,7 +29,7 @@ export default function AboutText() {
 	];
 
 	return (
-		<div className='flex flex-col justify-between items-center w-1/2 mb-8 xs400:mb-10 mq1050:w-full'>
+		<div className='flex justify-between items-center w-full mb-8 xs400:mb-10 mq1050:w-full px-12'>
 			<div className='mb-4'>
 				<h1 className='font-bold text-lg mb-4 flex justify-start'>can ⇢</h1>
 				<div className='flex flex-wrap gap-2'>

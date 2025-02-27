@@ -8,12 +8,9 @@ import Cursor from './components/Cursor';
 import NavMenu from './components/NavMenu';
 import HomeContact from './components/HomeContact';
 import Heading from './components/Heading';
-import EvervaultCardContainer from './components/ui/EvervaultCard';
 import Water from './components/Water';
 import Disc from './components/Disc';
 import MenuItem from './components/MenuItem';
-import ThemeToggler from './components/ThemeToggler';
-import Button from './components/Button';
 import CTA from './components/CTA';
 import VideoComponent from './components/VideoComponent';
 
@@ -51,27 +48,20 @@ export default function Home() {
 						<MenuItem href='./playground'>Playground</MenuItem>
 					</NavMenu>
 				</Nav>
-
-				<main>
+				<header className='w-full h-50 top-20 xs400:top-16 relative'>
 					<VideoComponent />
-					<header className='w-full h-50 top-20 xs400:top-16 relative'>
-						<CTA />
-						<Heading />
-					</header>
-					{/* <ThemeToggler>
-						<Button onClick={toggleTheme}>
-							{theme === 'light' ? 'theme dark' : 'theme light'}
-						</Button>
-					</ThemeToggler> */}
+					<CTA />
+					<Heading />
+				</header>
+				<main>
+					<Scene>
+						<Water />
+						<Disc />
+					</Scene>
+					<HomeContact />
 				</main>
+				<Footer />
 			</div>
-
-			<Scene>
-				<Water />
-				<Disc />
-			</Scene>
-			<HomeContact />
-			<Footer />
 		</div>
 	);
 }

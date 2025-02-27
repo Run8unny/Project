@@ -6,7 +6,7 @@ import { useProgress, Html, ScrollControls } from '@react-three/drei';
 
 export default function Scene({ children }) {
 	return (
-		<div className='w-full rounded-3xl h-screen flex flex-col justify-center items-center py-16 bg-zinc-950 md:w-full'>
+		<div className='w-full rounded-3xl h-[32rem] flex flex-col justify-center items-center py-16 bg-zinc-950 md:w-full'>
 			<Canvas
 				gl={{ antialias: true }}
 				camera={{

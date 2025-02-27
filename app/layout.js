@@ -1,5 +1,6 @@
 import '@/app/_styles/globals.css';
 import localFont from 'next/font/local';
+import SecondCursor from './components/SecondCursor';
 
 export const metadata = {
 	title: '',
@@ -26,9 +27,10 @@ export default function RootLayout({ children }) {
 			className={`${cotham.variable}  ${outward.variable} container`}
 		>
 			<body
-				className={`w-full font-cotham bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text flex items-center justify-center xs400:p-0 xs400:m-0 lg:w-full xs400:w-fit p-10`}
+				className={`w-full font-cotham bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text flex items-center justify-center xs400:p-0 xs400:m-0 lg:w-full xs400:w-fit box-border`}
 			>
 				<main className='relative z-10'>{children}</main>
+				<SecondCursor />
 			</body>
 		</html>
 	);
