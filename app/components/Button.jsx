@@ -6,7 +6,7 @@ export default function Button({ onClick, children }) {
 			type='button'
 			aria-label='Custom Button'
 			onClick={onClick}
-			className='w-auto px-6 rounded-[25px] border-[1px] text-xs bg-zinc-950 text-white border-white border-solid box-border h-[2.3rem] hover:text-black hover:bg-white hover:scale-115'
+			className='w-auto px-4 py-2 rounded-[25px] text-xs bg-transparent border border-white text-white border-solid box-border hover:text-black hover:bg-white hover:scale-105'
 		>
 			{children}
 		</button>

@@ -18,8 +18,8 @@ export default function FadingImages() {
 
 	// Load textures
 	const [texture1, texture2, dispTexture] = useTexture([
-		'./assets/about_page/about0.png',
-		'./assets/about_page/about.png',
+		'./assets/about_page/react.png',
+		'./assets/about_page/webgl.jpg',
 		'./assets/about_page/displacement.jpg',
 	]);
 
@@ -42,8 +42,8 @@ export default function FadingImages() {
 	return (
 		<>
 			<OrbitControls
-				minDistance={0}
-				maxDistance={40}
+				minDistance={6}
+				maxDistance={14}
 				enablePan={false}
 				enableZoom={true}
 				enableRotate={true}
@@ -54,7 +54,7 @@ export default function FadingImages() {
 			<Center>
 				<mesh
 					onPointerOver={() => setHover(true)}
-					onClick={() => setHover(false)}
+					onPointerOut={() => setHover(false)}
 				>
 					{/* Responsive plane geometry */}
 					<planeGeometry args={[planeWidth, planeHeight]} />

@@ -2,10 +2,10 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-const colors = ['#f45fcf', '#2349f2', '#f0f6b4', '#eeeeed'];
+const colors = ['#ff24e5', '#1E90FF'];
 
 export default function SecondCursor() {
-	const size = 270;
+	const size = 50;
 	const circles = useRef([]);
 	const mouse = useRef({ x: 0, y: 0 });
 	const delayedMouse = useRef({ x: 0, y: 0 });
