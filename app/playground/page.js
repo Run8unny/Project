@@ -27,7 +27,7 @@ export default function Page() {
 
 			<ParallaxScrollBox />
 
-			<div className='flex flex-col font-bold items-start justify-center leading-none text-lg mt-10 mq850:text-base xs400:p-0 xs400:m-2 mb-3 px-1'>
+			<div className='flex flex-col font-bold items-start justify-center leading-none text-lg mt-10 mq850:text-base xs400:p-0 xs400:m-2 mb-3 px-10'>
 				<h3 className='mb-10'>
 					I’ve done all of these [except my dog] with shaders, R3F, and creative
 					coding. It’s 3d & it’s moving. There’ll be the gallery soon.

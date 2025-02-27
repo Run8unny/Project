@@ -35,7 +35,7 @@ export default function ContactForm() {
 	};
 
 	const formStyle =
-		'border-2 rounded-full h-80 w-80 m-4 text-center p-10 placeholder-gray-800 focus:outline-pink-900';
+		'border-2 rounded-full h-72 w-72 m-4 text-center p-10 placeholder-gray-800 focus:outline-pink-900';
 
 	return (
 		<form
@@ -89,7 +89,7 @@ export default function ContactForm() {
 			<textarea
 				id='message'
 				name='message'
-				className='border-2 rounded-full h-80 w-80 m-4 resize-none text-center pt-[140px] p-10 placeholder-gray-800 focus:outline-pink-900'
+				className='border-2 rounded-full h-72 w-72 m-4 resize-none text-center pt-[140px] p-10 placeholder-gray-800 focus:outline-pink-900'
 				placeholder='[ message ]'
 				value={data.message}
 				onChange={(e) => {
@@ -104,8 +104,8 @@ export default function ContactForm() {
 			<button
 				className={
 					isSent
-						? 'border-2 border-solid cursor-pointer border-pink-900 rounded-full h-80 w-80 text-base mx-4 button-neon '
-						: 'border-2 border-solid cursor-pointer border-white rounded-full h-80 w-80 text-base mx-4 hover:bg-pink-900 hover:text-white hover:border-0 hover:animate-bounce'
+						? 'border-2 border-solid cursor-pointer border-blue-500 rounded-full h-72 w-72 text-base mx-4 button-neon '
+						: 'border-2 border-solid cursor-pointer border-white rounded-full h-72 w-72 text-base mx-4 hover:bg-blue-500 hover:text-white hover:border-0 hover:animate-bounce'
 				}
 				type='submit'
 				value='send'
