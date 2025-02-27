@@ -3,9 +3,13 @@ import FadingImages from '../components/FadeImages';
 import MenuItem from '../components/MenuItem';
 import Cursor from '../components/Cursor';
 import AboutText from '../components/AboutText';
-import Footer from '../components/Footer';
+import FooterAbout from '../components/FooterAbout';
 import Nav from '../components/Nav';
 import NavMenu from '../components/NavMenu';
+import CallMeButton from '../components/CallMeButton';
+import MailMeButton from '../components/MailMeButton';
+import Circle from '../components/Circle';
+import Link from 'next/link';
 
 const SceneTwo = dynamic(() => import('../components/SceneTwo'), {
 	ssr: false,
@@ -16,10 +20,9 @@ export default function Page() {
 		<div className='felx flex-col justify-center items-center w-full cursor-pointer'>
 			<Nav>
 				<NavMenu>
-					<MenuItem href='./home'>home</MenuItem>
+					<MenuItem href='./'>home</MenuItem>
 					<MenuItem href='./contact'>contact</MenuItem>
 					<MenuItem href='./playground'>playground</MenuItem>
-					<MenuItem href='./work'>work</MenuItem>
 				</NavMenu>
 			</Nav>
 			<Cursor />
@@ -30,7 +33,7 @@ export default function Page() {
 							HELLO THERE <br /> (. ͡❛ ‿ ͡❛.)
 						</h1>
 					</div>
-					<div className='flex flex-col font-bold items-start justify-center text-left px-10 leading-none text-base mt-10 mq850:text-sm xs400:text-xs xs400:p-0 xs400:m-2'>
+					<div className='flex flex-col font-bold items-start justify-center leading-none text-base mt-10 mq850:text-sm xs400:text-xs xs400:m-2'>
 						<h3 className='my-4 py-20'>
 							Hi! I’m Zan. Front-end developer who loves design, creative
 							programming, and 3D art. I always strive to make a lasting
@@ -41,7 +44,7 @@ export default function Page() {
 							working, I enjoy climbing & knitting. Dog lover.
 						</h3>
 					</div>
-					<div className='flex justify-center items-center mq1050:flex-col m-10'>
+					<div className='flex justify-center items-center mq1050:flex-col'>
 						<SceneTwo>
 							<FadingImages />
 						</SceneTwo>
@@ -49,7 +52,26 @@ export default function Page() {
 					</div>
 				</main>
 			</div>
-			<Footer />
+			<div className='w-full h-[20rem] md:h-[35rem] pt-0 pb-10 flex flex-col justify-center items-center gap-8 md:gap-6 bg-transparent'>
+				<div className='w-full grid grid-rows-3 md:grid-rows-3 grid-cols-5 md:grid-cols-4 relative overflow-hidden box-border leading-normal xs400:w-full xs400:gap-2 xs400:h-[35rem] mq850:h-[55rem] mq650:h-[45rem] mq1225:h-[55rem] '>
+					<div className='row-start-2 row-end-3 col-start-1 col-end-2 flex justify-start items-center justify-self-center mq650:hidden'>
+						<CallMeButton />
+					</div>
+
+					<div className='row-start-2 row-end-3 col-start-2 col-end-5 md:col-end-4 flex justify-center items-center hover:animate-bounce '>
+						<Circle>
+							<Link
+								href='/contact'
+								className='flex text-xs text-white font-cotham justify-center items-center p-20 text-center xs400:text-xs'
+							>{`Contact Form`}</Link>
+						</Circle>
+					</div>
+					<div className='row-start-2 row-end-3 col-start-5 col-end-6 flex justify-end items-center justify-self-center mq650:hidden'>
+						<MailMeButton>mail me</MailMeButton>
+					</div>
+				</div>
+			</div>
+			<FooterAbout />
 		</div>
 	);
 }

@@ -7,23 +7,25 @@ import { cn } from '@/app/lib/utils';
 
 export default function ParallaxScrollBox() {
 	return (
-		<div className='flex flex-col justify-center items-center mt-10'>
-			<div className='w-2/3 h-50 grid grid-rows-1 grid-cols-2 mq1050:grid-rows-2 mq1050:grid-cols-1 box-border'>
-				<div className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-center justify-center md:mb-10'>
+		<div className='flex flex-col justify-center items-center mt-4 mb-8'>
+			<ParallaxScroll images={images} />
+			<div className='w-10/12 h-50 grid grid-rows-1 grid-cols-2 mq1050:grid-rows-2 mq1050:grid-cols-1 box-border'>
+				<div
+					className='row-start-1 row-end-2 col-start-1 col-end-2 flex flex-col items-start
+				 justify-center md:mb-10'
+				>
 					<video className='w-80 max-w-md md:w-full rounded-3xl' controls>
 						<source src='/assets/playground_page/video2.mp4' type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
 				</div>
-				<div className='row-start-1 row-end-2 col-start-2 col-end-3 mq1050:row-start-2 mq1050:col-start-1 flex flex-col items-center justify-center'>
+				<div className='row-start-1 row-end-2 col-start-2 col-end-3 mq1050:row-start-2 mq1050:col-start-1 flex flex-col items-end justify-center'>
 					<video className='w-80 max-w-md md:w-full rounded-3xl' controls>
 						<source src='/assets/playground_page/video1.mp4' type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
 				</div>
 			</div>
-
-			<ParallaxScroll images={images} />
 		</div>
 	);
 }
@@ -78,13 +80,13 @@ export const ParallaxScroll = ({ images, className }) => {
 	return (
 		<div
 			className={cn(
-				'h-[90vw] items-start overflow-y-auto w-full md:h-1/2',
+				'h-[90vw] pt-16 items-start overflow-y-auto w-full md:h-1/2',
 				className
 			)}
 			ref={gridRef}
 		>
 			<div
-				className='grid grid-cols-3 md:grid-cols-1 lg:grid-cols-3 items-start max-w-6xl mx-auto gap-14 py-6 px-10'
+				className='grid grid-cols-3 md:grid-cols-1 lg:grid-cols-3 items-start max-w-6xl mx-auto gap-14 py-6'
 				ref={gridRef}
 			>
 				<div className='grid gap-10'>

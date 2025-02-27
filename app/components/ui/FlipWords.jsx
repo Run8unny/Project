@@ -49,7 +49,7 @@ export default function FlipWords({ words, duration = 3000, className }) {
 					position: 'absolute',
 				}}
 				className={cn(
-					'z-10 inline-block relative text-left px-2 font-bold text-pink-900 ',
+					'z-10 inline-block text-center relative font-bold text-white',
 					className
 				)}
 				key={currentWord}
@@ -61,7 +61,7 @@ export default function FlipWords({ words, duration = 3000, className }) {
 						animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
 						transition={{
 							delay: wordIndex * 0.3,
-							duration: 0.3,
+							duration: 0.7,
 						}}
 						className='inline-block whitespace-nowrap'
 					>

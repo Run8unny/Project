@@ -8,7 +8,7 @@ export default function CallMeButton() {
 		<a
 			href={`tel:${phoneNumber}`}
 			aria-label={`Call us at ${phoneNumber}`}
-			className='hover:scale-175'
+			className='hover:scale-115'
 		>
 			<Button>call me</Button>
 		</a>

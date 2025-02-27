@@ -5,11 +5,11 @@ export default function Logo() {
 	return (
 		<div className={`pl-4`}>
 			<Link href='/' className='flex flex-row'>
-				<div className='text-[40px] hover:text-orange-500 self-center w-auto h-auto m-5'>
+				<div className='hover:text-orange-500 w-auto h-auto'>
 					<Image
-						width={55}
+						width={65}
 						height={50}
-						src={'/icons/zw_icon.svg'}
+						src={'/icons/logo_white.svg'}
 						alt='logo sign'
 					/>
 				</div>
